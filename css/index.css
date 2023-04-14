@@ -1,0 +1,122 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+:root{
+    --danger-color:red;
+    --safe-color:green;
+}
+
+/* header part------------------------------------------------------- */
+#navbar{
+    display: flex;
+    /* position:sticky; */
+    align-items: center;
+    justify-content: center;
+    height: 3.3rem;
+    background-color: lightcyan;
+}
+#navbarLeft{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+}
+#navbarLeft li a{
+    font-size: 17px;
+    padding: 6px;
+    margin: 7px;
+    text-decoration: none;
+    color: var(--danger-color);
+}
+#logo{
+    margin:auto;
+    /* font-family: 'Ubuntu', sans-serif; */
+    font-family: cursive;
+    color: var(--safe-color);
+    cursor: pointer;
+}
+#logo h2 a{
+    text-decoration: none;
+}
+#navbarRight{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+#navbarRight li{
+    font-size: 17px;
+    padding: 6px;
+    margin: 5px;
+    color: var(--danger-color);
+}
+#login{
+    font-size: 17px;
+    padding: 6px;
+    margin: 7px;
+    text-decoration: none;
+}
+#navbarRight li button{
+    cursor: pointer;
+    padding:4px;
+    background-color: var(--safe-color);
+    color: white;
+}
+/* header part   (hover)------------------------------------------------------- */
+#navbarLeft li a:hover{
+   background-color: red;
+   border-radius: 10px;
+   color:white;
+}
+#login:hover{
+    background-color: red;
+    border-radius: 10px;
+    color:white;
+}
+#navbarRight li button:hover{
+    background-color: var(--danger-color);
+    color: white;
+}
+
+/* footer protion begins --------------------------------------------------------------- */
+#bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#bottomUp{
+    display: flex;
+    list-style: none;
+    /* border:3px solid red;  */
+    align-items: center;
+    justify-content: center; 
+    background-color: black;
+    height:2.5rem;
+    width: 100vw;
+}
+#bottomUp li a{
+    text-decoration: none;
+    margin:10px;
+    color: white;
+}
+#bottomDown{
+    display: flex;
+    color: white;
+    background-color: #140e0e;
+    width: 100vw;
+    height:2.5rem ;
+    text-align: center;
+    justify-content: center;
+}
+#bottomDown p{
+   padding:8px;
+}
+/* footer protion begins  (hover) --------------------------------------------------------------- */
+
+#bottomUp li a:hover{
+    color:red;
+}
+
+
