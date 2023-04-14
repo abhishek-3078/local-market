@@ -120,4 +120,32 @@
     color:red;
 }
 
+/* Categories */
+.categories-container{
+    display: flex;
+    flex-wrap:wrap;
+
+}
+.category{
+    border: 2px solid rgb(52, 47, 47);
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px 3px rgb(104, 102, 102);
+    margin: 20px;
+    padding: 20px;
+    cursor: pointer;    
+}
+.category img{
+    height: 300px;
+    width: 300px;
+
+}
+.category h3{
+    font-family: 'Lato';
+    font-size: 1.5rem;
+}
+.category a{
+    text-decoration: none;
+    color: black;
+}
+
 
