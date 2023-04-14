@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Noto+Serif&family=Poppins&family=Roboto&display=swap');
+
+.text-center{
+    text-align: center;
+    
+}
+
+.font-style{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+}
+.flex-wrap-center{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
