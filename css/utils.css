@@ -4,6 +4,9 @@
     padding:0px;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 :root{
     --danger-color:red;
     --safe-color:green;
