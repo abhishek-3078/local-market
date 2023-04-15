@@ -9,6 +9,12 @@
 }
 
 /* header part------------------------------------------------------- */
+header{
+    position: sticky;
+    top:0px;
+    left:0px;
+    z-index:1;
+}
 #navbar{
     display: flex;
     /* position:sticky; */
@@ -79,6 +85,33 @@
 #navbarRight li button:hover{
     background-color: var(--danger-color);
     color: white;
+}
+/* section part---------------------------------------------------------------------------------- */
+
+
+section{
+    background-color: ghostwhite;
+}
+section div h2{
+    padding-bottom: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: 0.7;
+}
+section div p{
+    opacity: 0.8;
+}
+#sectionFirstChild{
+    padding:74px 26px 13px 34px;
+}
+#sectionLastChild{
+    padding:18px 30px 76px 29px;
+}
+#sectionFirstChild h2{
+    color:red;
+    font-size: 33px;
+}
+.termsPadding{
+    padding: 22px 51px 28px 30px;
 }
 
 /* footer protion begins --------------------------------------------------------------- */

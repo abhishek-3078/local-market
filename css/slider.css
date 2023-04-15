@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Noto+Serif&family=Roboto&display=swap');
+.content{
+    width: 100%;
+    position: absolute;
+    /* border: 2px solid red; */
+    top:156px;
+    
+}
+#form{
+    position: relative;
+    /* border: 2px solid red; */
+    margin: auto;
+    width: 70%;
+    padding: 20px;
+}
+.slider{
+    height: 400px;
+    width: 100vw;
+    display: flex;
+    /* border: 2px solid red; */
+    margin: auto;
+    overflow: hidden;
+}
+.slider img{
+    /* display: inline-block; */
+    width: 100vw;
+    min-width: 100vw;
+    z-index: -2;
+}
+
+#form::before{
+    content: "";
+    background-color: #ffffffc3;
+    z-index: -1;
+    opacity: 0.6;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    box-shadow: 0 4px 12px 0 rgba(26, 12, 12, 0.45);
+}
+#form h2{
+    text-align: center;
+    margin:10px;
+    font-size: 3rem;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 2px 2px black;
+    color: whitesmoke;
+    text-shadow: black 4px 3px;
+}
+#form button{
+    display: block;
+    margin: auto;
+    padding: 15px;
+    border-radius: 15px;
+    border: 3px solid black;
+    margin:auto;
+    font-size: 1.3rem;
+    background-color: green;
+    cursor: pointer;
+}
+#form button:hover{
+  background-color:darkgreen;
+}
+#form button a{
+    text-decoration: none;
+    color:white;
+}
+
+ @keyframes slide1{
+    0%{
+        transform:translateX(0%);
+        /* opacity: 1; */ 
+    }   
+    25%{
+        transform: translateX(100%);    
+    }
+    75%{
+        transform: translateX(-100%);    
+    }
+}
+@keyframes slide2{
+    0%{
+        transform:translateX(-200%);      
+    }
+    50%{
+        transform: translateX(0%);    
+    }
+}
+@keyframes slide3{
+    0%{
+        transform:translateX(-400%);      
+    }
+    75%{
+        transform: translateX(-100%);         
+    }
+}
+@keyframes slide4{
+    0%{
+        transform:translateX(-600%);            
+    }
+    100%{
+        transform: translateX(-200%);           
+    }
+}
+.slider img:nth-child(1){
+    animation: slide1 25s linear infinite;
+}
+.slider img:nth-child(2){
+    animation: slide2  25s linear infinite;
+}
+.slider img:nth-child(3){
+    animation: slide3  25s linear infinite;
+}
+.slider img:nth-child(4){
+    animation: slide4  25s linear infinite;
+}
+
+
