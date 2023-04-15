@@ -44,7 +44,6 @@ header{
     list-style: none;
     align-items: center;
     justify-content: left;
-    overflow: auto;
 }
 #navbarRight{
     width:30%;
