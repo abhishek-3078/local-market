@@ -12,7 +12,7 @@
     display: flex;
     border: 2px solid red;
     margin: auto;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 .slider img{
     /* display: inline-block; */
