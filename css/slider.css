@@ -10,7 +10,7 @@
     height: 400px;
     width: 100%;
     display: flex;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     margin: auto;
     overflow: hidden;
 }

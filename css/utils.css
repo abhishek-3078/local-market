@@ -44,7 +44,7 @@ header{
     list-style: none;
     align-items: center;
     justify-content: left;
-    overflow: auto;
+
 }
 #navbarRight{
     width:30%;
@@ -89,7 +89,6 @@ header{
     padding: 10px;
     /* margin: 2px; */
     text-decoration: none;
-    background-color:green;
     border-radius: 10px;
     color: white;
 }
@@ -105,11 +104,7 @@ header{
    background-color: red;
    color:white;
 }
-#login:hover{
-    background-color: red;
-    border-radius: 10px;
-    color:white;
-}
+
 #navbarRight li button:hover{
     background-color: var(--danger-color);
     color: white;
