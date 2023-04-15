@@ -6,6 +6,20 @@
     top:156px;
     
 }
+.slider{
+    height: 400px;
+    width: 100%;
+    display: flex;
+    border: 2px solid red;
+    margin: auto;
+    overflow: hidden;
+}
+.slider img{
+    /* display: inline-block; */
+    width: 100%;
+    min-width: 100%;
+    z-index: -2;
+}
 #form{
     position: relative;
     /* border: 2px solid red; */
