@@ -1,4 +1,6 @@
-
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 /* section part begins ------------------------------------------------------------------ */
 
@@ -19,7 +21,6 @@
 
 #sub_banner h1{
     display: inline-block;
-    margin: auto;
     margin-top: 20px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 2rem;
@@ -27,7 +28,6 @@
     background-color: white;
     padding: 8px;
     border-radius: 10px;
-    
 }
 
 #searchbar{
@@ -42,6 +42,7 @@
 #searchbar:focus{
     background-color: black;
 }
+
 form{
     display: flex;
     justify-content: center;
@@ -66,8 +67,8 @@ form button:hover{
     width: 100%;
     justify-content: center;
     background-color: rgba(128, 128, 128, 0.753);
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 8px;
+    padding-bottom: 8px;
     position:absolute;
     bottom: 0;
 }
@@ -85,6 +86,7 @@ form button:hover{
     width: 140px;
     text-align: center;
     padding: 10px;
+    margin: 8px;
     text-decoration: none;
     transition: ease-in-out .2s;
     bottom: 0;
@@ -117,6 +119,19 @@ form button:hover{
     justify-content: center;
 }
 
+.productsList ul img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.productsList ul h3{
+    text-align: center;
+    margin-top: 15px;
+    color: rgb(0, 150, 0);
+}
 .productsList ul a{
     text-decoration: none;
     border: 1px solid grey;

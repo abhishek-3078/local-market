@@ -1,23 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Noto+Serif&family=Poppins&family=Roboto&display=swap');
-*{
-    margin:0px;
-    padding:0px;
+
+* {
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
-}
-:root{
-    --danger-color:red;
-    --safe-color:green;
-}
-.text-center{
-    text-align: center;
-    
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.font-style{
+:root {
+    --danger-color: red;
+    --safe-color: green;
+}
+
+.text-center {
+    text-align: center;
+
+}
+
+.font-style {
     font-family: 'Poppins', sans-serif;
     font-size: 2rem;
 }
-.flex-wrap-center{
+
+.flex-wrap-center {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -25,20 +30,22 @@
 
 
 /* header part------------------------------------------------------- */
-header{
+header {
     position: sticky;
-    top:0px;
-    left:0px;
-    z-index:1;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
 }
-#navbar{
+
+#navbar {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 4.1rem;
     background-color: lightcyan;
 }
-#navbarLeft{
+
+#navbarLeft {
     display: flex;
     width: 30%;
     list-style: none;
@@ -46,105 +53,133 @@ header{
     justify-content: left;
 
 }
-#navbarRight{
-    width:30%;
+
+#navbarRight {
+    width: 30%;
     display: flex;
     align-items: center;
     justify-content: end;
     list-style: none;
     margin-right: 20px;
-    
+
 }
-#navbarLeft li a{
+
+#navbarLeft li a {
     font-size: 1.2rem;
     /* border-radius: 10px; */
-    padding: 25px;
+    padding: 22px;
     /* margin: 10px; */
     text-decoration: none;
     color: var(--danger-color);
-    transition:background-color 0.5s ease-in-out 0s;
-    
+    transition: background-color 0.5s ease-in-out 0s;
 }
-#logo{
-    margin:auto;
+
+#logo {
+    margin: auto;
     /* font-family: 'Ubuntu', sans-serif; */
     font-family: cursive;
     color: var(--safe-color);
     cursor: pointer;
 }
 
-#logo h2 a{
+#logo h2 a {
     text-decoration: none;
 }
-#navbarRight li{
+
+#navbarRight li {
     font-size: 17px;
     padding: 6px;
     /* margin: 5px; */
     color: var(--danger-color);
-    
+
 }
 
-#login{
+#navbar img{
+    padding: 5px;
+    /* border: 1px red solid; */
+    border-radius: 25px;
+    transition: ease-in-out .2s;
+}
+
+#navbar img:hover{
+    box-shadow: 2px 2px 8px black; /*Find a suitable color and replace it with that for the shopping cart*/
+    background-color: rgb(14, 162, 162); /*Find a suitable color and replace it with that for the shopping cart*/
+}
+
+#login {
     font-size: 17px;
     padding: 10px;
     /* margin: 2px; */
     text-decoration: none;
     border-radius: 10px;
-    color: white;
+    color: black;
 }
-#navbarRight li button{
+
+#navbarRight li button {
     cursor: pointer;
-    padding:10px;
+    padding: 10px;
     border-radius: 10px;
     background-color: var(--safe-color);
     color: white;
-}
-/* header part   (hover)------------------------------------------------------- */
-#navbarLeft li a:hover{
-   background-color: red;
-   color:white;
+    box-shadow: 1px 1px 10px  black;
+    transition: ease-in-out .2s;
 }
 
-#navbarRight li button:hover{
+/* header part   (hover)------------------------------------------------------- */
+#navbarLeft li a:hover {
+    background-color: red;
+    color: white;
+}
+
+#navbarRight li button:hover {
     background-color: var(--danger-color);
     color: white;
 }
 
+#navbarRight li button:focus{
+    box-shadow: none;
+}
+
 /* footer protion begins --------------------------------------------------------------- */
-#bottom{
+#bottom {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-#bottomUp{
+
+#bottomUp {
     display: flex;
     list-style: none;
     /* border:3px solid red;  */
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
     background-color: black;
-    height:2.5rem;
+    height: 2.5rem;
     width: 100vw;
 }
-#bottomUp li a{
+
+#bottomUp li a {
     text-decoration: none;
-    margin:10px;
+    margin: 10px;
     color: white;
 }
-#bottomDown{
+
+#bottomDown {
     display: flex;
     color: white;
     background-color: #140e0e;
     width: 100vw;
-    height:2.5rem ;
+    height: 2.5rem;
     text-align: center;
     justify-content: center;
 }
-#bottomDown p{
-   padding:8px;
+
+#bottomDown p {
+    padding: 8px;
 }
+
 /* footer protion begins  (hover) --------------------------------------------------------------- */
 
-#bottomUp li a:hover{
-    color:red;
+#bottomUp li a:hover {
+    color: red;
 }
