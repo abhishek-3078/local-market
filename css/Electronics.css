@@ -1,17 +1,8 @@
-
-/* header */
-#navbarLeft li:first-child a{
-    background-color: #80808053;
-    color:red;
-
-}
-
-
 /* section part begins ------------------------------------------------------------------ */
 
 #banner{
     position: relative;
-    background-image: url(https://media.istockphoto.com/id/1227198304/de/foto/bunter-hintergrund-aus-verschiedenen-kr%C3%A4utern-und-gew%C3%BCrzen-zum-kochen-in-schalen.jpg?s=612x612&w=0&k=20&c=LjJDEeDFQFIgDze0twPmEQXYyXSXe5la-tENvHIuxyY=);
+    background-image: url('../img/electonics/electronic.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     height: 300px;
@@ -100,6 +91,22 @@ form button:hover{
     background: white;
     color: rgba(128, 128, 128, 0.753);
 }
+#back_key{
+    position:absolute;
+    top:30px;
+    left:25px;
+}
+#back_key a{
+    text-decoration: none;
+    color:white;
+    background-color: green;
+    border-radius: 7px;
+    padding:7px 6px;
+}
+#back_key a:hover{
+    background-color: darkgreen;
+}
+
 
 .allProducts{
     margin: 20px;
