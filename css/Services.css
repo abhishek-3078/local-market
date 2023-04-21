@@ -1,4 +1,9 @@
+/* header */
+#navbarLeft li:first-child a{
+    background-color: #80808053;
+    color:red;
 
+}
 
 /* section part begins ------------------------------------------------------------------ */
 
