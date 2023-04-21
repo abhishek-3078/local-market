@@ -1,52 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-
+  <head>
+    <title>Tailor</title>
     <title>Document</title>
-</head>
-<body>
+    <link rel="stylesheet" href="css/utils.css" />
+    <link rel="stylesheet" href="css/Tailor.css" />
+    <link rel="stylesheet" href="css/responsive.css">
+    <script defer src="js/tailor.js"></script>
+  </head>
+
+  <body>
     <header>
-        <div id="navbar">
-            <div class="nav" id="navbarLeft">
-                <li><a href="Services.html">Services</a></li>
-                <li><a href="Offers.html">Offers</a></li>
-                <li><a href="About.html">About</a></li>
-                <li><a href="Contact.html">Contact</a></li>
-            </div>
-            <div class="nav" id="logo">
-                <h2> <a href="index.html">OurLocalMarket</a></h2>
-            </div>
-            <div class="nav" id="navbarRight">
-                <li><a href="/Login.html" id="login"><button>Login</button></a></li>
-                <li><a href="/SignUp.html"><button>SignUp</button></a></li>
-                <li><a href=""><img src="img/logo/cart.png" alt="cart" width="40px"></a></li>
-            </div>
+      <div id="navbar">
+        <div class="nav" id="navbarLeft">
+          <li><a href="Services.html">Services</a></li>
+          <li><a href="Offers.html">Offers</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="Contact.html">Contact</a></li>
         </div>
+        <div class="nav" id="logo">
+          <h2><a href="index.html">OurLocalMarket</a></h2>
+        </div>
+        <div class="nav" id="navbarRight">
+          <li>
+            <a href="/Login.html" id="login"><button>Login</button></a>
+          </li>
+          <li>
+            <a href="/SignUp.html"><button>SignUp</button></a>
+          </li>
+          <li>
+            <a href=""
+              ><img src="img/logo/cart.png" alt="cart" width="40px"
+            /></a>
+          </li>
+        </div>
+      </div>
     </header>
- <main>
+    <main>
+      <div id="banner">
+        <div id="sub_banner">
+          <h1>Tailor</h1>
+          <form action="">
+            <input
+              type="search"
+              placeholder="Search....."
+              name="search"
+              id="searchbar"
+            />
+            <button type="submit">
+              <img
+                src="img/logo/search.png"
+                alt="noon"
+                height="30"
+                width="30"
+              />
+            </button>
+          </form>
+        </div>
+        <div id="categories">
+          <a href="#product1"><div class="cateogry">Tailoring Material</div></a>
+          <a href="#product2"><div class="cateogry">Book an Appointment</div></a>
+          <a href="#product3"><div class="cateogry">Readymade</div></a>
+          <a href="#product4"><div class="cateogry">NearBy Tailors</div></a>
+    
+        </div>
+        <div id="back_key">
+          <a href="Services.html">&larr;All Services</a>
+        </div>
+      </div>
+      <div class="measure-box">
+        <button id="measurement" onclick="addMeasurement()">+</button
+        ><label for="measurement">Add Measurement</label>
+      </div>
 
-    tailor
-
-
-
- </main>
-
-
-
-
-<!-- ---------------------------------------------------------------------------------------------------- -->
-    <footer id="bottom">
-        <div>
-            <ul id="bottomUp">
-                <li> <a href="Terms.html">Terms</a> </li>
-                <li> <a href="Privacy.html">Privacy Policy</a> </li>
-                <li> <a href="FAQ.html">FAQ</a> </li>
-                <li> <a href="Contact.html">Contact</a> </li>
+      <section>
+        <div class="measurements">
+          <form>
+            <button id="cross" 
+              type="button
+                    "
+              onclick="addMeasurement()"
+            >
+              X
+            </button>
+            <h3 class="heading">Add Measurement</h3>
+           
+            <button type="button">Book an Appointment</button>
+            <div class="field">
+            <label for="height">Height</label>
+            <input type="number" name="height" id="height" /> </div>
+            <div class="field">
+            <label for="chest">chest</label>
+            <input type="number" name="chest" id="chest" /> </div>
+            <div class="field">
+            <label for="chest">Waist</label>
+            <input type="number" name="waist" id="chest" /> </div>
+                <button>Add</button>
+          </form>
+        </div>
+      </section>
+      <div id="products1" class="allProducts">
+        <div class="productHeading">
+            Tailoring Material
+        </div>
+        <div class="productsList" id="productList1">
+            <ul>
+                <a href=""><li><div class="indivProduct">Banana</div></li></a>
+                <a href=""><li><div class="indivProduct">Banana</div></li></a>
+                <a href=""><li><div class="indivProduct">Banana</div></li></a>
+                <a href=""><li><div class="indivProduct">Banana</div></li></a>
+                <a href=""><li><div class="indivProduct">Banana</div></li></a>
+                <a href=""><li><div class="indivProduct">Banana</div></li></a>
+                <a href=""><li><div class="indivProduct">Banana</div></li></a>
+                <a href=""><li><div class="indivProduct">Banana</div></li></a>
+                <a href=""><li class="showAllButton"><div class="indivProduct ">Show All <br> &rarr;</div></li></a>
             </ul>
         </div>
-        <div id="bottomDown">
-            <p>OurLocalMarket &copy; is <span style="color:red"> self</span> sponsored</p>
+    </div>
+    <div id="product2" class="allProducts">
+        <div class="productHeading">
+            Electrician
         </div>
+        <div class="productsList" id="productList1">
+            <ul>
+                <a href=""><li><div class="indivProduct">Banana</div></li></a>
+                <a href=""><li><div class="indivProduct">Banana</div></li></a>
+                <a href=""><li><div class="indivProduct">Banana</div></li></a>
+                <a href=""><li><div class="indivProduct">Banana</div></li></a>
+                <a href=""><li><div class="indivProduct">Banana</div></li></a>
+                <a href=""><li><div class="indivProduct">Banana</div></li></a>
+                <a href=""><li><div class="indivProduct">Banana</div></li></a>
+                <a href=""><li><div class="indivProduct">Banana</div></li></a>
+                <a href=""><li class="showAllButton"><div class="indivProduct ">Show All <br> &rarr;</div></li></a>
+            </ul>
+        </div>
+    </div>
+    <div id="product3" class="allProducts">
+        <div class="productHeading">
+            Fast Food
+        </div>
+        <div class="productsList" id="productList1">
+            <ul>
+                <a href=""><li><div class="indivProduct">Banana</div></li></a>
+                <a href=""><li><div class="indivProduct">Banana</div></li></a>
+                <a href=""><li><div class="indivProduct">Banana</div></li></a>
+                <a href=""><li><div class="indivProduct">Banana</div></li></a>
+                <a href=""><li><div class="indivProduct">Banana</div></li></a>
+                <a href=""><li><div class="indivProduct">Banana</div></li></a>
+                <a href=""><li><div class="indivProduct">Banana</div></li></a>
+                <a href=""><li><div class="indivProduct">Banana</div></li></a>
+                <a href=""><li class="showAllButton"><div class="indivProduct ">Show All <br> &rarr;</div></li></a>
+            </ul>
+        </div>
+    </div>
+    <div id="product4" class="allProducts">
+        <div class="productHeading">
+            Tailor
+        </div>
+        <div class="productsList" id="productList1">
+            <ul>
+                <a href=""><li><div class="indivProduct">Banana</div></li></a>
+                <a href=""><li><div class="indivProduct">Banana</div></li></a>
+                <a href=""><li><div class="indivProduct">Banana</div></li></a>
+                <a href=""><li><div class="indivProduct">Banana</div></li></a>
+                <a href=""><li><div class="indivProduct">Banana</div></li></a>
+                <a href=""><li><div class="indivProduct">Banana</div></li></a>
+                <a href=""><li><div class="indivProduct">Banana</div></li></a>
+                <a href=""><li><div class="indivProduct">Banana</div></li></a>
+                <a href="/Tailor.html"><li class="showAllButton"><div class="indivProduct ">Show All <br> &rarr;</div></li></a>
+            </ul>
+        </div>
+    </div>
+    </main>
+
+    <!-- ---------------------------------------------------------------------------------------------------- -->
+    <footer id="bottom">
+      <div>
+        <ul id="bottomUp">
+          <li><a href="Terms.html">Terms</a></li>
+          <li><a href="Privacy.html">Privacy Policy</a></li>
+          <li><a href="FAQ.html">FAQ</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div id="bottomDown">
+        <p>
+          OurLocalMarket &copy; is
+          <span style="color: red"> self</span> sponsored
+        </p>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
