@@ -26,7 +26,6 @@
 
 #sub_banner h1{
     display: inline-block;
-    margin: auto;
     margin-top: 20px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 2rem;
@@ -48,6 +47,7 @@
 #searchbar:focus{
     background-color: black;
 }
+
 form{
     display: flex;
     justify-content: center;
@@ -72,8 +72,8 @@ form button:hover{
     width: 100%;
     justify-content: center;
     background-color: rgba(128, 128, 128, 0.753);
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 8px;
+    padding-bottom: 8px;
     position:absolute;
     bottom: 0;
 }
@@ -91,6 +91,7 @@ form button:hover{
     width: 140px;
     text-align: center;
     padding: 10px;
+    margin: 8px;
     text-decoration: none;
     transition: ease-in-out .2s;
     bottom: 0;
@@ -123,7 +124,20 @@ form button:hover{
     justify-content: center;
 }
 
-.productsList ul a{
+.productsList ul img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+}
+
+.productsList ul h3{
+    text-align: center;
+    margin-top: 10px;
+    color: rgb(0, 150, 0);
+}
+
+.productsList ul li .indivProduct{
     text-decoration: none;
     border: 1px solid grey;
     background-color: white;
@@ -132,13 +146,68 @@ form button:hover{
     margin: 20px;
     border-radius: 10px ;
 }
+.productsList ul li p{
+    float: left;
+    font-size: 0.9rem;
+    margin-left: 10px;
+    padding: 6px;
+    background-color: rgb(0, 196, 0);
+    border-radius: 10px;
+    color: white;
+}
 
-.showAllButton{
+.cartBtn{
+    float: right;
+    height: 30px;
+    width: 70px;
+    margin-right: 5px;
+    border-radius: 0px;
+    border: none;
+    background-color: red;
+    color: white;
+    font-size: 1.05rem;
+    padding: 5px;
+
+}
+
+.dynBtn{
+    float: right;
+    height: 30px;
+    width: 30px;
+    border-radius: 0px;
+    border: none;
+    background-color: red;
+    color: white;
+    font-size: 1.05rem;
+    padding: 5px;
+    display: none;
+
+}
+.cartBtn:hover{
+    background-color: rgb(213, 20, 20);
+}
+
+#dynCartBtn{
+    display: flex;
+    float: right;
+    margin-right: 5px;
+}
+
+#dynCartBtn input{
+    width: 25px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 0px;
+    /* color: ; */
+}
+
+.productsList ul li .showAllButton{
     border-radius: 10px ;
     height: 200px;
+    width: 200px;
     border: 1px solid grey;
-    background-color: rgb(27, 201, 27);
-    color: white;
+    background-color: rgb(24, 201, 27);
+    color: black;
     text-align: center;
     padding-top: 80px;
     font-size: 1.8rem;
@@ -155,7 +224,7 @@ form button:hover{
     color: black;
 }
 
-.productsList a:hover{
+.productsList li:hover{
     box-shadow: 3px 3px 10px black;
 }
 
