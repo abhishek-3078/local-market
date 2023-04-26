@@ -17,21 +17,22 @@
 }
 .category{
     border: 2px solid rgb(52, 47, 47);
-    border-radius: 15px;
-    box-shadow: 0px 0px 5px 3px rgb(104, 102, 102);
+    border-radius: 10px;
     margin: 20px;
     padding: 20px;
     cursor: pointer;  
-    background-color: rgb(211, 227, 232);  
+    background-color: rgb(211, 227, 232);
+    transition: ease-in-out .2s;
 }
 .category img{
-    height: 300px;
+    height: 260px;
     width: 300px;
     border-radius: 15px;;
 }
-.category img:hover{
- 
-    box-shadow: 4px 3px 5px 2px rgb(0, 0, 0);
+.category:hover{
+
+    box-shadow: 2px 2px 10px 2px rgb(0, 0, 0);
+    transform: scale(1.1);
 }
 .category h3{
     font-family: 'Lato';
