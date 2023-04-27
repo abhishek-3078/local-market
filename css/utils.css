@@ -3,6 +3,7 @@
     margin:0px;
     padding:0px;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 html{
@@ -129,7 +130,7 @@ header{
 #navbarRight img:hover{
     background-color: lightseagreen;
     box-shadow: 1px 1px 10px black;
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 /* footer protion begins --------------------------------------------------------------- */
 #bottom{
@@ -334,7 +335,8 @@ form button:hover{
 }
 
 .productsList ul img:hover{
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.842);
+    /* box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.842); */
+    border: 1px solid black;
 }
 
 .productsList ul h1{
@@ -366,11 +368,17 @@ form button:hover{
     color: white;
     font-size: 1.05rem;
     padding: 5px;
-
+    border-radius: 3px;
 }
 
 .cartBtn:hover{
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.772);
+}
+
+.cartBtn:active{
     background-color: rgb(213, 20, 20);
+    border: 1px solid black;
+    box-shadow: none;
 }
 
 .showAllButton{
@@ -391,7 +399,7 @@ form button:hover{
 }
 
 .productsList li:hover{
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 
 ul a{
@@ -406,6 +414,7 @@ ul a{
     padding-top: 29%;
 }
 #showAllButton:hover{
+    transform: scale(0.9);
     background-color: green;
 }
 
