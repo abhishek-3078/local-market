@@ -8,17 +8,24 @@
     <link rel="stylesheet" href="css/Offers.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="css/utils.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <title>Offers|</title>
 </head>
 
 <body>
     <header>
         <div id="navbar">
+            <div class="burger-menu">
+                <div class="burger"></div>
+                <div class="burger"></div>
+                <div class="burger"></div>
+            </div>
             <div class="nav" id="navbarLeft">
                 <li><a href="Services.html">Services</a></li>
                 <li><a href="Offers.html">Offers</a></li>
                 <li><a href="About.html">About</a></li>
                 <li><a href="Contact.html">Contact</a></li>
+                <li class="nav-resp"><a href="/Signup.html">Sign Up/Log In</a></li>
             </div>
             <div class="nav" id="logo">
                 <h2> <a href="index.html">OurLocalMarket</a></h2>
@@ -54,6 +61,22 @@
             <p>OurLocalMarket &copy; is <span style="color:red"> self</span> sponsored</p>
         </div>
     </footer>
+
+    <script>
+        let x=document.querySelector(".burger-menu")
+        navbar=document.querySelector('#navbar')
+        let leftnav=document.querySelector('#navbarLeft')
+        let rightnav=document.querySelector('#navbarRight')
+        x.addEventListener('click',(e)=>{
+            if(leftnav.style.display==="none"){
+                leftnav.style.display="flex";
+            }else{
+             leftnav.style.display="none"
+            }
+
+
+        })
+    </script>
 </body>
      
 </html>
