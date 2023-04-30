@@ -56,7 +56,7 @@ header {
     align-items: center;
     justify-content: center;
     height: 4.1rem;
-    background-color: lightcyan;
+    background:linear-gradient(rgb(0, 183, 255),rgb(7, 7, 108)) ;
 }
 
 #navbarLeft {
@@ -331,7 +331,7 @@ form button:hover{
 .allProducts{
     margin: 20px;
     border-radius: 10px ;
-    background-color: rgb(244, 244, 244);
+    background-color: grey;
 }
 
 .productHeading{
@@ -354,7 +354,7 @@ form button:hover{
 .productsList ul li{
     text-decoration: none;
     border: 1px solid grey;
-    background-color: white;
+    background-color: black;
     height: 220px;
     width: 220px;
     margin: 20px;
