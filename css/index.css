@@ -27,7 +27,7 @@
 .category img{
     height: 260px;
     width: 300px;
-    border-radius: 15px;;
+    border-radius: 15px;
 }
 .category:hover{
 
@@ -44,6 +44,11 @@
 .category a{
     text-decoration: none;
     color: black;
+}
+
+#categoryHeading{
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 
