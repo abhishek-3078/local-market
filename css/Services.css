@@ -9,9 +9,14 @@
 
 /* section part begins ------------------------------------------------------------------ */
 
+section{
+    background-color: black;
+}
+
+
 #banner{
     position: relative;
-    background-image: url(https://media.istockphoto.com/id/1227198304/de/foto/bunter-hintergrund-aus-verschiedenen-kr%C3%A4utern-und-gew%C3%BCrzen-zum-kochen-in-schalen.jpg?s=612x612&w=0&k=20&c=LjJDEeDFQFIgDze0twPmEQXYyXSXe5la-tENvHIuxyY=);
+    background-image: url(/local-market/img/gifs/monkey.gif);
     background-repeat: no-repeat;
     background-size: cover;
     height: 300px;
@@ -29,7 +34,8 @@
     margin-top: 20px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 2rem;
-    color: rgb(0, 208, 0);
+    /* color: rgb(0, 208, 0); */
+    
     background-color: white;
     padding: 8px;
     border-radius: 10px;
