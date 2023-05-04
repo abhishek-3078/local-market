@@ -71,9 +71,12 @@
     font-size: 1.3rem;
     background-color: green;
     cursor: pointer;
+    transition: ease-in-out .1s;
 }
 #form button:hover{
-  background-color:darkgreen;
+    background-color: rgb(0, 255, 0);
+    box-shadow: 4px 4px 10px white;
+    transform: scale(1.1);
 }
 #form button a{
     text-decoration: none;
