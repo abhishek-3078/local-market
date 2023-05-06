@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&family=Noto+Serif&family=Poppins&family=Roboto&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Noto+Serif&family=Poppins:wght@400;500&family=Roboto&family=Secular+One&display=swap');
 * {
     margin: 0px;
     padding: 0px;
@@ -11,17 +10,20 @@
 html{
     scroll-behavior: smooth;
 }
-
-:root{
-    --danger-color:red;
-    --safe-color:green;
+html{
+    /* background: linear-gradient(rgb(0, 0, 0),grey); */
+    background:linear-gradient(0deg, rgba(2,0,36,1) 23%, rgba(82,7,141,1) 88%);
+    background-attachment:fixed ;
+    
 }
+
 .text-center{
     text-align: center;
     
 }
 
 :root {
+    --new-theme:rgb(0,9,32);
     --danger-color: red;
     --safe-color: green;
 }
@@ -56,7 +58,8 @@ header {
     align-items: center;
     justify-content: center;
     height: 4.1rem;
-    background:black;
+    /* background:black; */
+    background:rgb(2, 0, 36);
 }
 
 #navbarLeft {
@@ -172,9 +175,11 @@ header {
 }
 /* footer protion begins --------------------------------------------------------------- */
 #bottom {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+
 }
 
 #bottomUp {
@@ -183,9 +188,10 @@ header {
     /* border:3px solid red;  */
     align-items: center;
     justify-content: center;
-    background-color: black;
+    /* background-color: black; */
+    background-color: rgb(2, 0, 36);
     height: 2.5rem;
-    width: 100vw;
+    width: 100%;
 }
 
 #bottomUp li a {
@@ -197,13 +203,16 @@ header {
 #bottomDown {
     display: flex;
     color: white;
-    background-color: #140e0e;
-    width: 100vw;
+    width: 100%;
+    background-color: rgb(2, 0, 36);
+    /* background-color: #140e0e; */
     height: 2.5rem;
     text-align: center;
     justify-content: center;
 }
-
+#bottom >div{
+    width: 100%;
+}
 #bottomDown p {
     padding: 8px;
 }
@@ -328,14 +337,13 @@ form button:hover{
 }
 
 /* To make the product list ----------------------------------------------------------------------------- */
-section{
-    /* background-color: black; */
-}
 
 .allProducts{
     margin: 20px;
     border-radius: 10px ;
-    background:linear-gradient(grey,rgb(0, 0, 0));
+    /* background:linear-gradient(grey,rgb(0, 0, 0)); */
+    background:linear-gradient(0deg, rgba(2,0,36,1) 23%, rgba(82,7,141,1) 88%);
+    /* background: rgb(1, 16, 30); */
 }
 
 .productHeading{
@@ -467,4 +475,23 @@ ul a{
 /* banner part ends */
 .heading{
     text-align: center;
+}
+/* Sub Heading */
+.subHeading{
+    color: white;
+    font-size: 2rem;
+    font-family:'Poppins','Lato', 'Sans-serif';
+    font-weight:900
+
+}
+
+.subText{
+    color:white;
+    
+}
+
+/* div wrapper */
+.flex-auto{
+    display: flex;
+    margin: auto;
 }

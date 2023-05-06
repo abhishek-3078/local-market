@@ -10,10 +10,10 @@ const scrollWidth=container.offsetWidth;
 const totalWidth=(box.offsetWidth+ 2*parseInt(boxStyle.marginRight))*8
 // console.log((box.offsetWidth+ 2*parseInt(boxStyle.marginRight))*8)
 console.log(scrollWidth,totalWidth)
-const maxScrollLeft=totalWidth-scrollWidth;
+
 
 nextBtn.onclick=(e)=>{
-    
+    const maxScrollLeft=totalWidth-scrollWidth;
     if(container.scrollLeft>=maxScrollLeft) container.scrollLeft=0;
     else{
     container.scrollLeft+=box.offsetWidth+ 2*parseInt(boxStyle.marginRight)
@@ -22,6 +22,7 @@ nextBtn.onclick=(e)=>{
     
 }
 prevBtn.onclick=(e)=>{
+    const maxScrollLeft=totalWidth-scrollWidth;
     if(container.scrollLeft==0) container.scrollLeft=maxScrollLeft;
     else{
     container.scrollLeft-=box.offsetWidth+ 2*parseInt(boxStyle.marginRight)
