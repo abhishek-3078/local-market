@@ -2,20 +2,19 @@ const addBtn=document.querySelectorAll('.cartBtn')
 function addToCart(name,price){
     console.log(name,price)
     let item={}
-    localStorage.removeItem(name)
-//     if(localStorage.getItem(name)){
-//          item=JSON.parse(localStorage.getItem(name))
-//         item.qty++;
-//     }else{
-//     item={
-//         price:price,
-//         qty:1
-//     }
-// }
-//     item=JSON.stringify(item)
-//     console.log(item)
+    if(localStorage.getItem(name)){
+         item=JSON.parse(localStorage.getItem(name))
+        item.qty++;
+    }else{
+    item={
+        price:price,
+        qty:1
+    }
+}
+    item=JSON.stringify(item)
+    console.log(item)
 
-//     localStorage.setItem(name,item)
+    localStorage.setItem(name,item)
     
     
 }
