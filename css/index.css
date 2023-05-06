@@ -2,6 +2,7 @@
     margin:0px;
     padding:0px;
     scroll-behavior:smooth;
+    
     /* box-sizing: border-box; */
 }
 :root{
@@ -9,12 +10,15 @@
     --danger-color:red;
     --safe-color:green;
 }
+
 /* Categories */
 .categories-container{
     display: flex;
     /* flex-wrap:wrap; */
     /* justify-content: center; */
     overflow: hidden;
+    /* overflow: auto; */
+    
     position: relative;
 
 }
@@ -28,8 +32,10 @@
     transition: ease-in-out .2s;
 }
 .category img{
-    height: 260px;
-    width: 300px;
+    /* height: 260px;
+    width: 300px; */
+    width: 200px;
+    height: 150px;
     border-radius: 15px;
 }
 .category:hover{
@@ -69,11 +75,15 @@
     font-size: 2rem;
 }
  .next{
-    right:0
+    right:0;
 }
 .prev{
     left:0;
     
 }
 
+.about{
+    height: 1000px;
+    
+}
 
