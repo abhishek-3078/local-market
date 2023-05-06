@@ -26,6 +26,16 @@ prevBtn.onclick=(e)=>{
     if(container.scrollLeft==0) container.scrollLeft=maxScrollLeft;
     else{
     container.scrollLeft-=box.offsetWidth+ 2*parseInt(boxStyle.marginRight)
+
+}
+
+var loader=document.getElementById("preloader");
+
+window.addEventListener("load",function(){
+    loader.style.display="none";
+})
+=======
     console.log(container.scrollLeft)
     }
 }
+
