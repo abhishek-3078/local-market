@@ -56,7 +56,7 @@ header {
     align-items: center;
     justify-content: center;
     height: 4.1rem;
-    background-color: lightcyan;
+    background:black;
 }
 
 #navbarLeft {
@@ -85,7 +85,7 @@ header {
     /* margin: 10px; */
     text-decoration: none;
     color: var(--danger-color);
-    transition: background-color 0.5s ease-in-out 0s;
+    transition: ease-in-out 0.2s;
 }
 
 #logo {
@@ -98,6 +98,7 @@ header {
 
 #logo h2 a {
     text-decoration: none;
+    color: white;
 }
 
 #navbarRight li {
@@ -146,16 +147,18 @@ header {
 }
 
 /* header part   (hover)------------------------------------------------------- */
-#navbarLeft li a:hover {
-    background-color: red;
+
+#navbarLeft li a:hover{
+    background:linear-gradient(to right, #f32170,#ff6b08);
+    /* background-color: red; */
     color: white;
 }
 
 #navbarRight li button:hover {
-    background-color: var(--danger-color);
+    background-color: rgb(14, 237, 14);
     color: white;
     transform: scale(1.2);
-    box-shadow:1px 1px 10px rgba(0, 0, 0, 0.751);
+    box-shadow:1px 1px 10px white;
 }
 
 #navbarRight li button:focus{
@@ -164,7 +167,7 @@ header {
 
 #navbarRight img:hover{
     background-color: lightseagreen;
-    box-shadow: 1px 1px 10px black;
+    box-shadow: 1px 1px 10px lightseagreen;
     transform: scale(1.2);
 }
 /* footer protion begins --------------------------------------------------------------- */
@@ -237,12 +240,9 @@ header {
     background:rgba(203, 213, 214, 0.315);
     padding: 8px;
     border-radius: 10px;
-    transition: ease-in 0.3s;
+    /* background-color: black; */
 }
-#sub_banner h1:hover{
-  
-    font-size: 3rem;
-}
+
 #searchbar{
     margin-right: 15px;
     color: rgb(0, 195, 0);
@@ -328,10 +328,14 @@ form button:hover{
 }
 
 /* To make the product list ----------------------------------------------------------------------------- */
+section{
+    /* background-color: black; */
+}
+
 .allProducts{
     margin: 20px;
     border-radius: 10px ;
-    background-color: rgb(244, 244, 244);
+    background:linear-gradient(grey,rgb(0, 0, 0));
 }
 
 .productHeading{
@@ -354,7 +358,7 @@ form button:hover{
 .productsList ul li{
     text-decoration: none;
     border: 1px solid grey;
-    background-color: white;
+    background-color: black;
     height: 220px;
     width: 220px;
     margin: 20px;
@@ -376,13 +380,13 @@ form button:hover{
 
 .productsList ul img:hover{
     /* box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.842); */
-    border: 1px solid black;
+    border: 1px solid white;
 }
 
 .productsList ul h1{
     text-align: center;
     margin-top: 10px;
-    color: rgb(0, 150, 0);
+    color: white;
 }
 
 .productsList ul li p{
