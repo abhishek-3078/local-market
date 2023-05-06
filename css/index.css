@@ -2,6 +2,7 @@
     margin:0px;
     padding:0px;
     scroll-behavior:smooth;
+    
     /* box-sizing: border-box; */
 }
 :root{
@@ -9,6 +10,7 @@
     --danger-color:red;
     --safe-color:green;
 }
+
 
 h2{
     background: linear-gradient(to right, #f32170,
@@ -21,12 +23,15 @@ h2{
 .categories-container{
     background-color: #111;
 }
+
 /* Categories */
 .categories-container{
     display: flex;
     /* flex-wrap:wrap; */
     /* justify-content: center; */
     overflow: hidden;
+    /* overflow: auto; */
+    
     position: relative;
 
 }
@@ -40,8 +45,10 @@ h2{
     transition: ease-in-out .2s;
 }
 .category img{
+
     height: 200px;
     width: 250px;
+
     border-radius: 15px;
 }
 .category:hover{
@@ -87,8 +94,10 @@ h2{
     font-size: 2rem;
 }
 
+
 .next{
     right : 0 ;
+
 }
 .prev{
     left:0;
@@ -109,4 +118,8 @@ h2{
     border: 2px solid black;
 }
 
+.about{
+    height: 1000px;
+    
+}
 
