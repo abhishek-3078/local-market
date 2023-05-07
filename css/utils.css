@@ -3,7 +3,8 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: sans-serif;
+    /* font-family: sans-serif; */
+    font-family: Poppins;
 }
 
 
@@ -494,4 +495,17 @@ ul a{
 .flex-auto{
     display: flex;
     margin: auto;
+}
+.text-center{
+    text-align: center;
+}
+
+.defaultButton{
+    background-color: red;
+    color: white;
+    font-family: 'Poppins','sans-serif';
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
 }
