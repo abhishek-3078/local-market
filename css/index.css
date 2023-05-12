@@ -94,8 +94,11 @@ h2{
 }
 
 /* slider button */
+
 .categories-main-container{
     position: relative;
+    padding-right: 20px;
+    border-radius: 15px;
 }
 .slide{
     height: 100px;
@@ -161,5 +164,4 @@ h2{
     object-fit: contain;
     border-radius: 15px;
 }
-
 
