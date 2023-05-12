@@ -4,6 +4,7 @@ function addToCart(name,price,img){
     let item={}
     if(localStorage.getItem(name)){
          item=JSON.parse(localStorage.getItem(name))
+         console.log(item)
         item.qty++;
     }else{
     item={
@@ -13,16 +14,16 @@ function addToCart(name,price,img){
     }
 }
     item=JSON.stringify(item)
-    console.log(item)
-
     localStorage.setItem(name,item)
     
     
 }
 addBtn.forEach((btn)=>{
-    btn.addEventListener('click',(event)=>{
+    btn.addEventListener('click',(event)=>{ 
+        console.log(event.target)
        
         let bx=event.target.closest('li')
+        console.log(bx)
         const img=event.target.parentNode.querySelector('img').src
         
         addToCart(bx.querySelector('h1').innerText,bx.querySelector('p').innerText,img)

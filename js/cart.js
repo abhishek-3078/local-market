@@ -8,13 +8,14 @@ function setTotal(amt){
     console.log(totalAmountBox.innerText)
     totalAmountBox.innerHTML="&#x20B9;"+`${amt}`;
 }
+
 function replaceValue(element,qty){
     const qtyBox=element.querySelectorAll('.qty')
     const totalBox=element.querySelectorAll('.total')
     const price=element.querySelector('#price').innerText
     const total=qty*Number(price)
     console.log(price)
-    // const amount=amountBox[0].innerText
+
     let b=[qty,total]
     let i=0
    let a=[qtyBox,totalBox]
@@ -38,6 +39,7 @@ function replaceValue(element,qty){
     
 }
 
+
 const totalItems=Object.entries(localStorage)
 let totalAmount=0;
 if(totalItems.length!=0) emptyCart.style.display="none";
@@ -59,6 +61,7 @@ for(let i of Object.entries(localStorage)){
   
     itemBox.insertAdjacentHTML("beforeend",x)
 }
+
 console.log(totalAmount)
 setTotal(totalAmount)
 function increment(e){
@@ -69,7 +72,7 @@ function increment(e){
     const price=desBox.querySelector('#price').innerText
     const newQty=Number(x.querySelector('input').value)+1
     x.querySelector('input').value=newQty
-    totalAmount+=price;
+    totalAmount+=Number(price);
     setTotal(totalAmount)
     
     replaceValue(desBox,newQty)
@@ -81,9 +84,9 @@ function decrement(e){
     const y=x.parentNode
     const desBox=y.querySelector('.description')
     const newQty=Number(x.querySelector('input').value)-1
-    const price=element.querySelector('#price').innerText
+    const price=desBox.querySelector('#price').innerText
     x.querySelector('input').value=newQty
-    totalAmount-=price;
+    totalAmount-=Number(price);
     setTotal(totalAmount)
     replaceValue(desBox,newQty)
 
