@@ -140,6 +140,7 @@ header {
     border-radius: 5px;
     background-color: var(--safe-color);
     color: white;
+    border: none;
     transition: ease-in-out .1s;
 }
 
@@ -162,7 +163,7 @@ header {
     background-color: rgb(14, 237, 14);
     color: white;
     transform: scale(1.2);
-    box-shadow:1px 1px 10px white;
+    /* box-shadow:1px 1px 10px white; */
 }
 
 #navbarRight li button:focus{
@@ -329,8 +330,8 @@ form button:hover{
     margin: 20px;
     border-radius: 10px ;
     /* background:linear-gradient(grey,rgb(0, 0, 0)); */
-    background:linear-gradient(0deg, rgba(2,0,36,1) 23%, rgba(82,7,141,1) 88%);
-    /* background: rgb(1, 16, 30); */
+    /* background:linear-gradient(0deg, rgba(2,0,36,1) 23%, rgba(82,7,141,1) 88%); */
+    background: rgb(26, 9, 61);
 }
 
 .productHeading{

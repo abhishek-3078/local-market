@@ -8,17 +8,24 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="stylesheet" href="css/utils.css" />
     <link rel="stylesheet" href="css/cart.css" />
+    <link rel="stylesheet" href="css/responsive.css">
     <title>FAQ|</title>
   </head>
  
   <body>
     <header>
       <div id="navbar">
+        <div class="burger-menu">
+          <div class="burger"></div>
+          <div class="burger"></div>
+          <div class="burger"></div>
+      </div>
         <div class="nav" id="navbarLeft">
           <li><a href="Services.html">Services</a></li>
           <li><a href="Offers.html">Offers</a></li>
           <li><a href="About.html">About</a></li>
           <li><a href="Contact.html">Contact</a></li>
+          <li class="nav-resp"><a href="/Signup.html">Sign Up/Log In</a></li>
         </div>
         <div class="nav" id="logo">
           <h2><a href="index.html">OurLocalMarket</a></h2>
@@ -44,14 +51,15 @@
       <div class="cart">
       <div class="flex-auto cart-container">
         <h2 class="subHeading">Cart Items</h2>
-        
-        <div class="items">
+        <div class="cart-division">
+        <!-- <div class="items"> -->
           <div class="emptyCart">
             <p class="subHeading text-center">Your Cart is Empty!!!</p>
 
             <p class="text-center">
             <a href="/Services.html" class="subText"> Start Shopping Now</a></p>
-          </div>
+          <!-- </div> -->
+        </div>
         </div>
       </div>
     </div>
@@ -66,6 +74,11 @@
       
 
     </section>
+    <script id="categoryHead" type="text/html">
+      <div class="same-category items" id="{id}">
+      <h2 class="subHeading"><span class="cat-heading">{category}</span></h2>
+    </div>
+    </script>
       <!-- template for cart item -->
       <script id="cartItemTemplate" type="text/html">
         <div class="item">
@@ -85,6 +98,7 @@
           </div>
         </div>
       </script>
+      <script src="js/utils.js"></script>
    
 
     <!-- ---------------------------------------------------------------------------------------------------- -->
