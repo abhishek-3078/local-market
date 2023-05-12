@@ -1,23 +1,33 @@
 .burger-menu{
     display: none;
+    margin: 5px;
+    width: 30%;
+    cursor: pointer;
 }
 .burger{
     width: 40px;
     height: 5px;
     margin: 4px;
-    background-color: black;
+    background-color: rgb(251, 251, 251);
 }
 .nav-resp{
     display: none;
 }
-@media only screen and (max-width:700px) {
+@media only screen and (max-width:1080px) and (min-width:800px) {
+    #navbarLeft li a{
+        padding: 7px;
+        font-size: 1.1rem;
+    }
+}
+@media only screen and (max-width:800px) {
     #navbarLeft{
         flex-direction: column;
         position:absolute;
+        display: none;
         left:0;
         top:65.6px;
         height: 100vh;
-        background-color: aliceblue;
+        background-color: rgb(3, 3, 49);
         width: 30%;
     } 
     .nav-resp{
