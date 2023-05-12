@@ -1,70 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/FAQ.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="css/utils.css">
-    <link rel="stylesheet" href="css/cart.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/FAQ.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="css/utils.css" />
+    <link rel="stylesheet" href="css/cart.css" />
     <title>FAQ|</title>
-</head>
-
-<body>
+  </head>
+ 
+  <body>
     <header>
-        <div id="navbar">
-            <div class="nav" id="navbarLeft">
-                <li><a href="Services.html">Services</a></li>
-                <li><a href="Offers.html">Offers</a></li>
-                <li><a href="About.html">About</a></li>
-                <li><a href="Contact.html">Contact</a></li>
-            </div>
-            <div class="nav" id="logo">
-                <h2> <a href="index.html">OurLocalMarket</a></h2>
-            </div>
-            <div class="nav" id="navbarRight">
-                <li><a href="/Login.html" id="login"><button>Login</button></a></li>
-                <li><a href="/SignUp.html"><button>SignUp</button></a></li>
-                <li><a href="/Cart.html"><img src="img/logo/cart.png" alt="cart" width="40px"></a></li>
-            </div>
+      <div id="navbar">
+        <div class="nav" id="navbarLeft">
+          <li><a href="Services.html">Services</a></li>
+          <li><a href="Offers.html">Offers</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="Contact.html">Contact</a></li>
         </div>
+        <div class="nav" id="logo">
+          <h2><a href="index.html">OurLocalMarket</a></h2>
+        </div>
+        <div class="nav" id="navbarRight">
+          <li>
+            <a href="/Login.html" id="login"><button>Login</button></a>
+          </li>
+          <li>
+            <a href="/SignUp.html"><button>SignUp</button></a>
+          </li>
+          <li>
+            <a href="/Cart.html"
+              ><img src="img/logo/cart.png" alt="cart" width="40px"
+            /></a>
+          </li>
+        </div>
+      </div>
     </header>
-<!-- -------------------------------------------------------------------------------------------------- -->
+    <!-- -------------------------------------------------------------------------------------------------- -->
 
+    <section class="flex-auto">
+      <div class="cart">
+      <div class="flex-auto cart-container">
+        <h2 class="subHeading">Cart Items</h2>
+        
+        <div class="items">
+          <div class="emptyCart">
+            <p class="subHeading text-center">Your Cart is Empty!!!</p>
 
-
-    <section>
-        <div class="flex-auto">
-            <div class="items">
-                <div class="item">
-                    <div class="name"></div>
-                    <div class="qty"></div>
-                    <div class="price"></div>
-                    <div class="total"></div>
-                </div>
-            </div>
+            <p class="text-center">
+            <a href="/Services.html" class="subText"> Start Shopping Now</a></p>
+          </div>
         </div>
+      </div>
+    </div>
+      <div class="checkout">
+        <div class="payAmount">
+        <p>Subtotal:</p>
+        <p class="totalAmount"></p>
+      </div>
+        <a href="/payment.html"><button class="defaultButton" id="paymentButton" >Checkout</button></a>
+      </div>
+
+      
+
     </section>
+      <!-- template for cart item -->
+      <script id="cartItemTemplate" type="text/html">
+        <div class="item">
+          <div class="img">
+            <img src="{url}" alt="{name}" />
+          </div>
+          <div class="description">
+            <div class="name"><h3>{name}</h3></div>
+            <!-- <div class="qty">{qty}</div> -->
+            <div class="price">{price}</div>
+            <div class="totalAmt"><span style="color:rgba(204, 208, 209, 0.497)">Total :</span><span class="qty">{qty}</span> X &#x20B9;<span id="price">{amount}</span> = &#x20B9;<span class="total">{total}</span></div>
+          </div>
+          <div class="item-count">
+            <button onclick="decrement(event)">-</button>
+            <input type="text" name="count" value="{qty}">
+            <button onclick="increment(event)">+</button>
+          </div>
+        </div>
+      </script>
+   
 
-
-
-<!-- ---------------------------------------------------------------------------------------------------- -->
+    <!-- ---------------------------------------------------------------------------------------------------- -->
     <footer id="bottom">
-        <div>
-            <ul id="bottomUp">
-                <li> <a href="Terms.html">Terms</a> </li>
-                <li> <a href="Privacy.html">Privacy Policy</a> </li>
-                <li> <a href="FAQ.html">FAQ</a> </li>
-                <li> <a href="Contact.html">Contact</a> </li>
-            </ul>
-        </div>
-        <div id="bottomDown">
-            <p>OurLocalMarket &copy; is <span style="color:red"> self</span> sponsored</p>
-        </div>
+      <div>
+        <ul id="bottomUp">
+          <li><a href="Terms.html">Terms</a></li>
+          <li><a href="Privacy.html">Privacy Policy</a></li>
+          <li><a href="FAQ.html">FAQ</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div id="bottomDown">
+        <p>
+          OurLocalMarket &copy; is
+          <span style="color: red"> self</span> sponsored
+        </p>
+      </div>
     </footer>
     <script src="js/cart.js"></script>
-</body>
-     
+  </body>
 </html>
