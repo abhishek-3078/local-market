@@ -11,7 +11,9 @@ const totalWidth=(box.offsetWidth+ 2*parseInt(boxStyle.marginRight))*8
 // console.log((box.offsetWidth+ 2*parseInt(boxStyle.marginRight))*8)
 console.log(scrollWidth,totalWidth)
 
-
+window.onload=()=>{
+    document.querySelector(".loading").style.display="none"
+}
 nextBtn.onclick=(e)=>{
     const maxScrollLeft=totalWidth-scrollWidth;
     if(container.scrollLeft>=maxScrollLeft) container.scrollLeft=0;
