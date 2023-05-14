@@ -96,16 +96,24 @@
     color:white;
 }
 
- @keyframes slide1{
+ /* @keyframes slide1{
     0%{
         transform:translateX(0%);
-        /* opacity: 1; */ 
     }   
     25%{
-        transform: translateX(100%);    
+        transform: translateX(100%); 
+        opacity: 1;   
+    }
+    26%{
+        opacity: 0;
+    }
+
+    74%{
+        transform: translateX(-100%);
+        opacity: 0;    
     }
     75%{
-        transform: translateX(-100%);    
+        opacity: 1;    
     }
 }
 @keyframes slide2{
@@ -131,19 +139,108 @@
     100%{
         transform: translateX(-200%);           
     }
+} */
+ @keyframes slide1{
+    0%{
+        transform:translateX(0%);
+    
+    }
+    20%{
+        transform:translateX(0%);
+    }   
+    25%{
+        transform: translateX(100%);    
+    }
+    25%{
+        opacity: 1;
+    }
+    26%{
+        opacity: 0;
+    }
+    94%{
+        transform: translateX(-100%);
+        opacity: 0;
+        
+    }
+    95%{
+        transform: translateX(-100%);
+        opacity: 1;
+    }
+    100%{
+        transform: translateX(0%);
+    }
+ 
 }
+@keyframes slide2{
+    0%{
+        transform:translateX(-200%);  
+    }
+    20%{
+        transform:translateX(-200%);  
+    }
+    25%{
+        transform: translateX(-100%);
+    }
+    45%{
+        transform: translateX(-100%); 
+    }
+    50%{
+        transform: translateX(0%);
+    }
+   
+    
+}
+@keyframes slide3{
+    0%{
+        transform:translateX(-400%); 
+    }
+    45%{
+        transform:translateX(-300%);
+    }
+    50%{
+        transform:translateX(-200%);
+    }
+   70%{
+        transform:translateX(-200%);
+        
+    }
+    75%{
+        transform: translateX(-100%);         
+    }
+}
+@keyframes slide4{
+    0%{
+        transform:translateX(-500%);    
+    }
+    70%{
+        transform:translateX(-400%);            
+    }
+    75%{
+        transform: translateX(-300%);           
+    }
+    95%{
+        transform: translateX(-300%);
+    }
+    100%{
+        transform: translateX(-200%);
+    }
+}
+
+
 .slider img:nth-child(1){
-    animation: slide1 25s linear infinite;
+    animation: slide1 15s linear infinite;
 }
 .slider img:nth-child(2){
-    animation: slide2  25s linear infinite;
+    animation: slide2  15s linear infinite;
 }
 .slider img:nth-child(3){
-    animation: slide3  25s linear infinite;
+    animation: slide3  15s linear infinite;
 }
 .slider img:nth-child(4){
-    animation: slide4  25s linear infinite;
+    animation: slide4  15s linear infinite;
 }
+
+
 
 /* loader */
 
