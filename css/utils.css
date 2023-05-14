@@ -7,6 +7,10 @@
     font-family: Poppins;
 }
 
+::selection{
+    background-color: white;
+    color: black;
+}
 
 html{
     scroll-behavior: smooth;
@@ -289,8 +293,8 @@ form button:hover{
 
 #categories{
     display: flex;
-    flex-wrap: wrap;
     width: 100%;
+    flex-wrap: wrap;
     justify-content: center;
     background-color: rgba(128, 128, 128, 0.753);
     padding-top: 8px;
@@ -311,7 +315,7 @@ form button:hover{
     height: 40px;
     width: 140px;
     text-align: center;
-    padding: 10px;
+    padding: 6px;
     margin: 8px;
     text-decoration: none;
     transition: ease-in-out .2s;
@@ -421,7 +425,7 @@ form button:hover{
     box-shadow: none;
 }
 
-.showAllButton{
+/* .showAllButton{
     border-radius: 10px ;
     height: 200px;
     border: 1px solid grey;
@@ -432,7 +436,7 @@ form button:hover{
     font-size: 1.8rem;
     transition: ease-in-out ;
     border: 1px solid black;
-}
+} */
 
 .showAllButton:hover{
     background-color: rgb(14, 185, 14);
@@ -458,6 +462,7 @@ ul a{
     background-color: green;
 }
 
+
 /* Product list ends ----------------------------------------------------------------------------- */
 
 /* banner part ends */
@@ -469,8 +474,7 @@ ul a{
     color: white;
     font-size: 2rem;
     font-family:'Poppins','Lato', 'Sans-serif';
-    font-weight:900
-
+    font-weight:900;
 }
 
 .subText{
