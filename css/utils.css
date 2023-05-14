@@ -227,6 +227,10 @@ header {
 
 
 /* Banner part */
+section{
+    background-color: black;
+}
+
 
 
 #banner{
@@ -322,6 +326,23 @@ form button:hover{
     background: white;
     color: rgba(128, 128, 128, 0.753);
 }
+
+
+#back_key{
+    position:absolute;
+    top:30px;
+    left:25px;
+}
+#back_key a{
+    text-decoration: none;
+    color:white;
+    background-color: green;
+    border-radius: 7px;
+    padding:7px 6px;
+}
+#back_key a:hover{
+    background-color: darkgreen;
+} 
 
 
 /* To make the product list ----------------------------------------------------------------------------- */
