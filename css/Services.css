@@ -9,7 +9,7 @@
 
 /* section part begins ------------------------------------------------------------------ */
 
-section{
+/* section{
     background-color: black;
 }
 
@@ -35,13 +35,13 @@ section{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 2rem;
     /* color: rgb(0, 208, 0); */
-    
+/*     
     background-color: white;
     padding: 8px;
     border-radius: 10px;
-}
+} */
 
-#searchbar{
+/* #searchbar{
     margin-right: 15px;
     color: rgb(0, 195, 0);
     height: 40px;
@@ -106,5 +106,5 @@ form button:hover{
 .cateogry:hover{
     background: white;
     color: rgba(128, 128, 128, 0.753);
-}
+}  */
 

@@ -57,7 +57,7 @@ form button:hover{
     border: 2px solid white;
 }
 
-#categories{
+/* #categories{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -165,4 +165,4 @@ form button:hover{
 .productsList a:hover{
     box-shadow: 3px 3px 10px black;
 }
-
+ */
