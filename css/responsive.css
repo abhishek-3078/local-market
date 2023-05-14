@@ -1,23 +1,34 @@
 .burger-menu{
     display: none;
+    margin: 5px;
+    width: 30%;
+    cursor: pointer;
 }
 .burger{
     width: 40px;
     height: 5px;
     margin: 4px;
-    background-color: black;
+    background-color: rgb(251, 251, 251);
 }
 .nav-resp{
     display: none;
 }
-@media only screen and (max-width:700px) {
+@media only screen and (max-width:1080px) and (min-width:800px) {
+    #navbarLeft li a{
+        padding: 7px;
+        font-size: 1.1rem;
+    }
+}
+
+@media only screen and (max-width:800px) {
     #navbarLeft{
         flex-direction: column;
         position:absolute;
+        display: none;
         left:0;
         top:65.6px;
         height: 100vh;
-        background-color: aliceblue;
+        background-color: rgb(3, 3, 49);
         width: 30%;
     } 
     .nav-resp{
@@ -56,5 +67,64 @@
     } */
     
     
+    .card:nth-child(n){
+        flex-direction: column-reverse;
+        height: auto;
+        padding: 20px;
+    }
+    .card .pic{
+        width: 200px;
+        margin: auto;
+    }
     
+}
+
+
+
+/* MOBILE SCREEN */
+
+@media only screen and (max-width:400px){
+    #navbarLeft{
+        width: 40%;
+    }
+    .slider{
+        height: 250px;
+    }
+    #logo a{
+        font-size: 1.2rem;
+    }
+    .burger-menu{
+        width: 30px;
+        padding-left: 5px;
+    }
+    .burger{
+        width: 100%;
+        height: 4px;
+    }
+    #navbarRight{
+        margin-right: 0px;
+    }
+    #navbarRight li{
+        padding: 0;
+    }
+    #form{
+        top:15px;
+        padding:5px 10px 15px 10px
+
+    }
+    
+    #form::before{
+        opacity:0.3;
+    }
+    #form h2{
+        font-size: 1.5rem;
+        margin:0
+    }
+    #form button{
+        padding: 10px;
+    }
+    .categories-main-container{
+        margin:auto;
+    }
+
 }

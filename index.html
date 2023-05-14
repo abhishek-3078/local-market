@@ -9,17 +9,42 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="css/slider.css">
     <link rel="stylesheet" href="css/utils.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <title>OurLocalMarket</title>
 </head>
 
 <body>
     <header>
+
+        <div class="loading">
+            
+<div class="center">
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+  
+  
+        </div>
         <div id="navbar">
+            <div class="burger-menu">
+                <div class="burger"></div>
+                <div class="burger"></div>
+                <div class="burger"></div>
+            </div>
             <div class="nav" id="navbarLeft">
                 <li><a href="Services.html">Services</a></li>
                 <li><a href="Offers.html">Offers</a></li>
                 <li><a href="About.html">About</a></li>
                 <li><a href="Contact.html">Contact</a></li>
+                <li class="nav-resp"><a href="/Signup.html">Sign Up/Log In</a></li>
             </div>
             <div class="nav" id="logo">
                 <h2> <a href="index.html">OurLocalMarket</a></h2>
@@ -27,7 +52,7 @@
             <div class="nav" id="navbarRight">
                 <li><a href="/Login.html" id="login"><button>Login</button></a></li>
                 <li><a href="/SignUp.html"><button>SignUp</button></a></li>
-                <li><a href=""><img src="img/logo/cart.png" alt="cart" width="50px"></a></li>
+                <li><a href="/Cart.html"><img src="img/logo/cart.png" alt="cart" width="50px"></a></li>
             </div>
         </div>
     </header>
@@ -46,7 +71,7 @@
         </div>
         <div class="content">
             <div id="form">
-                <h2>We Bring the Market at Your Door</h2>
+                <h2 class="subHeading">We Bring the Market at Your Door</h2>
                 <form action="">
                     <button><a href="Services.html">Order Online</a></button>
                 </form>
@@ -90,7 +115,7 @@
                 <a href="/Electronics.html">
                     <img src="img/categories/electronics.jpg" alt="">
                     <h3 class="text-center">Electronics</h3>
-                </a>l
+                </a>
             </div>
             <div class="category">
                 <a href="/Stationery.html">
@@ -105,16 +130,56 @@
                 </a>
             </div>
             <div class="category">
-                <a href="/barber.html">
+                <a href="/local-market/Medical.html">
                     <img src="img/categories/barbar.jpg" alt="">
-                    <h3 class="text-center">Barber</h3>
+                    <h3 class="text-center">Medical</h3>
                 </a>
             </div>
         </div>
         </div>
 
     </section>
+    <section>
 
+    <div class="about setwidth">
+        <div class="card">
+            <div class="text">
+                <h3 class="subHeading">Order Online</h3>
+                <p class="subText">Your most favorite grocery store, your most trusted brand, now at your fingertips! Order Online, pick up from the store or get groceries conveniently delivered to your home. Shop Apna Bazar in a whole new way!</p>
+            </div>
+            <div class="pic">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM4w-gXrGLlBQQG6aK5hBBsUJbvS9_aNBi7ludCrH148DwKaaa" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="text">
+                <h3 class="subHeading">Fast Delivery</h3>
+                <p class="subText">Get your groceries delivered in as little as two hours or at the time of your choice. Minimum purchase is required to qualify for a free delivery. Check If We Deliver To Your Address.</p>
+            </div>
+            <div class="pic">
+                <img src="https://www.apnabazarstores.com/images/client-assets/abs/how-it-works/free-same-day-delivery.svg" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="text">
+                <h3 class="subHeading">Free In-Store Pick Up</h3>
+                <p class="subText">Skip the line! Order online & conveniently pick up your Goods and receive Services at the time of your choice. No minimum order or additional fees on Pick Up orders, Ever! No Lines No Rush, Only Convenience!</p>
+            </div>
+            <div class="pic">
+                <img src="https://www.apnabazarstores.com/images/client-assets/abs/how-it-works/free-curbside-pickup.svg" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="text">
+                <h3 class="subHeading">100% Satisfaction Guaranteed</h3>
+                <p class="subText">Your Local Market's great Quality, Savings & Customer Service, now available Online. Shop online with confidence, you are always covered with our 100% Satisfaction Guarantee</p>
+            </div>
+            <div class="pic">
+                <img src="https://t3.gstatic.com/images?q=tbn:ANd9GcR2yzZbzF1RO6j99fZ36sU3EjTzGSs5qyvp2kQSs4mYSuwYdSDh" alt="">
+            </div>
+        </div>
+    </div>
+    </section>
 
 
     <!-- ---------------------------------------------------------------------------------------------------- -->
@@ -132,6 +197,7 @@
         </div>
     </footer>
     <script src="js/index.js"></script>
+    <script src="js/utils.js"></script>
 </body>
 
 </html>
