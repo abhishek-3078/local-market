@@ -82,9 +82,13 @@
 
 @media only screen and (max-width:630px){
     .productsList ul li{
-        height: 200px;
-        width: 130px;
-        /* margin-top:60px ; */
+        height: auto;
+        width: 160px;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-top:5px ;
+        margin-bottom: 5px;
+        /* margin: 0px; */
     }
 
     .productsList ul li:nth-child(n+5){
@@ -96,6 +100,15 @@
         height: 100px;
     }
 
+    .productsList ul li p{
+        width: 140px;
+        text-align: center;
+    }
+
+    #searchbar{
+        width: 200px;
+    }
+
     /* #products1{
         position: relative;
     } */
@@ -105,9 +118,17 @@
         padding-top: 10px;
         font-size: 1.2rem;
         position: relative;
-
-        bottom: 590px;
+        /* display: none; */
+        bottom: 607px;
         left: 100px;
+        width: 130px;
+        /* bottom: 6000%;
+        left: 50%; */
+    }
+
+    .cartBtn{
+        margin-right: 40px;
+        margin-bottom: 10px;
     }
 
 }
@@ -122,10 +143,6 @@
         width: 200px;
         margin: auto;
     }
-    
-}
-
-
 
 /* MOBILE SCREEN */
 
