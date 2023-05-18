@@ -150,6 +150,14 @@ h2{
     border: 2px solid black;
 }
 
+#preloader{
+    background: #111 url(https://static.vecteezy.com/system/resources/previews/008/174/698/mp4/animation-loading-circle-icon-loading-gif-loading-screen-gif-loading-spinner-gif-loading-animation-loading-on-black-background-free-video.mp4) no-repeat center;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
 .about{
     margin-bottom: 20px;
 }

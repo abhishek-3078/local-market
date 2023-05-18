@@ -1,3 +1,9 @@
+
+function firstAddition()
+{
+    document.getElementsByClassName("cartBtn").style.display="";
+}
+
 const addBtn=document.querySelectorAll('.cartBtn')
 function addToCart(name,price,img,cat){
     console.log(name,price)

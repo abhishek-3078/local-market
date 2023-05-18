@@ -77,6 +77,8 @@
 #form button{
     display: block;
     margin: auto;
+    width:auto;
+    height:auto;
     padding: 15px;
     border-radius: 15px;
     border: 3px solid black;
