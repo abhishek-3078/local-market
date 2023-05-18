@@ -8,28 +8,44 @@
     <link rel="stylesheet" href="css/About.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="css/utils.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
     <title>About|</title>
 </head>
 
 <body>
     <header>
         <div id="navbar">
-            <div class="nav" id="navbarLeft">
-                <li><a href="Services.html">Services</a></li>
-                <li><a href="Offers.html">Offers</a></li>
-                <li><a href="About.html">About</a></li>
-                <li><a href="Contact.html">Contact</a></li>
-            </div>
-            <div class="nav" id="logo">
-                <h2> <a href="index.html">OurLocalMarket</a></h2>
-            </div>
-            <div class="nav" id="navbarRight">
-                <li><a href="/Login.html" id="login"><button>Login</button></a></li>
-                <li><a href="/SignUp.html"><button>SignUp</button></a></li>
-                <li><a href="/Cart.html"><img src="img/logo/cart.png" alt="cart" width="40px"></a></li>
-            </div>
+          <div class="burger-menu">
+            <div class="burger"></div>
+            <div class="burger"></div>
+            <div class="burger"></div>
         </div>
-    </header>
+          <div class="nav" id="navbarLeft">
+            <li><a href="Services.html">Services</a></li>
+            <li><a href="Offers.html">Offers</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li class="nav-resp"><a href="/Signup.html">Sign Up/Log In</a></li>
+          </div>
+          <div class="nav" id="logo">
+            <h2><a href="index.html">OurLocalMarket</a></h2>
+          </div>
+          <div class="nav" id="navbarRight">
+            <li>
+              <a href="/Login.html" id="login"><button>Login</button></a>
+            </li>
+            <li>
+              <a href="/SignUp.html"><button>SignUp</button></a>
+            </li>
+            <li>
+              <a href="/Cart.html"
+                ><img src="img/logo/cart.png" alt="cart" width="40px"
+              /></a>
+            </li>
+          </div>
+        </div>
+      </header>
     <!-- -------------------------------------------------------------------------------------------------- -->
 
 
@@ -54,6 +70,7 @@
             <p>OurLocalMarket &copy; is <span style="color:red"> self</span> sponsored</p>
         </div>
     </footer>
+    <script src="js/utils.js"></script>
 </body>
 
 </html>

@@ -17,7 +17,15 @@ html{
     background-attachment:fixed ;
     
 }
-
+header h2{
+        background: linear-gradient(to right, #f32170,
+                        #ff6b08, #cf23cf, #eedd44);
+                -webkit-text-fill-color: transparent;
+                background-clip:border-box;
+                -webkit-background-clip: text;
+    
+    
+}
 .text-center{
     text-align: center;
     
@@ -51,7 +59,7 @@ header {
     position: sticky;
     top: 0px;
     left: 0px;
-    z-index: 1;
+    z-index: 4;
 }
 
 #navbar {

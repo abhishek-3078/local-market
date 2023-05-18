@@ -93,6 +93,21 @@ h2{
     border-radius: 25px;
 }
 
+.resp-category{
+    display: none;
+    cursor: pointer;
+    position: relative;
+    border: 2px solid blue;
+
+}
+
+/* .resp-category span{
+    border:2px solid red 2px solid blue;
+    animation:rotateBorder 1s ease-in
+} */
+
+
+
 /* slider button */
 
 .categories-main-container{
@@ -123,6 +138,7 @@ h2{
     border-radius: 30px;
     height: 60px;
     width: 60px;
+    z-index: 1;
     color: white;
     background-color: black;
     border: 2px solid white;
@@ -144,6 +160,7 @@ h2{
     display: flex;
     background-color: black;
     justify-content: space-evenly;
+    transition:transform 0.5s ease-in-out
 }
 .about :nth-child(2n-1){
     flex-direction: row-reverse;
@@ -164,3 +181,61 @@ h2{
     border-radius: 15px;
 }
 
+section #categories{
+    background:none;
+    flex-direction: column;
+    position: relative;
+    margin:auto;
+    overflow:hidden;
+    /* width: 300px; */
+    /* transform: translateX(100%); */
+
+    display: none;
+}
+.cateogry{
+    position: relative; 
+    width: 300px;
+    margin: 5px auto;
+    transform: translateX(0%);
+    left:-100%;
+    transition:all 0.5s ease-in;
+}
+
+@keyframes rotateBorder{
+    0%{
+        border:2px solid red 2px solid blue;
+       
+    }
+    100%{
+        border:2px solid red 2px solid blue;
+    }
+}
+.slidein{
+    left:0;
+}
+@media only screen and (max-width:800px){
+   .categories-main-container{
+    display: none;
+   
+   }
+   .resp-b{
+    display: inline;
+   }
+   #categoryHeading{
+    display: none;
+   }
+   .resp-category{
+    display: block;
+   }
+   #categories{
+    display: flex;
+   }
+   .card{
+    transform: translateY(100%);
+   }
+}
+@media only screen and (min-width:800px){
+    #respCategory{
+        display: none;
+    }
+}
