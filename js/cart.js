@@ -46,12 +46,12 @@ const totalItems=Object.entries(localStorage)
 let totalAmount=0;
 if(totalItems.length!=0) emptyCart.style.display="none";
 for(let i of Object.entries(localStorage)){
+
     let x=itemTemplate
     let y=itemCategory
     const name=i[0]
     const data=JSON.parse(i[1])
     const total=Number.parseInt(data.price.slice(1))*Number(data.qty)
-    
 // finding the category of item
 const customId=data.category.replaceAll(" ","");
     if(!categories.find((elem)=>elem==data.category) ){

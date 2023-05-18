@@ -247,7 +247,7 @@
 /* loader */
 
 
-bodY {
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -323,7 +323,7 @@ bodY {
 }
 @media only screen and (max-width:500px) {
     .content{
-        top:80px
+        top:90px
     }
     #form{
       width: 90%;  
@@ -331,6 +331,7 @@ bodY {
     }
     .slider{
         height: 300px;
+        margin-top: 10px;
     }
     #form h2{
         font-size: 2rem;
@@ -338,7 +339,7 @@ bodY {
     .categories-container{
         width: 333px;
     }
-    
+   
     
   
 }
@@ -346,9 +347,8 @@ bodY {
     .slider{
         height: 300px;
     }
-    #form h2{
-        font-size: 2rem;
-    }
+    
+    
     .content{
         top:80px
     }
