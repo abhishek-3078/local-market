@@ -412,6 +412,7 @@ form button:hover{
 
 .productsList ul li p{
     float: left;
+    width: 100px;
     font-size: 0.9rem;
     margin-left: 10px;
     margin-top: 10px;
