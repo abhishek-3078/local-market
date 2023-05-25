@@ -13,6 +13,12 @@
 .nav-resp{
     display: none;
 }
+@media only screen and (max-width:1076px){
+    #categories{
+        overflow: scroll;
+        flex-wrap: nowrap;
+    }
+}
 @media only screen and (max-width:1080px) and (min-width:800px) {
     #navbarLeft li a{
         padding: 7px;
@@ -35,22 +41,17 @@
         display: block;
     }
     #navbarLeft li{
-        /* margin: 12px; */
         display: block;
         text-align: center;
-        /* padding: 15px; */
         width: 100%;
     }
     #navbarLeft li:hover{
-        /* margin: 12px; */
         background-color:red;
     }
     #navbarLeft li a{
         display: block;
         text-align: center; 
         width: 100%;
-        /* border: 2px solid black; */
-        /* border-bottom: 2px solid black; */
     }
     #navbarLeft li a:hover{
         background-color: none;
@@ -61,16 +62,6 @@
     .burger-menu{
         display: block;
     }
-    /* #res-nav{
-        display: flex;
-        flex-direction: column;
-    } */
-
-    #categories{
-        overflow: scroll;
-        flex-wrap: nowrap;
-    }
-
     #categories::-webkit-scrollbar{
         width: 10px;
         height: 10px;
@@ -81,59 +72,12 @@
 }
 
 @media only screen and (max-width:630px){
-    .productsList ul li{
-        height: auto;
-        width: 160px;
-        margin-left: 5px;
-        margin-right: 5px;
-        margin-top:5px ;
-        margin-bottom: 5px;
-        /* margin: 0px; */
-    }
-
-    .productsList ul li:nth-child(n+5){
-        display: none;
-    }
-
-    .productsList ul li img{
-        /* width: 100%; */
-        height: 100px;
-    }
-
-    .productsList ul li p{
-        width: 140px;
-        text-align: center;
-    }
-
     #searchbar{
         width: 200px;
     }
 
-    /* #products1{
-        position: relative;
-    } */
 
-    #showAllButton{
-        height: 70px;
-        padding-top: 10px;
-        font-size: 1.2rem;
-        position: relative;
-        /* display: none; */
-        bottom: 607px;
-        left: 100px;
-        width: 130px;
-        /* bottom: 6000%;
-        left: 50%; */
-    }
-
-    .cartBtn{
-        margin-right: 40px;
-        margin-bottom: 10px;
-    }
-
-}
-
-    
+} 
     .card:nth-child(n){
         flex-direction: column-reverse;
         height: auto;
@@ -143,6 +87,7 @@
         width: 200px;
         margin: auto;
     }
+
 
 /* MOBILE SCREEN */
 

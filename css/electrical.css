@@ -1,0 +1,7 @@
+#banner{
+    position: relative;
+    background-image: url('../img/electrical/electrical.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+}

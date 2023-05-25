@@ -255,7 +255,8 @@ header {
     margin-top: 20px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 2rem;
-    color: rgb(0, 208, 0);
+    color: inherit;
+    text-shadow: -1px -1px yellow;
     background:rgba(203, 213, 214, 0.315);
     padding: 8px;
     border-radius: 10px;
@@ -295,9 +296,9 @@ form button:hover{
 /* Categories */
 #categories{
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     width: 100%;
-    justify-content:center;
+    justify-content:space-around;
     background-color: rgba(128, 128, 128, 0.753);
     padding-top: 15px;
     padding-bottom: 15px;
@@ -313,16 +314,17 @@ form button:hover{
 .cateogry{
     position: relative;
     border: 2px solid white;
-    border-radius: 20px;
+    border-radius: 10px;
     color: white;
     height: 40px;
     
     text-align: center;
-    padding: 10px;
+    padding: 7px;
     text-decoration: none;
     transition: ease-in-out .2s;
     bottom: 0;
     margin: 5px;
+    width:120px;
 }
 
 .cateogry:hover{
@@ -409,6 +411,7 @@ form button:hover{
 
 .productsList ul li p{
     float: left;
+    text-align: center;
     font-size: 0.9rem;
     margin-left: 10px;
     margin-top: 10px;
