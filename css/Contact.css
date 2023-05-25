@@ -1,6 +1,7 @@
 #mainBody{
     /* border: 2px solid green; */
     /* background:linear-gradient(purple,black); */
+    /* background-image: url("/local-market/img/contacts/DALL·E\ 2023-05-25\ 12.06.23\ -\ \ a\ black\ bakground\ image\ with\ a\ lot\ of\ beautiful\ doodles\ in\ white\ color\ related\ to\ communication.png"); */
     
 } 
 
@@ -43,16 +44,18 @@
     color: white;
     /* border: 2px solid yellow; */
     width: 50vw;
-    background-color: rgba(255, 255, 255, 0.384);
+    background-color: rgba(255, 255, 255, 0.563);
     padding: 20px;
 }
 
 #details h2{
-    /* border-radius: 5px; */
+    border-radius: 5px;
     padding: 5px;
     display: inline-block;
     /* background-color: red; */
     color: red;
+    background-color: rgba(0, 0, 0, 0.705);
+    padding: 10px;
     /* margin-left: 10px; */
     margin-top: 20px;
 }
@@ -60,6 +63,7 @@
 #details p{
     /* margin-left: 50px; */
     margin-top: 10px;
+
 }
 
 iframe{
