@@ -100,7 +100,6 @@ function scroll(){
 }
 
 scroll()
-// cards[0].style.transform="translateY("+0+"%)";
 
 document.addEventListener("scroll",(e)=>{
     scroll()
