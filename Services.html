@@ -14,7 +14,7 @@
 
     <link rel="stylesheet" href="/css/Services.css">
     <link rel="stylesheet" href="css/responsive.css">
-    <script  src="js/utils.js"></script>
+    <script defer src="js/utils.js"></script>
 </head>
 
 <body>
@@ -38,7 +38,8 @@
             <div class="nav" id="navbarRight">
                 <li><a href="/Login.html" id="login"><button>Login</button></a></li>
                 <li><a href="/SignUp.html"><button>SignUp</button></a></li>
-                <li><a href="/local-market/Cart.html"><img src="img/logo/cart.png" alt="cart" width="40px"></a></li>
+                <div class="cartCount"></div>
+                <li><a href="/Cart.html"><img src="img/logo/cart.png" alt="cart" width="40px"></a></li>
             </div>
         </div>
     </header>
@@ -95,7 +96,7 @@
                             <img src="img/grocery/apple-dark.jpg" alt="image to be included" height="120px">
                         </a>
                         <p>&#8377 450/dz</p>
-                        <button id="addBtn" class="cartBtn" onclick="firstAddition()">Add+</button>
+                        <button id="addBtn" class="cartBtn" onclick="">Add+</button>
                     </li>
                     <li>
                         <h1>Tomato</h1>

@@ -1,0 +1,74 @@
+.paymentOption{
+    padding:20px;
+    margin: 10px auto 10px;
+    background-color: #fff;
+    width: 300px;
+    
+}
+input{
+    width: 100%;
+}
+.cardDetails input[type="tel"]{
+    width: 200px;
+}
+.cardDetails input{
+    width:100px;
+    text-align: center;
+}
+.cardname{
+    display: flex;
+    gap: 20px;
+}
+.cardDetails label{
+    display: block;
+}
+
+.flex{
+    display: flex;
+    gap:10px
+}
+
+.submit{
+    text-align: center;
+    & button{
+        /* display: block; */
+        cursor: pointer;
+        padding:20px;
+        width: 80%;
+        color:white;
+        border-radius: 15px;
+        font-size: 2rem;
+        background-color: red;
+    };
+
+    & button:hover{
+        background-color: green;
+    }
+}
+
+/*Order choice----------------------------------------------------------------------------------------------------------------------------------*/
+.address{
+    background-color: #fff;
+    width: 70%;
+    margin: auto;
+    padding: 30px;
+}
+.deliveryChoice{
+    display: flex;
+    justify-content: space-around;
+}
+.choice{
+    text-align: center;
+    line-height: 100px;
+    cursor:pointer;
+    width: 40%;
+    height: 100px;
+    font-family: "Lato","sans-serif";
+    font-size:2rem;
+    background-color: rgb(218, 213, 213);
+    margin-bottom: 10px;
+}
+label{
+    display: block;
+}
+/*---------------------------------------------------------------------------------------------------------------------------------------------*/
