@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="css/utils.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/Payment.css">
+</head>
+<body>
+    <header>
+        <div id="navbar">
+            <div class="burger-menu">
+                <div class="burger"></div>
+                <div class="burger"></div>
+                <div class="burger"></div>
+            </div>
+            <div class="nav" id="navbarLeft">
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="Offers.html">Offers</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li class="nav-resp"><a href="/Signup.html">Sign Up/Log In</a></li>
+            </div>
+            <div class="nav" id="logo">
+                <h2> <a href="index.html">OurLocalMarket</a></h2>
+            </div>
+            <div class="nav" id="navbarRight">
+                <li><a href="/Login.html" id="login"><button>Login</button></a></li>
+                <li><a href="/SignUp.html"><button>SignUp</button></a></li>
+                <div class="cartCount"></div>
+                <li><a href="/Cart.html"><img src="img/logo/cart.png" alt="cart" width="40px"></a></li>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="deliveryChoice">
+            <div class="choice">PickUp</div>
+            <div class="choice">Delivery</div>
+        </div>
+        <div class="address">
+            <h3>Add Address</h3>
+            <div class="inputBox">
+            <label for="">Street No</label>
+            <input type="text">
+        </div>
+
+        <div class="inputBox">
+            <label for="">Address Line 1</label>
+            <input type="text" name="" id="">
+</div>
+<div class="inputBox">
+            <label for="">Address Line2</label>
+            <input type="text" name="" id="">
+</div>
+<div class="flex">
+    <div class="inputBox">
+        <label for="">Mobile No</label>
+        <input type="tel" name="" id="">
+    </div> 
+
+<div class="inputBox">
+          <label for="">PinCode</label>
+            <input type="text" name="" id="">
+            </div>
+        </div>
+            <button class="defaultButton"> Add </button>
+        </div>
+
+        
+        <div class="paymentOption">
+            <div><h3>ADD DEBIT/CREDIT CARD</h3></div>
+            <div class="cardDetails">
+                <div class="cardname">
+                <div>
+                <label for="firstN">First Name</label>
+                <input type="text" id="firstN">
+            </div>
+                <div class="cardDetails">
+                <label for="lastN"> Last Name
+                </label>
+                    <input type="text" id="lastN">
+            </div>
+            </div >
+               <div>
+                <label for="cardNumber">Card Number</label>
+                <input type="tel" name="card" id="cardNumber" maxlength="19" pattern="\d*" >
+            
+            </div>
+                <div class="cardDetails flex">
+                    
+                    <div >
+                    <label for="expiry">Expiry</label> 
+                    <input type="text" placeholder="MM/YYYY" pattern="\d" id="expiry"> 
+                    </div>
+
+                    <div>
+                    <label for="CVV">CVV</label>
+                    <input type="text" placeholder="123" >
+                 </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="paymentOption">
+           <h3>UPI</h3>
+           <div>
+            <img src="" alt="paytm">
+           
+            <img src="" alt="Gpay">
+          
+            <img src="" alt="PhonePe">
+           </div> 
+
+           <div>
+            <button class="defaultButton" >Use UPI Id instead</button>
+           </div>
+
+        </div>
+        <div class="paymentOption">
+            <p>Cash On Delivery</p>
+        </div>
+        <div class="submit">
+        <button>Proceed To Payment</button>
+    </div>
+        
+    </section>
+        
+
+    <footer id="bottom">
+        <div>
+            <ul id="bottomUp">
+                <li> <a href="Terms.html">Terms</a> </li>
+                <li> <a href="Privacy.html">Privacy Policy</a> </li>
+                <li> <a href="FAQ.html">FAQ</a> </li>
+                <li> <a href="Contact.html">Contact</a> </li>
+            </ul>
+        </div>
+        <div id="bottomDown">
+            <p>OurLocalMarket &copy; is <span style="color:red"> self</span> sponsored</p>
+        </div>
+    </footer>
+    <script src="js/utils.js"></script>
+
+    <script>
+        const choice=document.querySelectorAll(".choice")
+
+        choice.forEach((e)=>{
+            e.addEventListener("click",(e)=>{
+                choice.forEach((e)=>{
+            e.style.background="white"
+            })
+
+                e.target.style.background="red"
+            })
+        })
+        
+    </script>
+</body>
+</html>

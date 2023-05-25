@@ -13,3 +13,7 @@ document.querySelector(".burger-menu").onclick=()=>{
     }
     document.querySelector("#navbarLeft").style.display="flex"
 }
+
+if(localStorage.length>0){
+    document.querySelector(".cartCount").style.visibility="visible"
+}
