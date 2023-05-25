@@ -21,14 +21,6 @@ html{
     width: 98%;
     margin: auto;
 }
-h2{
-    background: linear-gradient(to right, #f32170,
-                    #ff6b08, #cf23cf, #eedd44);
-            -webkit-text-fill-color: transparent;
-            background-clip:border-box;
-            -webkit-background-clip: text;
-
-}
 
 .categories-container{
     background-color: #111;
