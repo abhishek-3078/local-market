@@ -38,7 +38,6 @@ section{
     color:white;
     display: flex;
     flex-direction: column;
-    /* border:2px solid blue; */
 }
 #membersHeading{
     padding:10px;
@@ -47,7 +46,7 @@ section{
     background-color: rgb(48, 44, 41);
    
 }
-#membersHeading>h2{
+#membersHeading > h2{    
     color:white;
     font-family: 'Raleway', sans-serif;
 
