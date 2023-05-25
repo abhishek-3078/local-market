@@ -1,16 +1,47 @@
 *{
     color:white;
 }
+body{
+    background-color: black;
+}
 #sectionTop{
-    border:2px solid red;
+    /* border:2px solid red; */
     color:white;
 }
+#sectionTop h2{
+    margin:20px 20px;
+    color:lightcyan;
+}
+#sectionTop .span{
+    color:violet;
+    font-weight: bold;
+
+}
+#sectionTop p{
+    margin:0px 10px;
+    padding:10px;
+    color:lightgoldenrodyellow;
+
+}
+
 #members{
+    margin:10px 0px;
     text-align: center;
     color:white;
     display: flex;
     flex-direction: column;
+    /* border:2px solid blue; */
+}
+#membersHeading{
+    padding:10px;
     border:2px solid blue;
+    padding:20px 0px;
+    background-color: rgb(190, 184, 178);
+   
+}
+#membersHeading>h2{
+    color:black;
+   
 }
 #membersImages{
     display: flex;
@@ -18,40 +49,19 @@
     justify-content: space-around;
     align-items: center;
 }
+
+.memberInformationBox{
+    border:2px solid green;
+    padding:10px;
+    margin:15px 0px;
+    background-color: rgb(37, 32, 29);
+    border-radius:20px 20px ;
+    box-shadow: -1px 2px blue;
+}
 #membersImages div img{
     border:2px solid green;
     width:200px;
     height:200px;
     border-radius: 50%;
 }
-#memberdetails{
-    color:white;
-    border:2px solid red;
-    display:flex;
-    flex-direction: column;
-}
-#memberdetails :nth-child(2n-1){
-    flex-direction: row-reverse;
-    background-color: yellow;
-}
-.memberdetail{
-    color:white;
-    border:2px solid violet;
-    display: flex;
-    flex-direction: row;
-}
-.detailLeft{
-    display: flex;
-    flex-direction: column;
-    border:2px solid green;
-}
-.details{
-    display: flex;
-    flex-direction: column;
-}
-.imgWithDetails img{
-    width:100px;
-    height:100px;
-    border:2px solid yellow;
-    border-radius: 50%;
-}
+
