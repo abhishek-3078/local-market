@@ -1,16 +1,24 @@
 *{
     color:white;
+    margin:0%;
+    padding: 0%;
 }
-body{
-    background-color: black;
+section{
+    background-image: url("../img/aboutUS/bg2.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
 }
 #sectionTop{
     /* border:2px solid red; */
     color:white;
+    background-color: rgba(255, 0, 0, 0);
 }
 #sectionTop h2{
-    margin:20px 20px;
+    /* margin:20px 20px; */
+    padding:20px 20px;
     color:lightcyan;
+    font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif
 }
 #sectionTop .span{
     color:violet;
@@ -36,24 +44,26 @@ body{
     padding:10px;
     border:2px solid blue;
     padding:20px 0px;
-    background-color: rgb(190, 184, 178);
+    background-color: rgb(48, 44, 41);
    
 }
 #membersHeading>h2{
-    color:black;
-   
+    color:white;
+    font-family: 'Raleway', sans-serif;
+
 }
 #membersImages{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .memberInformationBox{
     border:2px solid green;
     padding:10px;
-    margin:15px 0px;
+    margin:15px 10px;
     background-color: rgb(37, 32, 29);
     border-radius:20px 20px ;
     box-shadow: -1px 2px blue;
@@ -64,4 +74,14 @@ body{
     height:200px;
     border-radius: 50%;
 }
+.membersEmail{
+    color:lightcoral;
+}
+@media only screen and (max-width:490px){
+    #membersImages div img{
+        width:100px;
+        height:100px;
+    }   
+}
+
 

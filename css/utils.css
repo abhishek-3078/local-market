@@ -17,8 +17,7 @@ html{
     --safe-color:green;
 }
 .text-center{
-    text-align: center;
-    
+    text-align: center; 
 }
 
 :root {
