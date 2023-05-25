@@ -3,14 +3,10 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: sans-serif;
-    /* font-family: Poppins; */
+    /* font-family: sans-serif; */
+    font-family: Poppins;
 }
 
-::selection{
-    background-color: white;
-    color: black;
-}
 
 html{
     scroll-behavior: smooth;
@@ -31,7 +27,8 @@ header h2{
     
 }
 .text-center{
-    text-align: center; 
+    text-align: center;
+    
 }
 
 :root {
@@ -109,19 +106,6 @@ header {
     font-family: cursive;
     color: var(--safe-color);
     cursor: pointer;
-    background: linear-gradient(to right, #f32170,
-                    #ff6b08, #cf23cf, #eedd44);
-            -webkit-text-fill-color: transparent;
-            background-clip:border-box;
-            -webkit-background-clip: text;
-}
-
-#categoryHeading{
-    background: linear-gradient(to right, #f32170,
-    #ff6b08, #cf23cf, #eedd44);
--webkit-text-fill-color: transparent;
-background-clip:border-box;
--webkit-background-clip: text;
 }
 
 #logo h2 a {
@@ -199,6 +183,20 @@ background-clip:border-box;
     box-shadow: 1px 1px 10px lightseagreen;
     transform: scale(1.2);
 }
+
+.cartCount{
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    visibility: hidden;
+    color: white;
+    font-size:0.7rem;
+    text-align: center;
+    background-color: #e81111;
+}
 /* footer protion begins --------------------------------------------------------------- */
 #bottom {
     width: 100%;
@@ -251,15 +249,8 @@ background-clip:border-box;
 
 
 /* Banner part */
-section{
-    background-color: black;
-}
-
-
-
 #banner{
     position: relative;
-    background-image: url(/local-market/img/gifs/monkey.gif);
     background-repeat: no-repeat;
     background-size: cover;
     height: 300px;
@@ -274,14 +265,15 @@ section{
 
 #sub_banner h1{
     display: inline-block;
+    margin: auto;
     margin-top: 20px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 2rem;
-    /* color: rgb(0, 208, 0); */
-    
-    background-color: white;
+    color: rgb(0, 208, 0);
+    background:rgba(203, 213, 214, 0.315);
     padding: 8px;
     border-radius: 10px;
+    /* background-color: black; */
 }
 
 #searchbar{
@@ -295,36 +287,37 @@ section{
 
 #searchbar:focus{
     background-color: black;
+    box-shadow: 0px 0px 5px rgb(241, 237, 237);
 }
-
 form{
     display: flex;
     justify-content: center;
     margin-top: 25px;
 }
 
-form button{
+/* form button{
     background-color:rgb(0, 195, 0) ;
     padding: 3px;
     border-radius: 10px;
     width: 50px;
     height: 40px;
-}
+} */
 
 form button:hover{
     border: 2px solid white;
 }
-
+/* Categories */
 #categories{
     display: flex;
-    width: 100%;
     flex-wrap: wrap;
-    justify-content: center;
+    width: 100%;
+    justify-content:center;
     background-color: rgba(128, 128, 128, 0.753);
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     position:absolute;
     bottom: 0;
+
 }
 
 #categories a{
@@ -337,20 +330,19 @@ form button:hover{
     border-radius: 20px;
     color: white;
     height: 40px;
-    width: 140px;
+    
     text-align: center;
-    padding: 8px;
-    margin: 8px;
+    padding: 10px;
     text-decoration: none;
-    transition: ease-in-out .2s;
+    transition: ease-in-out .4s;
     bottom: 0;
+    margin: 5px auto;
 }
 
 .cateogry:hover{
     background: white;
     color: rgba(128, 128, 128, 0.753);
 }
-
 
 #back_key{
     position:absolute;
@@ -366,8 +358,7 @@ form button:hover{
 }
 #back_key a:hover{
     background-color: darkgreen;
-} 
-
+}
 
 /* To make the product list ----------------------------------------------------------------------------- */
 
@@ -419,10 +410,6 @@ form button:hover{
     border-radius: 5px;
 }
 
-.productsList ul img:hover{
-    /* box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.842); */
-    border: 1px solid white;
-}
 
 .productsList ul h1{
     text-align: center;
@@ -432,9 +419,7 @@ form button:hover{
 
 .productsList ul li p{
     float: left;
-    width: 100px;
     font-size: 0.9rem;
-    text-align: center;
     margin-left: 10px;
     margin-top: 10px;
     padding: 6px;
@@ -460,15 +445,16 @@ form button:hover{
 
 .cartBtn:hover{
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.772);
+    cursor: pointer;
 }
 
 .cartBtn:active{
-    background-color: rgb(213, 20, 20);
+    background-color: rgb(148, 2, 2);
     border: 1px solid black;
     box-shadow: none;
 }
 
-/* .showAllButton{
+.showAllButton{
     border-radius: 10px ;
     height: 200px;
     border: 1px solid grey;
@@ -479,19 +465,17 @@ form button:hover{
     font-size: 1.8rem;
     transition: ease-in-out ;
     border: 1px solid black;
-} */
+}
 
 .showAllButton:hover{
     background-color: rgb(14, 185, 14);
 }
 
-.productsList li:hover{
+/* .productsList li:hover{
     transform: scale(1.2);
-}
+} */
 
-ul a{
-    text-decoration: none;
-}
+
 
 #showAllButton{
     color: white;
@@ -505,7 +489,6 @@ ul a{
     background-color: green;
 }
 
-
 /* Product list ends ----------------------------------------------------------------------------- */
 
 /* banner part ends */
@@ -517,7 +500,8 @@ ul a{
     color: white;
     font-size: 2rem;
     font-family:'Poppins','Lato', 'Sans-serif';
-    font-weight:900;
+    font-weight:900
+
 }
 
 .subText{
@@ -542,4 +526,20 @@ ul a{
     border: none;
     border-radius: 5px;
     padding: 10px;
+}
+
+
+ /* popup design   */
+.confirmPopup{
+    width: 200px;
+    height: 50px;
+    position: fixed;
+    right:0;
+    top:63px;
+    text-align: center;
+    line-height: 50px;
+    
+    color: white;
+    background-color: #1b8c17;
+    z-index: 30;
 }

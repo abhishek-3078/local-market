@@ -14,7 +14,7 @@ container.scrollLeft=0
 boxStyle=getComputedStyle(box)
 const scrollWidth=container.offsetWidth;
 const totalWidth=(box.offsetWidth+ 2*parseInt(boxStyle.marginRight))*8
-
+console.log(scrollWidth,totalWidth)
 
 console.log(scrollWidth,totalWidth)
 
@@ -64,7 +64,9 @@ wmc.onchange=()=>{
     }
 }
 respcategoryHead.onclick=()=>{
+    
     if(categories.style.display!="flex"){
+        document.querySelector("#arrow").style.transform="rotateZ(180deg)"
                     categories.style.display="flex";
                     let a=0.1;
                     category.forEach((e)=>{
@@ -74,6 +76,7 @@ respcategoryHead.onclick=()=>{
                     a=a+0.1
                     })   
             }else{
+                document.querySelector("#arrow").style.transform="rotateZ(0deg)"
                 categories.style.display="none";
                 category.forEach((e)=>{
                     e.classList.remove("slidein")
@@ -96,7 +99,8 @@ function scroll(){
             if(card==card[0]) return;
         const rect=card.getBoundingClientRect();
         
-    //    console.log(rect.top,card.offsetHeight,window.innerHeight)
+       console.log(rect.top,card.offsetHeight,window.innerHeight)
+
         if(rect.top-card.offsetHeight<=window.innerHeight){
 
             setTimeout(()=>{

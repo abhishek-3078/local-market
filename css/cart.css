@@ -36,20 +36,34 @@
     justify-content: space-around;
     align-items: center;
     flex-grow: 1;
+    width: 600px;
     display: flex;
+    justify-content: left;
+    position: relative;
 }
 .description{
     display: flex;
     flex-direction: column;
     gap:10px;
+    padding-left: 30px;
+    
     
 }
+.img{
+    width: 150px;
+
+}
 .item img{
+    display: block;
+    margin: auto;
     height: 100px;
+    
     
 }
 .item-count  {
         display: flex;
+        position: absolute;
+        right:10px
 }
 .item-count input{
     width: 30px;
@@ -96,6 +110,9 @@
     
 }
 
+.same-category{
+    margin-bottom: 20px;
+}
 .payAmount{
     color:black;
     font-family: 'Lato';
@@ -112,7 +129,7 @@
 }
 
 
-@media only screen and (max-width:700px) {
+@media only screen and (max-width:850px) {
     .flex-auto{
         flex-direction: column;
         position: relative;
@@ -121,6 +138,10 @@
         width: 100%;
         margin-bottom: 100px;
     }
+    .item{
+        width: 90vw;
+    }
+
     .checkout{
         position:fixed;
         bottom:0px;
