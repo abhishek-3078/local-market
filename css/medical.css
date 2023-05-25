@@ -1,3 +1,7 @@
 #banner{
-    background-image: url("https://www.shutterstock.com/image-vector/group-elements-flat-icons-medicine-medical-693600256");
+    position: relative;
+    background-image: url('../img/medical/medical.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
 }

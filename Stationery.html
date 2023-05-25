@@ -6,14 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/utils.css">
-    <link rel="stylesheet" href="css/Stationery.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="responsive/res_headerAndFooter.css">
+    <link rel="stylesheet" href="responsive/res_services.css">
+    <link rel="stylesheet" href="css/Stationery.css">
+
+
     <title>Stationary|</title>
 </head>
 
 <body>
     <header>
         <div id="navbar">
+            <div class="burger-menu">
+                <div class="burger"></div>
+                <div class="burger"></div>
+                <div class="burger"></div>
+            </div>
             <div class="nav" id="navbarLeft">
                 <li><a href="Services.html">Services</a></li>
                 <li><a href="Offers.html">Offers</a></li>
@@ -26,7 +35,7 @@
             <div class="nav" id="navbarRight">
                 <li><a href="/Login.html" id="login"><button>Login</button></a></li>
                 <li><a href="/SignUp.html"><button>SignUp</button></a></li>
-                <li><a href=""><img src="img/logo/cart.png" alt="cart" width="40px"></a></li>
+                <li><a href="Cart.html"><img src="img/logo/cart.png" alt="cart" width="40px"></a></li>
             </div>
         </div>
     </header>
@@ -647,7 +656,7 @@
         <div>
             <ul id="bottomUp">
                 <li> <a href="Terms.html">Terms</a> </li>
-                <li> <a href="Privacy.html">Privacy Policy</a> </li>
+                <li id="bottomUpSecondChild"> <a href="Privacy.html">Privacy Policy</a> </li>
                 <li> <a href="FAQ.html">FAQ</a> </li>
                 <li> <a href="Contact.html">Contact</a> </li>
             </ul>
@@ -656,6 +665,8 @@
             <p>OurLocalMarket &copy; is <span style="color:red"> self</span> sponsored</p>
         </div>
     </footer>
+    <script src="js/utils.js"></script>
+
 </body>
 
 </html>
