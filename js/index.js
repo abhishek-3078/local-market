@@ -63,6 +63,8 @@ wmc.onchange=()=>{
         categories.style.display="none"
     }
 }
+
+//categories arrow rotate
 respcategoryHead.onclick=()=>{
     
     if(categories.style.display!="flex"){
@@ -83,6 +85,7 @@ respcategoryHead.onclick=()=>{
                     })  
                 
             }
+            
         }
     
 
