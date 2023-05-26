@@ -1,6 +1,6 @@
 .paymentOption{
     padding:20px;
-    margin: 10px auto 10px;
+    /* margin: 10px auto 10px; */
     background-color: #fff;
     width: 300px;
     
@@ -30,27 +30,36 @@ input{
 
 .submit{
     text-align: center;
-    & button{
-        /* display: block; */
-        cursor: pointer;
-        padding:20px;
-        width: 80%;
-        color:white;
-        border-radius: 15px;
-        font-size: 2rem;
-        background-color: red;
-    };
+}
+.payments{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin: auto;
+    width: 700px;
+    gap:15px;
+}
+.submit button{
+    /* display: block; */
+    cursor: pointer;
+    padding:20px;
+    width: 80%;
+    color:white;
+    border-radius: 15px;
+    font-size: 2rem;
+    background-color: purple;
+    border:none
+}
 
-    & button:hover{
-        background-color: green;
-    }
+button:hover{
+    background-color: green;
 }
 
 /*Order choice----------------------------------------------------------------------------------------------------------------------------------*/
 .address{
     background-color: #fff;
-    width: 70%;
-    margin: auto;
+    width: 100%;
+    /* margin: auto; */
     padding: 30px;
 }
 .deliveryChoice{
@@ -66,9 +75,22 @@ input{
     font-family: "Lato","sans-serif";
     font-size:2rem;
     background-color: rgb(218, 213, 213);
-    margin-bottom: 10px;
 }
 label{
     display: block;
+}
+
+button{
+    margin: 10px;
+}
+
+.flex{
+    display: flex;
+}
+
+@media screen and (max-width:700px){
+    .payments{
+        width: 95%;
+    }
 }
 /*---------------------------------------------------------------------------------------------------------------------------------------------*/

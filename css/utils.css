@@ -163,7 +163,8 @@ header {
 /* header part   (hover)------------------------------------------------------- */
 
 #navbarLeft li a:hover{
-    background:linear-gradient(to right, #f32170,#ff6b08);
+    height:65.6px;
+    /* background:linear-gradient(to right, #f32170,#ff6b08); */
     /* background-color: red; */
     color: white;
 }
