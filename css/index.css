@@ -235,7 +235,12 @@ section #categories{
     bottom: 0;
     margin: 5px auto;
 }
-
+#arrow{
+    background: linear-gradient(to right, #f32170, #ff6b08, #cf23cf, #eedd44);
+    -webkit-text-fill-color: transparent;
+    background-clip: border-box;
+    -webkit-background-clip: text
+}
 .cateogry:hover{
     background: white;
     color: rgba(128, 128, 128, 0.753);
