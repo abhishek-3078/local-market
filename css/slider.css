@@ -268,6 +268,7 @@ body {
     border-radius: 20px;
   }
   .wave:nth-child(2) {
+    
     animation-delay: 0.1s;
   }
   .wave:nth-child(3) {

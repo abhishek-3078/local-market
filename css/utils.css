@@ -198,6 +198,7 @@ header {
     font-size:0.7rem;
     text-align: center;
     background-color: #e81111;
+    z-index:1
 }
 /* footer protion begins --------------------------------------------------------------- */
 #bottom {
