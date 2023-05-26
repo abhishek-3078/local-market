@@ -56,7 +56,6 @@ const wmc=window.matchMedia("(max-width:800px)")
 
 let a=0.2;
 const category=document.querySelectorAll('.cateogry')
-console.log(category)
 wmc.onchange=()=>{
     if(!wmc.matches){
         if(categories.style.display=="flex")
@@ -97,7 +96,6 @@ function scroll(){
         setTimeout(()=>{
             cards[0].style.transform="translateY("+0+"px)";
         },0)
-        console.log("hello world")
     cards.forEach(card=>{
             if(card==card[0]) return;
         const rect=card.getBoundingClientRect();
