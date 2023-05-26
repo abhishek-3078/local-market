@@ -17,6 +17,7 @@ html{
     background-attachment:fixed ;
     
 }
+
 header h2{
         background: linear-gradient(to right, #f32170,
                         #ff6b08, #cf23cf, #eedd44);
@@ -331,15 +332,13 @@ form button:hover{
     border-radius: 10px;
     color: white;
     height: 40px;
-    
     text-align: center;
-    padding: 7px;
+    padding: 8px;
     text-decoration: none;
     transition: ease-in-out .4s;
     bottom: 0;
     margin: 5px;
     width:120px;
-
 /*     margin: 5px auto; */
 }
 

@@ -26,7 +26,7 @@
     
 }
 
-#map{
+iframe{
     background-image: url("/img/gifs/Loading_icon.gif");
     background-repeat: no-repeat;
     background-size: cover;
@@ -70,4 +70,21 @@ iframe{
     width: 50vw;
     height: 100vh;
     border-radius: 5px;
+}
+@media only screen and (max-width:800px){
+    #contents{
+        flex-wrap: wrap;
+        flex-direction:column-reverse;
+    }
+
+    #details{
+        width: 90vw;
+        margin: auto;
+    }
+
+    iframe{
+        width: 90vw;
+        margin: auto;
+        margin-top: 30px;
+    }
 }

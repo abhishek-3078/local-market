@@ -45,10 +45,69 @@
 
 
     <section>
-        this is offer section
+        <div id="mainBody">
+            <div id="heading">
+                Offers
+            </div>
+
+            <div id="coupons">
+                <h1 id="coupHeading">Your Coupons</h1>
+
+                <div id="discountFlex">
+                    <div class="discounts" id="discount1">
+                        <div class="description stylecoup">
+                            <h1>15% Off Your First Order</h1>
+                            <p>15% Off your first order with coupon code FIRST15</p>
+                        </div>
+                        <div class="code stylecoup">
+                            <p>Coupon Code:</p>
+                            <h3 id="copytext">FIRST15</h3>
+                            <button onclick="copy(event)" id="copyButton">Copy</button>
+                        </div>
+                        <div class="expiry stylecoup">
+                            <p>Expire by :</p>
+                            <h3>31/10/2023</h3>
+                        </div>
+                    </div>
+                    <div class="discounts" id="discount2">
+                        <div class="description stylecoup">
+                            <h1>We’ll pay your delivery fee</h1>
+                            <p>For a limited time only, spend $35+ online and we’ll pay your delivery fee!</p>
+                        </div>
+                        <div class="code stylecoup">
+                            <p>Coupon Code:</p>
+                            <h3 id="copytext">FEBFREE </h3>
+                            <button onclick="copy(event)" id="copyButton">Copy</button>
+                        </div>
+                        <div class="expiry stylecoup">
+                            <p>Expire by :</p>
+                            <h3>31/8/2023</h3>
+                        </div>
+                    </div>
+                    <div class="discounts" id="discount3">
+                        <div class="description stylecoup">
+                            <h1>15% Off Your First Order</h1>
+                            <p>15% Off your first order with coupon code FIRST15</p>
+                        </div>
+                        <div class="code stylecoup">
+                            <p>Coupon Code:</p>
+                            <h3 id="copytext">FIRST15</h3>
+                            <button onclick="copy(event)" id="copyButton">Copy</button>
+                        </div>
+                        <div class="expiry stylecoup">
+                            <p>Expire by :</p>
+                            <h3>30/9/2023</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-
+    <div id="successCopied">
+        <h3>Discount code copied Successfully &#10004</h3>
+        
+    </div>
 
 <!-- ---------------------------------------------------------------------------------------------------- -->
     <footer id="bottom">
@@ -65,6 +124,24 @@
         </div>
     </footer>
     <script src="js/utils.js"></script>
+
+    <script>
+        function copy(event){
+            // console.log(event.target.parentNode.querySelector("h3"));
+            var copytext = event.target.parentNode.querySelector("h3").innerHTML;
+
+            navigator.clipboard.writeText(copytext);
+
+            document.getElementById("successCopied").style.display="block";
+
+            const myTimeout = setTimeout(removeBox, 4000);
+
+            function removeBox()
+            {
+                document.getElementById("successCopied").style.display="none";   
+            }
+        }
+    </script>
 </body>
      
 </html>

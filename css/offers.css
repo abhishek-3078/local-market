@@ -1,0 +1,86 @@
+#heading{
+    
+    background-color: red;
+    display: inline-block;
+    font-size: xx-large;
+    padding: 7px;
+    border-radius: 5px;
+    color: white;
+    margin: 20px;
+}
+
+#coupons{
+    margin: 15px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.422);
+    border-radius: 10px;
+}
+
+#coupHeading{
+    color: white;
+    margin: 20px;
+    font-size: 2rem;
+    
+}
+
+h1{
+    color: red;
+}
+
+#discountFlex{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.discounts{
+    display: flex;
+    /* border: 2px solid white; */
+    width: 100vw;
+    margin: 10px;
+    background-color: white;
+    padding: 10px;
+    border-radius:10px ;
+}
+
+#copyButton{
+    background-color: green;
+    width: 70px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+#copyButton:hover{
+    background-color: rgb(27, 80, 27);
+    cursor: pointer;
+}
+
+.discounts h3{
+    color: red;
+}
+
+.description{
+    width: 40%;
+}
+
+.code{
+    width: 25%;
+}
+
+.expiry{
+    width: 25%;
+}
+
+#successCopied{
+    position : fixed;
+    background-color: rgb(19, 185, 19);
+    padding: 10px;
+    width: 250px;
+    height: 70px;
+    bottom: 30px;
+    left: 20px;
+    color: white;
+    display: none;
+    border-radius: 10px;
+}
