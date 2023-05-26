@@ -17,6 +17,7 @@ html{
     background-attachment:fixed ;
     
 }
+
 header h2{
         background: linear-gradient(to right, #f32170,
                         #ff6b08, #cf23cf, #eedd44);
@@ -255,7 +256,7 @@ header {
     margin-top: 20px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 2rem;
-    color: rgb(0, 208, 0);
+    color: black;
     background:rgba(203, 213, 214, 0.315);
     padding: 8px;
     border-radius: 10px;
@@ -316,13 +317,12 @@ form button:hover{
     border-radius: 20px;
     color: white;
     height: 40px;
-    
     text-align: center;
-    padding: 10px;
+    padding: 8px;
     text-decoration: none;
     transition: ease-in-out .2s;
     bottom: 0;
-    margin: 5px;
+    margin-left: 15px;
 }
 
 .cateogry:hover{

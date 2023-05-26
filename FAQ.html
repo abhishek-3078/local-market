@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/FAQ.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="css/utils.css">
+    <link rel="stylesheet" href="/local-market/css/responsive.css">
     <title>FAQ|</title>
 </head>
 
@@ -35,7 +36,84 @@
 
 
     <section>
-        this is FAQ page
+        <div id="heading">
+            Frequently Asked Questions
+        </div>
+
+        <div id="mainBox">
+            <div class="QuestionBox">
+                <h1 class="Questions">
+                    How are the online orders fulfilled?
+                    <img src="/local-market/img/downArrow.png" alt="&darr;" height="20px" onclick="showAnswer(event)">
+                </h1>
+                <p class="Answers">                 
+                    You can either choose to "Pick Up" your order at our store or have it “Delivered” to your address of choice.
+                </p>
+            </div>
+            <div class="QuestionBox">
+                <h1 class="Questions">
+                    How much is the Delivery Fee if my order doesn’t meet minimum?
+                    <img src="/local-market/img/downArrow.png" alt="&darr;" height="20px" onclick="showAnswer(event)">
+                </h1>
+                <p class="Answers">                 
+                    For the delivery orders below $75, a fee of $6.99 is assessed. No Fee for Pick Up ever. For your convenience, this information is displayed during the Checkout before placing an order.
+                </p>
+            </div>
+            <div class="QuestionBox">
+                <h1 class="Questions">
+                    If I ordered an item that I no longer need, do you provide a refund or exchange?
+                    <img src="/local-market/img/downArrow.png" alt="&darr;" height="20px" onclick="showAnswer(event)">
+                </h1>
+                <p class="Answers">                 
+                    All the requests for “Removing an Item” must be made before the order is Picked Up or is out for Delivery. After that, no changes can be made to the order.
+                </p>
+            </div>
+            <div class="QuestionBox">
+                <h1 class="Questions">
+                    Are there “restricted items” whose delivered quantity will be changed during order fulfillment without customer approval?
+                    <img src="/local-market/img/downArrow.png" alt="&darr;" height="20px" onclick="showAnswer(event)">
+                </h1>
+                <p class="Answers">                 
+                    As experienced in unusual times such Covid-19 certain items are classified in “restricted items” whose delivered quantity is controlled during order fulfillment e.g. Rice bags, aata bags. Any change to order due to this policy will be adjusted in order total and charge will be automatically adjusted.
+                </p>
+            </div>
+            <div class="QuestionBox">
+                <h1 class="Questions">
+                    Do you always deliver groceries to the door?
+                    <img src="/local-market/img/downArrow.png" alt="&darr;" height="20px" onclick="showAnswer(event)">
+                </h1>
+                <p class="Answers">                 
+                    We may not always be able to door deliver to apartment, due to access issues and parking restrictions. Our driver will call you or message while delivering in lobby of the apartments. Also you may receive an automatic text message before our driver arrives at your place.
+                </p>
+            </div>
+            <div class="QuestionBox">
+                <h1 class="Questions">
+                    What location does order gets fulfilled?
+                    <img src="/local-market/img/downArrow.png" alt="&darr;" height="20px" onclick="showAnswer(event)">
+                </h1>
+                <p class="Answers">                 
+                    Every Order is fulfilled at store chosen for delivery/pick up. All Store locations are following CDC guidelines for sanitization and cleanliness. All stores employees are required to wash hands as per CDC guidelines.
+                </p>
+            </div>
+            <div class="QuestionBox">
+                <h1 class="Questions">
+                    Delivered items are lesser than in original order placed to item restriction/availability, how will charges be adjusted?
+                    <img src="/local-market/img/downArrow.png" alt="&darr;" height="20px" onclick="showAnswer(event)">
+                </h1>
+                <p class="Answers">                 
+                    When order is placed we block charge (more than Order Total) on your provided credit card just like car rentals & other grocers do in ecommerce industry.When order is fulfilled then any order adjustments are accounted for and charge on credit card will match to adjusted order total.
+                </p>
+            </div>
+            <div class="QuestionBox">
+                <h1 class="Questions">
+                    How are orders processed in pipeline?
+                    <img src="/local-market/img/downArrow.png" alt="&darr;" height="20px" onclick="showAnswer(event)">
+                </h1>
+                <p class="Answers">                 
+                    Created Orders are processed in sequence they were created, however processing time for bigger orders can be more than small orders so delivery time can differ.
+                </p>
+            </div>
+        </div>
     </section>
 
 
@@ -56,6 +134,25 @@
     </footer>
 
     <script src="js/utils.js"></script>
+    <script>
+        function showAnswer(event)
+        {
+            const answer = event.target.parentNode.parentNode.querySelector(".Answers");
+            const image = event.target;
+            
+            console.log("hello",answer);
+            if(answer.style.display == "block")
+            {
+                answer.style.display = "none";
+                image.style.transform = "rotateZ(0deg)";
+                return;
+            }
+
+            answer.style.display = "block";
+            image.style.transform = "rotateZ(180deg)";
+
+        }
+    </script>
 </body>
      
 </html>
