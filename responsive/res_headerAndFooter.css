@@ -1,0 +1,16 @@
+/* footer */
+@media only screen and (max-width:340px){
+    #bottomUpSecondChild{
+        display: none;
+    }
+    #bottomDown p{
+        font-size: 0.9rem;
+    }
+}
+/* header */
+@media only screen and (max-width:350px){
+    #logo h2 a{
+        padding-right:7px;
+        font-size: 15px;
+    }
+}

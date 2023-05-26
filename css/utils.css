@@ -184,6 +184,20 @@ header {
     box-shadow: 1px 1px 10px lightseagreen;
     transform: scale(1.2);
 }
+
+.cartCount{
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    visibility: hidden;
+    color: white;
+    font-size:0.7rem;
+    text-align: center;
+    background-color: #e81111;
+}
 /* footer protion begins --------------------------------------------------------------- */
 #bottom {
     width: 100%;
@@ -256,7 +270,8 @@ header {
     margin-top: 20px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 2rem;
-    color: black;
+    color: inherit;
+    text-shadow: -1px -1px yellow;
     background:rgba(203, 213, 214, 0.315);
     padding: 8px;
     border-radius: 10px;
@@ -296,9 +311,9 @@ form button:hover{
 /* Categories */
 #categories{
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     width: 100%;
-    justify-content:center;
+    justify-content:space-around;
     background-color: rgba(128, 128, 128, 0.753);
     padding-top: 15px;
     padding-bottom: 15px;
@@ -314,15 +329,17 @@ form button:hover{
 .cateogry{
     position: relative;
     border: 2px solid white;
-    border-radius: 20px;
+    border-radius: 10px;
     color: white;
     height: 40px;
     text-align: center;
     padding: 8px;
     text-decoration: none;
-    transition: ease-in-out .2s;
+    transition: ease-in-out .4s;
     bottom: 0;
-    margin-left: 15px;
+    margin: 5px;
+    width:120px;
+/*     margin: 5px auto; */
 }
 
 .cateogry:hover{
@@ -396,10 +413,6 @@ form button:hover{
     border-radius: 5px;
 }
 
-.productsList ul img:hover{
-    /* box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.842); */
-    border: 1px solid white;
-}
 
 .productsList ul h1{
     text-align: center;
@@ -409,6 +422,7 @@ form button:hover{
 
 .productsList ul li p{
     float: left;
+    text-align: center;
     font-size: 0.9rem;
     margin-left: 10px;
     margin-top: 10px;
@@ -435,10 +449,11 @@ form button:hover{
 
 .cartBtn:hover{
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.772);
+    cursor: pointer;
 }
 
 .cartBtn:active{
-    background-color: rgb(213, 20, 20);
+    background-color: rgb(148, 2, 2);
     border: 1px solid black;
     box-shadow: none;
 }
@@ -460,13 +475,11 @@ form button:hover{
     background-color: rgb(14, 185, 14);
 }
 
-.productsList li:hover{
+/* .productsList li:hover{
     transform: scale(1.2);
-}
+} */
 
-ul a{
-    text-decoration: none;
-}
+
 
 #showAllButton{
     color: white;
@@ -518,3 +531,21 @@ ul a{
     border-radius: 5px;
     padding: 10px;
 }
+
+
+
+ 
+.confirmPopup{
+    width: 200px;
+    height: 50px;
+    position: fixed;
+    right:0;
+    top:63px;
+    text-align: center;
+    line-height: 50px;
+    
+    color: white;
+    background-color: #1b8c17;
+    z-index: 30;
+}
+
