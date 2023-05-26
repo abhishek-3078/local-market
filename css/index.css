@@ -220,6 +220,27 @@ section #categories{
     transition:all 0.5s ease-in;
 }
 
+
+.cateogry{
+    position: relative;
+    border: 2px solid white;
+    border-radius: 20px;
+    color: white;
+    height: 40px;
+    
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    transition: ease-in-out .4s;
+    bottom: 0;
+    margin: 5px auto;
+}
+
+.cateogry:hover{
+    background: white;
+    color: rgba(128, 128, 128, 0.753);
+}
+
 @keyframes rotateBorder{
     0%{
         border:2px solid red 2px solid blue;
