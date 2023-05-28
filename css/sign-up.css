@@ -1,0 +1,122 @@
+
+body{
+    /* background-color:rgb(217, 16, 16); */
+    text-align:center;
+    font-family: sans-serif;
+    /* background: rgb(2,0,36); */
+    /* background: url('https://images.unsplash.com/photo-1542838132-92c53300491e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80https://images.unsplash.com/photo-1610296669228-602fa827fc1f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1075&q=80') no-repeat  ; */
+    /* background-size: cover; */
+
+}
+body::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url('https://images.unsplash.com/photo-1542838132-92c53300491e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80https://images.unsplash.com/photo-1610296669228-602fa827fc1f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1075&q=80') no-repeat  ;
+    background-size: cover;
+    opacity: 0.5;
+    top:0;
+    left: 0;
+    z-index: -1;
+    
+
+}
+.box{
+    font-size: larger;
+}
+h1{ 
+    text-align: center;
+    padding:10px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif     ;
+    margin: 5px;
+}
+
+.out{
+    background: rgb(255,235,0);
+    background: radial-gradient(circle, rgba(255,235,0,1) 0%, rgba(133,237,138,1) 100%);
+    background-position-y: center;
+    width: 500px;
+    margin-top:0px;
+    margin-left: 500px;
+    /* height: 1000px; */
+    height: 100%;
+    padding:2px;
+    border-radius: 5px;
+}
+
+
+input{
+ color:rgb(22, 5, 59);height:40px;
+    width:85%;
+    border:2px solid rgb(0, 0, 0) ;
+    border-radius: 5px;
+}
+
+button{
+    background-color: rgb(51, 211, 54);
+    width: 150px;
+    margin-top: 10px;
+    border-radius: 2px;
+    font-size: medium;
+    color: rgb(0, 0, 0);
+    height: 38px;
+}
+button:hover{
+    background-color: aqua;
+}
+input[type='submit']{
+    background-color: rgb(253, 177, 177);
+    width: 150px;
+    margin-top: 10px;
+    border-radius: 2px;
+    font-size: medium;
+    color: rgb(0, 0, 0);
+}
+input[type='submit']:hover{
+    background-color:rgb(171, 255, 155);
+    color:white;
+    cursor: pointer;
+}
+#hi{
+    color:blue;
+    font-size: larger;
+}
+h2{ 
+    color:yellow;
+    animation-name: dushyant;
+    animation-name: batra;
+    animation-duration: 0.2s;
+    animation-iteration-count: infinite;
+}
+@keyframes dushyant{
+ from{
+     color:rgb(0, 76, 255);
+ }
+ to{
+    color:red;
+ }
+}
+@keyframes batra{
+    from{
+       color:red;
+    }
+    to{
+        color:rgb(0, 76, 255);
+    }
+   
+}
+button{
+    background-color: rgb(8, 255, 70);
+    color:black;
+}
+button:hover{
+    background-color: rgb(255, 60, 60);
+}
+.he{
+    background-color: rgb(245, 225, 44);
+    width:100%;
+    margin: auto;
+    border: 3px solid black ;
+    border-radius: 5px;
+}
