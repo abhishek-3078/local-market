@@ -83,6 +83,7 @@
       <!-- template for cart item -->
       <script id="cartItemTemplate" type="text/html">
         <div class="item">
+          <div class="item-main">
           <div class="img">
             <img src="{url}" alt="{name}" />
           </div>
@@ -92,6 +93,7 @@
             <div class="price">{price}</div>
             <div class="totalAmt"><span style="color:rgba(204, 208, 209, 0.497)">Total :</span><span class="qty">{qty}</span> X &#x20B9;<span id="price">{amount}</span> = &#x20B9;<span class="total">{total}</span></div>
           </div>
+        </div>
           <div class="item-count">
             <button onclick="decrement(event)">-</button>
             <input type="text" name="count" value="{qty}">

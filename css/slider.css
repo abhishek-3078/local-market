@@ -29,6 +29,7 @@
 .slider{
     height: 400px;
     width: 98%;
+    max-width:1400px;
     border: 3px solid black;
     box-shadow: 0 0 5px black;
     display: flex;
@@ -258,6 +259,8 @@ body {
     justify-content: center;
     align-items: center;
     background: #000;
+    z-index: 3;
+    position: relative;
   }
   .wave {
     width: 5px;
