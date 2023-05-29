@@ -5,43 +5,101 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-Up</title>
-    <link rel="stylesheet" href="css/sign-up.css">  
+    
+    <link rel="stylesheet" href="css/utils.css">
+    <link rel="stylesheet" href="css/sign-up.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="icon" sizes="1100x200"href="img/cartLogo.png">
 </head>
 <body>
+    <header>
+
+        <div class="loading">
+            <div class="center">
+                <div class="wave"></div>
+                <div class="wave"></div>
+                <div class="wave"></div>
+                <div class="wave"></div>
+                <div class="wave"></div>
+                <div class="wave"></div>
+                <div class="wave"></div>
+                <div class="wave"></div>
+                <div class="wave"></div>
+                <div class="wave"></div>
+            </div>
+
+
+        </div>
+        <div id="navbar">
+            <div class="burger-menu">
+                <div class="burger"></div>
+                <div class="burger"></div>
+                <div class="burger"></div>
+            </div>
+            <div class="nav" id="navbarLeft">
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="Offers.html">Offers</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <!-- <li class="nav-resp"><a href="/Signup.html">Sign Up/Log In</a></li> -->
+            </div>
+            <div class="nav" id="logo">
+                <h2> <a href="index.html">OurLocalMarket</a></h2>
+            </div>
+            <div class="nav" id="navbarRight">
+                <li><a href="log-in.html" id="login"><button>Login</button></a></li>
+                <!-- <li><a href="sign-up.html"><button>SignUp</button></a></li> -->
+                <li><a href="/Cart.html"><img src="img/logo/cart.png" alt="cart" width="50px"></a></li>
+            </div>
+        </div>
+    </header>
 <div class="out">
     <div class="he"> <h1><t>Sign-Up</t></h1></div>
     <h3 id="hi">Welcome to</h3>
-    <h2 >OUR LOCAL MARKET</h2>
-    <h3>Kindly Sign-Up if you do not have an account<h3>
+    <img src="img/FullLogo.png" alt="" , height="80">
+    <!-- <h3>Kindly Sign-Up if you do not have an account<h3> -->
     
     <form action="backend.php">
-        <br>
-        <div class="box">
-         <b>Name:</b><br><input type="text" name="myname" placeholder="Enter name">
-        </div>
-        <br>
-        <div class="box">
-            <b>E-mail:</b><br><input type="email" name="myemail" placeholder="Enter E-mail" >
-        </div>
         
-        <br>
-        <div class="box">
-            <b>Phone-No.:</b><br><input type="number" name="mynumber" class="f" placeholder="Enter Phone-No.">
+        <div id="entryBox">
+            <div class="box">
+             <h4>Name</h4><input type="text" name="myname" placeholder="Enter name">
+            </div>
+            
+            <div class="box">
+                <h4>E-mail</h4><input type="email" name="myemail" placeholder="Enter E-mail" >
+            </div>
+
+            
+            <div class="box">
+                <h4>Phone-No.</h4><input type="tel" name="mynumber" class="f" placeholder="Enter Phone-No.">
+            </div>
+
+            
+            <div class="box">
+                <h4>Password</h4><input type="password" name="mypassword" placeholder="Enter Password">
+            </div>
+
+            
+            <button id="signIn">Sign in</button>
         </div>
-        
-        <br>
-        <div class="box">
-            <b>Password:</b><br><input type="password" name="mypassword" placeholder="Enter Password">
-        </div>
-        
-        <br>
-        <input type="submit" name="submit now">
-        
     </form>
-    <button>  <a href="log-in.html" target="_blank" >
-       Log-In
-    </a></button>
-  
+    <!-- <a href="log-in.html" target="_blank" ><button>Log-In</button></a> -->
+    <p id="login">Already have an Account? Consider <a href="log-in.html" id="loginLink">logging in </a></p>
+    
 </div>
+<footer id="bottom">
+    <div>
+        <ul id="bottomUp">
+            <li> <a href="Terms.html">Terms</a> </li>
+            <li id="bottomUpSecondChild"> <a href="Privacy.html">Privacy Policy</a> </li>
+            <li> <a href="FAQ.html">FAQ</a> </li>
+            <li> <a href="Contact.html">Contact</a> </li>
+        </ul>
+    </div>
+    <div id="bottomDown">
+        <p>OurLocalMarket &copy; is <span style="color:red"> self</span> sponsored</p>
+    </div>
+</footer>
 </body>
 </html>

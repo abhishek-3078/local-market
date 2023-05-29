@@ -4,26 +4,24 @@ body{
     text-align:center;
     font-family: sans-serif;
     /* background: rgb(2,0,36); */
-    /* background: url('https://images.unsplash.com/photo-1542838132-92c53300491e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80https://images.unsplash.com/photo-1610296669228-602fa827fc1f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1075&q=80') no-repeat  ; */
-    /* background-size: cover; */
-
-}
-body::after{
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 100%;
     background: url('https://images.unsplash.com/photo-1542838132-92c53300491e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80https://images.unsplash.com/photo-1610296669228-602fa827fc1f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1075&q=80') no-repeat  ;
     background-size: cover;
-    opacity: 0.5;
-    top:0;
-    left: 0;
-    z-index: -1;
-    
 
 }
+
+
 .box{
     font-size: larger;
+    /* border: 2px solid red; */
+    width: auto;
+    margin-top: 15px;
+    margin-left: 10px;
+    color: white;
+}
+
+.box h4{
+    text-align: left;
+    margin-left: 5px;
 }
 h1{ 
     text-align: center;
@@ -33,63 +31,71 @@ h1{
 }
 
 .out{
-    background: rgb(255,235,0);
-    background: radial-gradient(circle, rgba(255,235,0,1) 0%, rgba(133,237,138,1) 100%);
+    /* background: rgb(255,235,0); */
+    background: linear-gradient(0deg, rgba(2,0,36,1) 23%, rgba(82,7,141,1) 88%);;
     background-position-y: center;
     width: 500px;
-    margin-top:0px;
-    margin-left: 500px;
-    /* height: 1000px; */
+    display: block;
+    margin: auto;
+    margin-top:20px;
+    margin-bottom:20px;
     height: 100%;
-    padding:2px;
+    padding: 15px;
     border-radius: 5px;
 }
 
 
 input{
- color:rgb(22, 5, 59);height:40px;
-    width:85%;
-    border:2px solid rgb(0, 0, 0) ;
-    border-radius: 5px;
+    color:white;
+    background: transparent;
+    height:40px;
+    width:400px;
+    border: none;
+    border-bottom:2px solid white ;
+    padding: 5px;
+    font-size: 1.1rem;
 }
 
-button{
-    background-color: rgb(51, 211, 54);
-    width: 150px;
-    margin-top: 10px;
-    border-radius: 2px;
-    font-size: medium;
-    color: rgb(0, 0, 0);
-    height: 38px;
+input:focus{
+    outline: none;    
 }
-button:hover{
-    background-color: aqua;
+
+#login{
+    color: white;
+    margin-bottom: 10px;
 }
-input[type='submit']{
-    background-color: rgb(253, 177, 177);
-    width: 150px;
-    margin-top: 10px;
-    border-radius: 2px;
-    font-size: medium;
-    color: rgb(0, 0, 0);
+
+#loginLink{
+    /* text-decoration: none; */
+    /* text-decoration: underline; */
+    color: white;
 }
-input[type='submit']:hover{
-    background-color:rgb(171, 255, 155);
-    color:white;
-    cursor: pointer;
-}
+
 #hi{
-    color:blue;
+    color:white;
     font-size: larger;
 }
-h2{ 
-    color:yellow;
+/* h2{ 
+    margin-top: 20px;
+    color: white;
+    background: linear-gradient(to right, #f32170, #ff6b08, #cf23cf, #eedd44);
+    -webkit-text-fill-color: transparent;
+    background-clip: border-box;
+    -webkit-background-clip: text;
     animation-name: dushyant;
     animation-name: batra;
-    animation-duration: 0.2s;
+    animation-duration: .2s;
     animation-iteration-count: infinite;
+} */
+
+.out img{
+    margin-top: 10px;   
 }
-@keyframes dushyant{
+
+h3{
+    margin-top: 10px;
+}
+/* @keyframes dushyant{
  from{
      color:rgb(0, 76, 255);
  }
@@ -105,18 +111,30 @@ h2{
         color:rgb(0, 76, 255);
     }
    
+} */
+#signIn{
+    width: 150px;
+    margin-top: 20px;
+    font-size: medium;
+    transition: ease-in-out .2s;
+    padding: 10px;
+    border: none;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 3px;
+    color: white;
 }
-button{
-    background-color: rgb(8, 255, 70);
-    color:black;
-}
-button:hover{
-    background-color: rgb(255, 60, 60);
+
+#signIn:hover{
+    cursor: pointer;
+    background-color: aliceblue;
+    color: black;
 }
 .he{
-    background-color: rgb(245, 225, 44);
+    background-color: rgb(2, 0, 36);
+    color: white;
     width:100%;
     margin: auto;
-    border: 3px solid black ;
-    border-radius: 5px;
+    border: 2px solid black ;
+    border-radius: 7px;
 }
