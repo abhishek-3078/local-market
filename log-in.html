@@ -1,62 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Log-in</title>
+    <link rel="stylesheet" href="/css/utils.css">
     <link rel="stylesheet" href="css/log-in.css">
+    <link rel="icon" sizes="1100x200" href="img/cartLogo.png">
 </head>
+
 <body>
+    <header>
+
+        <div class="loading">
+            <div class="center">
+                <div class="wave"></div>
+                <div class="wave"></div>
+                <div class="wave"></div>
+                <div class="wave"></div>
+                <div class="wave"></div>
+                <div class="wave"></div>
+                <div class="wave"></div>
+                <div class="wave"></div>
+                <div class="wave"></div>
+                <div class="wave"></div>
+            </div>
+
+
+        </div>
+        <div id="navbar">
+            <div class="burger-menu">
+                <div class="burger"></div>
+                <div class="burger"></div>
+                <div class="burger"></div>
+            </div>
+            <div class="nav" id="navbarLeft">
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="Offers.html">Offers</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </div>
+            <div class="nav" id="logo">
+                <h2> <a href="index.html">OurLocalMarket</a></h2>
+            </div>
+            <div class="nav" id="navbarRight">
+                <li><a href="log-in.html" id="login"><button>Login</button></a></li>
+                <li><a href="sign-up.html"><button>SignUp</button></a></li>
+                <li><a href="/Cart.html"><img src="img/logo/cart.png" alt="cart" width="50px"></a></li>
+            </div>
+        </div>
+    </header>
 
     <div class="out">
         <div class="rox">
-        <h1  >Log-In </h1>
+            <h1>Log-In </h1>
         </div>
         <div class="box">
-        <h3 >Welcome to</h3>
+            <h3>Welcome to</h3>
         </div>
         <div class="box">
-        <h2 >OUR LOCAL MARKET</h2>
-    </div>
-    <div class="box" class="text">
-        <div class="container">Kindly Log-In if you already have an account.</div>
-    </div>
-    <div class="box">
-        <br>
+            <h2>OUR LOCAL MARKET</h2>
         </div>
-            <form action="backend.php" >
-    <div class="box">
+        <div class="box" class="text">
+            <div class="container">Kindly Log-In if you already have an account.</div>
+        </div>
+        <div class="box">
+            <br>
+        </div>
+
+        <form action="backend.php">
+            <div class="box">
                 <div class="container">
-        Name:<input type="text" name="myname"  class="container">
+                    Name:<input type="text" name="myname" class="container">
+                </div>
+
+            </div>
+            <div class="box"> <br></div>
+            <div class="box">
+                <div class="container" class="text">
+                    Password:<input type="password" name="mypassword" class="container">
+                </div>
+            </div>
+            <div class="box">
+                <br>
+            </div>
+            <div class="box">
+                <div class="container">
+                    <input type="submit" name="submitnow" class="button">
+                </div>
+
+                <div class="box">
+                    <br>
+                </div>
+                <div class="box">
+                    <div class="container">
+                        <button class="button">
+                            <a href="sign-up.html">
+                                Sign-Up
+                            </a>
+                    </div>
+                </div>
+        </form>
     </div>
-   
-   </div>
-    <div class="box"> <br></div>
-    <div class="box">
-    <div class="container" class="text">
-        Password:<input type="password" name="mypassword" class="container">
-    </div>
-    </div>
-    <div class="box">
-    <br>
-    </div>
-    <div class="box">
-    <div class="container">
-    <input type="submit" name="submitnow" class="button" ></div>
-   
-    <div class="box">
-    <br>
-    </div>
-    <div class="box">
-        <div class="container">
-        <button class="button">
-        <a href="sign-up.html">
-            Sign-Up
-        </a>
-    </div>
-    </div>
-    </form>
-    </div>
+
+    <footer id="bottom">
+        <div>
+            <ul id="bottomUp">
+                <li> <a href="Terms.html">Terms</a> </li>
+                <li id="bottomUpSecondChild"> <a href="Privacy.html">Privacy Policy</a> </li>
+                <li> <a href="FAQ.html">FAQ</a> </li>
+                <li> <a href="Contact.html">Contact</a> </li>
+            </ul>
+        </div>
+        <div id="bottomDown">
+            <p>OurLocalMarket &copy; is <span style="color:red"> self</span> sponsored</p>
+        </div>
+    </footer>
+
 </body>
+
 </html>
