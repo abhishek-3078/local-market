@@ -29,6 +29,15 @@
     width: 80%;
 }
 .item{
+
+
+     width: 600px; 
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+ 
+}
+.item-main{
     background-color: black;
     border: 3px solid black;
     padding: 10px;
@@ -36,7 +45,7 @@
     justify-content: space-around;
     align-items: center;
     flex-grow: 1;
-    width: 600px;
+    width: 100%;
     display: flex;
     justify-content: left;
     position: relative;
@@ -53,17 +62,22 @@
     width: 150px;
 
 }
+
 .item img{
     display: block;
     margin: auto;
     height: 100px;
+    max-width: 150px;
     
     
 }
 .item-count  {
         display: flex;
-        position: absolute;
-        right:10px
+        align-self: flex-end;
+        position: relative;
+        right: 10px;
+        /* position: absolute; */
+        /* right:10px */
 }
 .item-count input{
     width: 30px;

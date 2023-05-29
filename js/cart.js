@@ -51,14 +51,16 @@ for(let i of Object.entries(localStorage)){
     let y=itemCategory
     const name=i[0]
     const data=JSON.parse(i[1])
-    const total=Number.parseInt(data.price.slice(1))*Number(data.qty)
+    const total=Number.parseInt(data.price.slice(1).replace(",",""))*Number(data.qty)
 // finding the category of item
-const customId=data.category.replaceAll(" ","");
+const customId=data.category.replace(/[\s]/g,"");
+console.log(data.category)
     if(!categories.find((elem)=>elem==data.category) ){
         y=y.replaceAll("{category}",data.category)
+        console.log(customId)
         y=y.replace("{id}",customId)
         categories.push(data.category)
-        console.log(data.category)
+        // console.log(data.category,y)
         cartDivision.insertAdjacentHTML("beforeend",y)
     }
     const box=document.querySelector(`#${customId}`)
