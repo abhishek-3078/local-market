@@ -260,6 +260,7 @@ body {
     align-items: center;
     background: #000;
     z-index: 3;
+    position: relative;
   }
   .wave {
     width: 5px;

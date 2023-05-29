@@ -1,122 +1,73 @@
 *{
-     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif     ;
-  
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif     ;
+ 
 }
-  
+ 
 h3{
-    color: blue;
+   color: blue;
 }
-.root{
-    display: flex;
-    width:90%;
-    max-width: 1000px;
-    height: 600px;
-    margin: auto;
-    box-shadow:0px 0px 5px black;
-}
-.box1{
-    text-align: center;
-    padding: 100px 20px 20px 20px;
-    position: relative;
-    overflow: hidden;
-    font-size: 1.4rem;
-    display: flex;
-    align-items: center;
-    color: white;
-    
-}
-/* .box1::after{
-
-    
-    content: "";
-    height: 500px;
-    width: 500px;
-    background-color: rgb(146, 16, 197);
-    position: absolute;
-    top: -223px;
-    left: -225px;
-    border-radius: 250px;
-    z-index: -1;
-    
-
-} */
-
-.box1::before{
-    content: "";
-    position: absolute;
-    top: 0px;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background:linear-gradient(45deg red ,blue);
-    background: rgb(58,26,111);
-    background: linear-gradient(3deg, rgba(58,26,111,1) 42%, rgba(32,4,96,1) 67%); 
-    z-index: -1;
-  }
-     
-
-
 .box{
-    display: flex;
-    justify-content: center;
-    width: 500px;
-    background-color: rgb(252, 234, 98);
-   
+   display: flex;
+   justify-content: center;
+   width: 500px;
+   background-color: rgb(252, 234, 98);
+
+   font-size: larger;
 }
 .out{
-    margin:0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column;
-    height:737px;
-    /* background: url('https://images.pexels.com/photos/1435737/pexels-photo-1435737.jpeg') no-repeat  ; */
-    background-size:100%;
-   
+   margin:0px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-flow: column;
+   height:737px;
+   background: url('https://images.pexels.com/photos/1435737/pexels-photo-1435737.jpeg') no-repeat  ;
+   background-size:100%;
+  
 }
 
 h2{ 
-    color:yellow;
-    animation-name: dushyant;
-    animation-name: batra;
-    animation-duration: 0.2s;
-    animation-iteration-count: infinite;
+   color:yellow;
+   animation-name: dushyant;
+   animation-name: batra;
+   animation-duration: 0.2s;
+   animation-iteration-count: infinite;
 }
 @keyframes dushyant{
- from{
-     color:rgb(0, 76, 255);
- }
- to{
-    color:red;
- }
+from{
+    color:rgb(0, 76, 255);
+}
+to{
+   color:red;
+}
 }
 @keyframes batra{
-    from{
-       color:red;
-    }
-    to{
-        color:rgb(0, 76, 255);
-    }
-   
+   from{
+      color:red;
+   }
+   to{
+       color:rgb(0, 76, 255);
+   }
+  
 }
 
 .rox{
-    background: rgb(131,58,180);
-    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
-    display: flex;
-    justify-content: center;
-    width: 500px;
-    
+   background: rgb(131,58,180);
+   background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+   display: flex;
+   justify-content: center;
+   width: 500px;
+   
 }
 .button{
-    background-color: rgb(255, 52, 52);
-    width: 250px;
-    font-weight: bold;
-    font-size: medium;
-    height: 45px;
-    text-decoration: none;
+   background-color: rgb(255, 52, 52);
+   width: 250px;
+   font-weight: bold;
+   font-size: medium;
+   height: 45px;
+   text-decoration: none;
 }
 .button:hover{
-    background-color: rgb(241, 149, 78);
-    color: beige;
+   background-color: rgb(241, 149, 78);
+   color: beige;
 }
