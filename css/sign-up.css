@@ -51,6 +51,7 @@ input{
     background: transparent;
     height:40px;
     width:400px;
+
     border: none;
     border-bottom:2px solid white ;
     padding: 5px;
@@ -165,10 +166,16 @@ h3{
     .signupForm{
         width: 500px;
         overflow:visible;
-        /* max-width: 80%; */
+        max-width: 90%;
     }
     .box1{
         display: none;
+    }
+    input{
+        width: 100%;
+    }
+    .out{
+        width: 100%;
     }
     
 }

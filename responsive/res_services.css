@@ -1,3 +1,9 @@
+#categories::-webkit-scrollbar{
+    width: 0px;
+    height: 0px;
+}
+
+
 @media only screen and (max-width:640px){
     .productsList ul li{
         width:132px;
@@ -55,8 +61,9 @@
     .productsList li:nth-child(2n){
         display: none;
     }
+    
 }
-@media only screen and (max-width:450px){
+@media only screen and (max-width:600px){
     #sub_banner{
         position: relative;
         top:40px;
@@ -64,5 +71,11 @@
     #categories{
         padding-top:7px;
         padding-bottom: 0px;
+        justify-content: left;
+        /* background-color: #fff; */
+    }
+    #categories::-webkit-scrollbar{
+        width: 0px;
+        height: 6px;
     }
 }
