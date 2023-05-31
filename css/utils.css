@@ -4,7 +4,7 @@
     padding: 0px;
     box-sizing: border-box;
     /* font-family: sans-serif; */
-    font-family: Poppins;
+    font-family: "Poppins";
 }
 
 
@@ -200,6 +200,65 @@ header {
     background-color: #e81111;
     z-index:0
 }
+
+/*Profile Box----------------------------------------------------------------------------*/
+
+#profile{
+    /* border: 2px solid red; */
+    display: none;
+    width: auto;
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    position: fixed;
+    z-index: 5;
+    top: 60px;
+    right: 10px;
+    
+}
+#profileHeading{
+    display: flex;
+}
+
+#profileHeading img{
+    border-radius: 35px;
+}
+
+#profileName{
+    margin-left: 10px;
+}
+
+#profileName h3 a{
+    text-decoration: none;
+    color: black;
+}
+
+#profileName h3 a:hover{
+    text-decoration: underline;
+}
+
+#profileBottom a{
+    text-decoration: none;
+    color: black;
+}
+
+.profileOptions{
+    display: flex;
+    padding: 8px;
+    transition: ease-in-out .2s;
+    border-radius: 5px;
+    margin-top: 8px;
+}
+
+.profileOptions p{
+    margin-left: 15px;
+}
+
+.profileOptions:hover{
+    background-color: rgba(0, 0, 0, 0.342);
+}
+/*---------------------------------------------------------------------------------------*/
+
 /* footer protion begins --------------------------------------------------------------- */
 #bottom {
     width: 100%;
@@ -299,14 +358,6 @@ form{
     margin-top: 25px;
 }
 
-/* form button{
-    background-color:rgb(0, 195, 0) ;
-    padding: 3px;
-    border-radius: 10px;
-    width: 50px;
-    height: 40px;
-} */
-
 form button:hover{
     border: 2px solid white;
 }
@@ -390,7 +441,9 @@ form button:hover{
     display: flex;
     list-style: none;
     flex-wrap: wrap;
-    justify-content: center;
+    /* justify-content: center; */
+    padding-left: 20px;
+    padding-bottom: 20px;
 }
 
 .productsList ul li{
@@ -399,9 +452,13 @@ form button:hover{
     background-color: black;
     height: 220px;
     width: 220px;
-    margin: 20px;
-    border-radius: 10px ;
+    margin: 8px;
+    border-radius: 5px ;
     transition: ease-in-out .2s;
+}
+
+.productsList ul li:hover{
+    transform: translateY(-10px);
 }
 
 .productsList ul li a{
@@ -461,7 +518,7 @@ form button:hover{
     box-shadow: none;
 }
 
-.showAllButton{
+/* .showAllButton{
     border-radius: 10px ;
     height: 200px;
     border: 1px solid grey;
@@ -472,7 +529,8 @@ form button:hover{
     font-size: 1.8rem;
     transition: ease-in-out ;
     border: 1px solid black;
-}
+    transform: scale(0.85);
+} */
 
 .showAllButton:hover{
     background-color: rgb(14, 185, 14);
@@ -490,10 +548,15 @@ form button:hover{
     font-size: 2rem;
     text-align: center;
     padding-top: 29%;
+    transform: scale(0.75);
 }
 #showAllButton:hover{
-    transform: scale(0.9);
+    transform: scale(0.85);
     background-color: green;
+}
+
+#listlastchild{
+    text-decoration: none;
 }
 
 /* Product list ends ----------------------------------------------------------------------------- */
