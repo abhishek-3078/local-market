@@ -1,18 +1,23 @@
+const Products=document.querySelectorAll(".allProducts")
+
+
 queries={
     Groceries:["Apple","Tomato","Mango","Dhaniya"],
     Electrical:["Fans","Refrigerator"]
 }
 
+
 const searchBox=document.querySelector("#banner form input")
-document.querySelector("#banner form").onsubmit=(e)=>{
-    e.preventDefault()
-    const query=searchBox.value
-    searchBox.value=""
+
+searchBox.addEventListener("keyup",(e)=>{
+    console.log(searchBox.value)
     for(let i in queries){
-        i.forEach(e=>{
-            if(e==query){
-                document.getElementById("product2").scrollIntoView();
+        queries[i].forEach(e=>{
+            if(e.toLowerCase().startsWith(searchBox.value.toLowerCase())){
+                console.log(e)
             }
         })
-    }
-}
+        }
+    })
+    
+
