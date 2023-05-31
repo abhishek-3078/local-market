@@ -5,7 +5,7 @@ const box=document.querySelector('.category')
 const categories=document.querySelector('#categories')
 const categoryHead=document.querySelector('#categoryHeading')
 const respcategoryHead=document.querySelector('.resp-category')
-
+const slider=document.querySelector(".slider")
 let counter=1
 let boxNo=document.querySelectorAll('.category').length
 
@@ -119,3 +119,9 @@ document.addEventListener("scroll",(e)=>{
     scroll()
 })
 
+
+
+
+document.querySelector(".slidemenu").addEventListener("click",()=>{
+    window.scrollTo(0,slider.offsetHeight)
+})
