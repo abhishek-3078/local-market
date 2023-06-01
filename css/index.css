@@ -296,3 +296,37 @@ section #categories{
         display: none;
     }
 }
+@media only screen and (max-width:699px){
+    #searchInIndex{
+        display: flex;
+        position: absolute;
+        top:350px;
+        right:auto;
+    }
+}
+@media only screen and (max-width:600px){
+    #searchInIndex{
+        display: flex;
+        position: absolute;
+        top:315px;
+        right:auto;
+    }
+}
+@media only screen and (max-width:450px){
+    #searchInIndex{
+        display: flex;
+        position: absolute;
+        top:300px;
+        right:auto;
+    }
+}
+
+@media only screen and (max-width:400px){
+    #searchInIndex{
+        display: flex;
+        position: absolute;
+        top:264px;
+        right:auto;
+    }
+}
+

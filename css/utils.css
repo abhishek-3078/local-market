@@ -362,7 +362,6 @@ form{
 }
 
 #showOption{
-    /* border:2px solid red; */
     position: absolute;
     width:100%;
 }
@@ -372,7 +371,7 @@ form{
     position:relative;
     z-index: 10;
     border-bottom:1px solid black;
-    width:21.7%;
+    width:274px;
     text-align: left;
     padding:7px;
     cursor: pointer;
@@ -642,4 +641,8 @@ form button:hover{
     background-color: #1b8c17;
     z-index: 30;
 }
-
+@media only screen and (max-width:630px){
+    .options{
+        width:234px;
+    }
+}
