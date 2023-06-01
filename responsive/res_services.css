@@ -39,7 +39,7 @@
         display: none;
     }
 }
-@media only screen and (max-width:385px){
+@media only screen and (max-width:400px){
     .productsList ul li{
         width: 49%;
         height:211px;
