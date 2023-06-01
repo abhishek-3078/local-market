@@ -56,6 +56,8 @@
 
 
 
+
+
 /* banner */
 @media only screen and (max-width:450px){
     #sub_banner{
@@ -71,5 +73,18 @@
     }
 }
 
+.showAllMobile{
+    background-color: rgb(0, 195, 0);
+    text-align: center;
+    width: 80px;
+    color: white;
+    height: 55px;
+    float: right;
+    margin-top: 24px;
+    margin-right: 2px;
+    padding-top: 13px;
+    border-radius: 5px;
+    display: none;
+}
 
 
