@@ -18,10 +18,13 @@ if(localStorage.length>0){
     document.querySelector(".cartCount").style.visibility="visible"
 }
 
+
 document.querySelector("#profilePhoto").onclick=()=>{
+    // alert("hello again")
     let a = document.querySelector("#profile");
-    console.log(a);
-    if(a.style.display == "none"){
+    let b=getComputedStyle(a)
+    // console.log(a,b.display);
+    if(b.display == "none"){
         a.style.display ="inline-block";
     }
     else{

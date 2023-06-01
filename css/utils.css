@@ -204,7 +204,9 @@ header {
 }
 
 /*Profile Box----------------------------------------------------------------------------*/
-
+#profilePhoto{
+    display: none;
+}
 #profile{
     /* border: 2px solid red; */
     display: none;
