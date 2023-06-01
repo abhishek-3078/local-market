@@ -17,3 +17,20 @@ document.querySelector(".burger-menu").onclick=()=>{
 if(localStorage.length>0){
     document.querySelector(".cartCount").style.visibility="visible"
 }
+
+document.querySelector("#profilePhoto").onclick=()=>{
+    let a = document.querySelector("#profile");
+    console.log(a);
+    if(a.style.display == "none"){
+        a.style.display ="inline-block";
+    }
+    else{
+        a.style.display = "none";
+    }
+}
+
+// document.querySelector("body").onclick=()=>{
+//     if(document.querySelector("#profile").style.display == "inline-block"){
+//         document.querySelector("#profile").style.display = "none";
+//     }
+// }
