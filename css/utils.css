@@ -156,8 +156,10 @@ header {
 #navbarRight img{
     /* border: 2px solid red; */
     padding: 5px;
-    border-radius: 27px;
+    border-radius: 25px;
     transition: ease-in-out .1s;
+    height: 50px;
+    width: 50px;
 }
 
 /* header part   (hover)------------------------------------------------------- */

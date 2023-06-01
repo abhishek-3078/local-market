@@ -21,3 +21,21 @@ searchBox.addEventListener("keyup",(e)=>{
     })
     
 
+document.querySelector("#banner form").onsubmit=(e)=>{
+    e.preventDefault()
+    const query=searchBox.value
+    searchBox.value=""
+    for(let i in queries){
+        queries[i].forEach(e=>{
+
+            if(e==query){
+                Products.forEach(p=>{
+                    
+                    if(p.querySelector("h1").innerText.toLowerCase()==query.toLowerCase()){
+                        p.querySelector("h1").scrollIntoView();
+                    }
+                })
+            }
+        })
+    }
+}
