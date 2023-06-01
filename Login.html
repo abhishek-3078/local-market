@@ -13,6 +13,25 @@
     <link rel="icon" sizes="1100x200"href="img/cartLogo.png">
 </head>
 <body>
+      <!-- Profile Dialog Box ------------------------------------------------------------------------------------>
+      <div id="profile">
+        <div id="profileHeading">
+            <img src="/img/profile/default.jpg" alt="" height="70px" width="70px">
+            <div id="profileName">
+                <h3><a href="profile.html">The_Great_Error</a></h3>
+                <p>garvit1234@gmail.com</p>
+            </div>
+        </div>
+
+        <div id="profileBottom">
+            <a href="order.html"><div class="profileOptions"><img src="/img/profile/orders.png" alt="" height="25px" width="25px"><p>My Orders</p></div></a>
+
+            <a href="wishlist.html"><div class="profileOptions"><img src="/img/profile/wishlist.png" alt="" height="25px" width="25px"><p>Wishlist</p></div></a>
+
+            <a href="signout.html"><div class="profileOptions"><img src="/img/profile/signout.png" alt="" height="25px" width="25px"><p>SignOut</p></div></a>
+        </div>
+      </div>
+    <!-------------------------------------------------------------------------------------------------------->
     <header>
         <div id="navbar">
             <div class="burger-menu">
@@ -35,6 +54,7 @@
                 <li><a href="/SignUp.html"><button>SignUp</button></a></li>
                 <div class="cartCount"></div>
                 <li><a href="Cart.html"><img src="img/logo/cart.png" alt="cart" width="40px"></a></li>
+                <li id="profilePhoto"><img src="/img/profile/default.jpg" alt="" width="50px" height="50px"></li>
             </div>
         </div>
     </header>
@@ -55,18 +75,18 @@
     <img src="img/FullLogo.png" alt="" , height="80"> -->
     <!-- <h3>Kindly Sign-Up if you do not have an account<h3> -->
     
-    <form action="backend.php">
+    <form action="" id="loginBox">
         
         <div id="entryBox">
             
             <div class="box">
-                <h4>E-mail</h4><input type="email" name="myemail" placeholder="Enter E-mail" >
+                <h4>E-mail</h4><input type="email" name="email" placeholder="Enter E-mail" id="email" >
             </div>
 
 
             
             <div class="box">
-                <h4>Password</h4><input type="password" name="mypassword" placeholder="Enter Password">
+                <h4>Password</h4><input type="password" name="password" placeholder="Enter Password" id="password">
             </div>
 
             
@@ -96,5 +116,6 @@
 </footer>
 
 <script src="js/utils.js"></script>
+<script src="js/login.js"></script>
 </body>
 </html>

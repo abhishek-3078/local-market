@@ -18,6 +18,26 @@
 </head>
 
 <body>
+    
+    <!-- Profile Dialog Box ------------------------------------------------------------------------------------>
+    <div id="profile">
+        <div id="profileHeading">
+            <img src="/img/profile/default.jpg" alt="" height="70px" width="70px">
+            <div id="profileName">
+                <h3><a href="profile.html">The_Great_Error</a></h3>
+                <p>garvit1234@gmail.com</p>
+            </div>
+        </div>
+
+        <div id="profileBottom">
+            <a href="order.html"><div class="profileOptions"><img src="/img/profile/orders.png" alt="" height="25px" width="25px"><p>My Orders</p></div></a>
+
+            <a href="wishlist.html"><div class="profileOptions"><img src="/img/profile/wishlist.png" alt="" height="25px" width="25px"><p>Wishlist</p></div></a>
+
+            <a href="signout.html"><div class="profileOptions"><img src="/img/profile/signout.png" alt="" height="25px" width="25px"><p>SignOut</p></div></a>
+        </div>
+    </div>
+    <!-------------------------------------------------------------------------------------------------------->
     <header>
         <div id="navbar">
           <div class="burger-menu">
@@ -46,21 +66,19 @@
             <li>
               <a href="Cart.html"><img src="img/logo/cart.png" alt="cart" width="40px"/></a>
             </li>
-            <li>
-                <a href="profile.html">
-                    <img src="/img/user.png" alt="">
-                </a>
-            </li>
+            
+            <li id="profilePhoto"><img src="/img/profile/default.jpg" alt="" width="50px" height="50px"></li>
           </div>
         </div>
       </header>
+
     <!-- -------------------------------------------------------------------------------------------------- -->
 
 
 
     <section>
         <div id="sectionTop">
-            <h1>About OurLocalMarket</h1>
+            <h1>About OurLocalMarket<button id="logout">logouit</button></h1>
             <p>The one and only motive behind our this website <span class="span">OurLocalMarket</span> is to help our
                 users to get every Goods and Services from their convenient place where they can trust, that is your own <span
                     class="span">nearby market</span>.</p>
@@ -147,6 +165,7 @@
             <p>OurLocalMarket &copy; is <span style="color:red"> self</span> sponsored</p>
         </div>
     </footer>
+    <script src="js/auth.js"></script>
     <script src="js/utils.js"></script>
 </body>
 
