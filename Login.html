@@ -11,6 +11,7 @@
     
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="icon" sizes="1100x200"href="img/cartLogo.png">
+    <script defer src="js/auth.js"></script>
 </head>
 <body>
       <!-- Profile Dialog Box ------------------------------------------------------------------------------------>
@@ -75,18 +76,18 @@
     <img src="img/FullLogo.png" alt="" , height="80"> -->
     <!-- <h3>Kindly Sign-Up if you do not have an account<h3> -->
     
-    <form action="backend.php">
+    <form action="" id="loginBox">
         
         <div id="entryBox">
             
             <div class="box">
-                <h4>E-mail</h4><input type="email" name="myemail" placeholder="Enter E-mail" >
+                <h4>E-mail</h4><input type="email" name="email" placeholder="Enter E-mail" id="email" >
             </div>
 
 
             
             <div class="box">
-                <h4>Password</h4><input type="password" name="mypassword" placeholder="Enter Password">
+                <h4>Password</h4><input type="password" name="password" placeholder="Enter Password" id="password">
             </div>
 
             
@@ -116,5 +117,6 @@
 </footer>
 
 <script src="js/utils.js"></script>
+<script src="js/login.js"></script>
 </body>
 </html>

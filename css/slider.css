@@ -318,7 +318,7 @@ body {
 .slidemenu{
     height: 70px;
     width: 50px;
-    background-color: rgba(128, 0, 128, 0.669);
+    background-color: rgba(0, 0, 0, 0.621);
     position: absolute;
     bottom: 0px;
     z-index: 3;
@@ -355,7 +355,7 @@ body {
 }
 @media only screen and (max-width:500px) {
     .content{
-        top:80px
+        top:68px
     }
     #form{
       width: 90%;  
@@ -370,11 +370,9 @@ body {
     .categories-container{
         width: 333px;
     }
-    
-    
   
 }
-@media only screen and (min-width:1000px) {
+@media only screen and (min-width:700px) {
     .slider{
         height: calc(100vh - 65px);
         width: 100%;
@@ -397,7 +395,7 @@ body {
         font-size: 2rem;
     }
     .content{
-        top:80px
+        top:73px
     }
     #form{
         width: 80%;
@@ -415,3 +413,10 @@ body {
         font-size: 3rem;
     }
 }
+/* @media only screen and (max-width:500px) {
+    #searchform{
+        position:relative;
+        top:100px;
+        left:20px;
+    }
+} */

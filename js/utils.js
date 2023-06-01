@@ -18,8 +18,11 @@ if(localStorage.length>0){
     document.querySelector(".cartCount").style.visibility="visible"
 }
 
+
 document.querySelector("#profilePhoto").onclick=()=>{
+    // alert("hello again")
     let a = document.querySelector("#profile");
+
     // console.log(a);
     let b = getComputedStyle(a);
     if(b.display == "none"){

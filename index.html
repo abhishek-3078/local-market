@@ -8,13 +8,14 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="css/utils.css">
-    <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/slider.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="responsive/res_headerAndFooter.css">
     <link rel="stylesheet" href="responsive/res_index.css">
-    <link rel="icon" sizes="1100x200"href="img/cartLogo.png">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" sizes="1100x200" href="img/cartLogo.png">
     <title>OurLocalMarket</title>
+    <script defer src="js/auth.js"></script>
 </head>
 
 <body>
@@ -52,8 +53,6 @@
                 <div class="wave"></div>
                 <div class="wave"></div>
             </div>
-
-
         </div>
         <div id="navbar">
             <div class="burger-menu">
@@ -83,7 +82,6 @@
     <!-- ----------------------------------------------------------------------------------------------------->
 
     <section>
-
         <div class="slider">
             <img src="img/img1.jpg" alt="">
             <img src="img/img2.jpg" alt="">
@@ -94,6 +92,13 @@
         <div class="slidemenu">
             <div class="move">&#8595;</div>
         </div>
+        <form id="searchform" action="">
+            <div id="searchInIndex">
+                <input type="search" autocomplete="off" value="" id="searchbar" placeholder="search product...">
+                <button type="submit" id="searchme" onclick="sendToLink(event)"><img src="img/logo/search.png"
+                        alt="press" height="20px" width="20px"></button>
+            </div>
+        </form>
         <div class="content">
             <div id="form">
                 <h2 class="subHeading">We Bring the Market at Your Door</h2>
@@ -107,8 +112,9 @@
 
         <div id="respCategory">
 
-        <h2 class="text-center font-style resp-category "> <span>C A T E G O R I E S <span id="arrow">&#9660;</span> </span>
-        </h2>
+            <h2 class="text-center font-style resp-category "> <span>C A T E G O R I E S <span id="arrow">&#9660;</span>
+                </span>
+            </h2>
             <div id="categories" class="toggle-cat">
                 <a href="groceries.html">
                     <div class="cateogry">Grocery</div>
@@ -268,6 +274,7 @@
             <p>OurLocalMarket &copy; is <span style="color:red"> self</span> sponsored</p>
         </div>
     </footer>
+    <script src="js/search.js"></script>
     <script src="js/index.js"></script>
     <script src="js/utils.js"></script>
 </body>

@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="responsive/res_headerAndFooter.css">
     <link rel="stylesheet" href="responsive/res_services.css">
     <link rel="stylesheet" href="css/fastfood.css">
+    <script defer src="js/auth.js"></script>
     <link rel="icon" sizes="1100x200"href="img/cartLogo.png">
 </head>
 <body>
@@ -65,9 +66,26 @@
             <div id="sub_banner">
                 <h1>Fast Food</h1>
                 <form action="">
-                    <input type="search" placeholder="Search....." name="search" id="searchbar">
-                    <button type="submit"><img src="img/logo/search.png" alt="noon" height="30" width="30"></button>
+                    <input type="search" onkeyup="showList(event)" placeholder="Search....." name="search" id="searchbar" value="" autocomplete="off">
+                    <button type="submit" onclick="searchProduct(event)"><img src="img/logo/search.png" alt="noon" height="30" width="30"></button>
                 </form>
+                <div id="showOption">
+                    <div class="options">
+                        apple
+                    </div>
+                    <div class="options">
+                        banana
+                    </div>
+                    <div class="options">
+                        kela
+                    </div>
+                    <div class="options">
+                        lamba kela
+                    </div>
+                    <div class="options">
+                        chaota kela
+                    </div class="options">
+                </div>
             </div>
             <div id="categories">
                 <a href="#product1">
@@ -633,6 +651,8 @@
             <p>OurLocalMarket &copy; is <span style="color:red"> self</span> sponsored</p>
         </div>
     </footer>
+    
+    <script src="js/search.js"></script>
     <script src="js/utils.js"></script>
     <script src="js/services.js"></script>
 </body>

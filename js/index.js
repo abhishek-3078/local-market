@@ -120,8 +120,9 @@ document.addEventListener("scroll",(e)=>{
 })
 
 
-
-
-document.querySelector(".slidemenu").addEventListener("click",()=>{
+document.querySelector(".slidemenu").addEventListener("click",(e)=>{
     window.scrollTo(0,slider.offsetHeight)
+    
+document.querySelector(".slidemenu").style.display = "none";
+
 })

@@ -156,8 +156,10 @@ header {
 #navbarRight img{
     /* border: 2px solid red; */
     padding: 5px;
-    border-radius: 27px;
+    border-radius: 25px;
     transition: ease-in-out .1s;
+    height: 50px;
+    width: 50px;
 }
 
 /* header part   (hover)------------------------------------------------------- */
@@ -202,7 +204,9 @@ header {
 }
 
 /*Profile Box----------------------------------------------------------------------------*/
-
+#profilePhoto{
+    display: none;
+}
 #profile{
     /* border: 2px solid red; */
     display: none;
@@ -340,10 +344,11 @@ header {
 }
 
 #searchbar{
-    margin-right: 15px;
+    margin-right: 0px;
     color: rgb(0, 195, 0);
     height: 40px;
-    border-radius: 20px;
+    border:none;
+    border-radius: 0px;
     font-size: 18px;
     padding: 10px;
 }
@@ -358,9 +363,33 @@ form{
     margin-top: 25px;
 }
 
+#showOption{
+    position: absolute;
+    width:100%;
+}
+.options{
+    display: none;
+    margin:auto;
+    position:relative;
+    z-index: 10;
+    border-bottom:1px solid black;
+    width:274px;
+    text-align: left;
+    padding:7px;
+    cursor: pointer;
+    background-color: white;
+    color:black;
+}
+.options:hover{
+    background-color: rgb(218, 218, 218);
+    color:rgb(72, 70, 70)
+}
+
+
 form button:hover{
     border: 2px solid white;
 }
+
 /* Categories */
 #categories{
     display: flex;
@@ -614,4 +643,8 @@ form button:hover{
     background-color: #1b8c17;
     z-index: 30;
 }
-
+@media only screen and (max-width:630px){
+    .options{
+        width:234px;
+    }
+}
