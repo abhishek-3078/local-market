@@ -8,13 +8,13 @@
     <link rel="stylesheet" href="css/utils.css">
     <link rel="stylesheet" href="responsive/res_headerAndFooter.css">
     <link rel="stylesheet" href="css/responsive.css">
-    <link rel="icon" sizes="1100x200"href="img/cartLogo.png">
+    <link rel="icon" sizes="1100x200" href="img/cartLogo.png">
 
     <title>Electronics</title>
     <link rel="stylesheet" href="responsive/res_services.css">
     <link rel="stylesheet" href="css/Electronics.css">
 
-   
+
 </head>
 
 <body>
@@ -63,25 +63,62 @@
     </header>
     <!-- -------------------------------------------------------------------------------------------------- -->
 
-    
+
     <section>
         <div id="banner">
             <div id="sub_banner">
                 <h1>Electronics</h1>
-                <form action="">
-                    <input type="search" placeholder="Search....." name="search" id="searchbar">
-                    <button type="submit"><img src="img/logo/search.png" alt="noon" height="30" width="30"></button>
-                </form>
+                <div id="searchBoxAndOption">
+                    <form action="">
+                        <input type="search" onkeyup="showList(event)" placeholder="Search....." name="search"
+                            id="searchbar" value="" autocomplete="off">
+                        <button type="submit" onclick="searchProduct(event)"><img src="img/logo/search.png" alt="noon"
+                                height="30" width="30"></button>
+                    </form>
+                    <div id="showOption">
+                        <div class="options">
+                            apple
+                        </div>
+                        <div class="options">
+                            banana
+                        </div>
+                        <div class="options">
+                            kela
+                        </div>
+                        <div class="options">
+                            lamba kela
+                        </div>
+                        <div class="options">
+                            chaota kela
+                        </div class="options">
+                    </div>
+                </div>
             </div>
             <div id="categories">
-                <a href="#product1"><div class="cateogry">Televisions</div></a>
-                <a href="#product2"><div class="cateogry">Mobile</div></a>
-                <a href="#product3"><div class="cateogry">Laptop</div></a>
-                <a href="#product4"><div class="cateogry">Tablet</div></a>
-                <a href="#product5"><div class="cateogry">Watches</div></a>
-                <a href="#product6"><div class="cateogry">Earphones</div></a>
-                <a href="#product7"><div class="cateogry">Cameras</div></a>
-                <a href="#product8"><div class="cateogry">Miscellaneous</div></a>
+                <a href="#product1">
+                    <div class="cateogry">Televisions</div>
+                </a>
+                <a href="#product2">
+                    <div class="cateogry">Mobile</div>
+                </a>
+                <a href="#product3">
+                    <div class="cateogry">Laptop</div>
+                </a>
+                <a href="#product4">
+                    <div class="cateogry">Tablet</div>
+                </a>
+                <a href="#product5">
+                    <div class="cateogry">Watches</div>
+                </a>
+                <a href="#product6">
+                    <div class="cateogry">Earphones</div>
+                </a>
+                <a href="#product7">
+                    <div class="cateogry">Cameras</div>
+                </a>
+                <a href="#product8">
+                    <div class="cateogry">Miscellaneous</div>
+                </a>
             </div>
             <div id="back_key">
                 <a href="Services.html">&larr;All Services</a>
@@ -105,7 +142,7 @@
                     <li>
                         <h1>KODAK 7XPRO</h1>
                         <a href="">
-                            <img src="img/electonics/television/tel2.gif"  alt="image to be included" height="120px">
+                            <img src="img/electonics/television/tel2.gif" alt="image to be included" height="120px">
                         </a>
                         <p>₹15,499</p>
                         <button id="addBtn" class="cartBtn" onclick="">Add +</button>
@@ -113,7 +150,8 @@
                     <li>
                         <h1>SAMSUNG M-5</h1>
                         <a href="">
-                            <img src="https://images.samsung.com/is/image/samsung/p6pim/in/ls27bm500ewxxl/gallery/in-smart-m5-27m50b-ls27bm500ewxxl-532346507?$1300_1038_PNG$-dark.jpg" alt="image to be included" height="120px">
+                            <img src="https://images.samsung.com/is/image/samsung/p6pim/in/ls27bm500ewxxl/gallery/in-smart-m5-27m50b-ls27bm500ewxxl-532346507?$1300_1038_PNG$-dark.jpg"
+                                alt="image to be included" height="120px">
                         </a>
                         <p>Rs.78000</p>
                         <button id="addBtn" class="cartBtn" onclick="">Add +</button>
@@ -170,7 +208,8 @@
                     <li>
                         <h1>iPHONE 13 PRO</h1>
                         <a href="">
-                            <img src="img/electonics/mobiles/61HHS0HrjpL._SX679_-removebg-preview.png" alt="image to be included" height="121px">
+                            <img src="img/electonics/mobiles/61HHS0HrjpL._SX679_-removebg-preview.png"
+                                alt="image to be included" height="121px">
                         </a>
                         <p>&#8377 450/dz</p>
                         <button id="addBtn" class="cartBtn" onclick="">Add +</button>
@@ -194,7 +233,8 @@
                     <li>
                         <h1>OPPO RENO 8</h1>
                         <a href="">
-                            <img src="img/electonics/mobiles/oppo-reno8-5g-shimmer-gold-128-gb-8-gb-ram-removebg-preview.png" alt="image to be included" height="120px">
+                            <img src="img/electonics/mobiles/oppo-reno8-5g-shimmer-gold-128-gb-8-gb-ram-removebg-preview.png"
+                                alt="image to be included" height="120px">
                         </a>
                         <p>&#8377 450/dz</p>
                         <button id="addBtn" class="cartBtn" onclick="">Add +</button>
@@ -202,7 +242,8 @@
                     <li>
                         <h1>ONE PLUS NORD</h1>
                         <a href="">
-                            <img src="img/electonics/mobiles/61QRgOgBx0L._SX679_-removebg-preview.png" alt="image to be included" height="120px">
+                            <img src="img/electonics/mobiles/61QRgOgBx0L._SX679_-removebg-preview.png"
+                                alt="image to be included" height="120px">
                         </a>
                         <p>&#8377 450/dz</p>
                         <button id="addBtn" class="cartBtn" onclick="">Add +</button>
@@ -210,7 +251,8 @@
                     <li>
                         <h1>REALME NARZO</h1>
                         <a href="">
-                            <img src="img/electonics/mobiles/71Ftzmh3XWL._SL1500_-removebg-preview.png" alt="image to be included" height="120px">
+                            <img src="img/electonics/mobiles/71Ftzmh3XWL._SL1500_-removebg-preview.png"
+                                alt="image to be included" height="120px">
                         </a>
                         <p>&#8377 450/dz</p>
                         <button id="addBtn" class="cartBtn" onclick="">Add +</button>
@@ -251,7 +293,7 @@
                     <li>
                         <h1>LENOVO V15 INTEL</h1>
                         <a href="">
-                            <img src="img/electonics/laptops/lenovo 2.png"  alt="image to be included" height="120px">
+                            <img src="img/electonics/laptops/lenovo 2.png" alt="image to be included" height="120px">
                         </a>
                         <p>&#8377 450/dz</p>
                         <button id="addBtn" class="cartBtn" onclick="">Add +</button>
@@ -690,6 +732,7 @@
             <p>OurLocalMarket &copy; is <span style="color:red"> self</span> sponsored</p>
         </div>
     </footer>
+    <script src="js/search.js"></script>
     <script src="js/utils.js"></script>
     <script src="js/services.js"></script>
 </body>

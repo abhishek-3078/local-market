@@ -342,10 +342,11 @@ header {
 }
 
 #searchbar{
-    margin-right: 15px;
+    margin-right: 0px;
     color: rgb(0, 195, 0);
     height: 40px;
-    border-radius: 20px;
+    border:none;
+    border-radius: 0px;
     font-size: 18px;
     padding: 10px;
 }
@@ -360,9 +361,34 @@ form{
     margin-top: 25px;
 }
 
+#showOption{
+    /* border:2px solid red; */
+    position: absolute;
+    width:100%;
+}
+.options{
+    display: none;
+    margin:auto;
+    position:relative;
+    z-index: 10;
+    border-bottom:1px solid black;
+    width:21.7%;
+    text-align: left;
+    padding:7px;
+    cursor: pointer;
+    background-color: white;
+    color:black;
+}
+.options:hover{
+    background-color: rgb(218, 218, 218);
+    color:rgb(72, 70, 70)
+}
+
+
 form button:hover{
     border: 2px solid white;
 }
+
 /* Categories */
 #categories{
     display: flex;
