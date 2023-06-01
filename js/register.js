@@ -17,10 +17,10 @@ document.querySelector("#register").onsubmit=(e)=>{
         },
         body:JSON.stringify(Object.fromEntries(formData))
     }).then(res=>{
-        console.log(res)
+        // console.log(res)
         return res.json()
     }).then(data=>{
-        alert("registered")
+
         if(data.success){
             fetch(`${url}/login`,{
                 method:"POST",
@@ -46,6 +46,9 @@ document.querySelector("#register").onsubmit=(e)=>{
                     alert("invalid Credentials")
                 }
             }).catch(e=>console.log(e))
+        }
+        else{
+            alert("registeration failed",data)
         }
           
         
