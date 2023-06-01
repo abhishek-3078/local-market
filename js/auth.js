@@ -1,8 +1,8 @@
 
 if(localStorage.getItem("token")){
 const url="http://127.0.0.1:3000/checkauth"
-const url2="https://local-market.onrender.com/checkauth"
-const url3="https://local-market.onrender.com/"
+const url2="https://local-market-api.onrender.comcheckauth"
+const url3="https://local-market-api.onrender.com/"
 fetch(url2,{
     method:"GET",
     headers:{
