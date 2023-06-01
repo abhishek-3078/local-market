@@ -100,7 +100,7 @@ function scroll(){
             if(card==card[0]) return;
         const rect=card.getBoundingClientRect();
         
-       console.log(rect.top,card.offsetHeight,window.innerHeight)
+    //    console.log(rect.top,card.offsetHeight,window.innerHeight)
 
         if(rect.top-card.offsetHeight<=window.innerHeight){
 

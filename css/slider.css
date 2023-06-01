@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&family=Noto+Serif&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Noto+Serif&family=Roboto:wght@400;500&display=swap');
+
 .content{
     width: 100%;
     position: absolute;
@@ -75,7 +76,6 @@
 
    
 }
-
 #form button{
     display: block;
     margin: auto;
@@ -100,6 +100,13 @@
     color:white;
 }
 
+@media only screen and (max-width:450px) {
+    #form button{
+        font-size: 1rem;
+        padding: 7px;
+        border-radius: 8;
+    }
+}
  /* @keyframes slide1{
     0%{
         transform:translateX(0%);

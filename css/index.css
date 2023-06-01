@@ -193,9 +193,7 @@ h2{
     justify-content: space-evenly;
     transition:transform 0.5s ease-in-out
 }
-.about :nth-child(2n-1){
-    flex-direction: row-reverse;
-}
+
 .card .text{
     display: flex;
     flex-direction: column;
@@ -310,7 +308,13 @@ section #categories{
         position: absolute;
         top:315px;
         right:auto;
+        max-width: 80%;
     }
+}
+@media only screen and (max-width:500px){
+   #form{
+    top: 10px;
+   }
 }
 @media only screen and (max-width:450px){
     #searchInIndex{
@@ -318,7 +322,9 @@ section #categories{
         position: absolute;
         top:300px;
         right:auto;
+
     }
+  
 }
 
 @media only screen and (max-width:400px){
