@@ -10,8 +10,14 @@
         height:211px;
     }
     .productsList ul li p{
-      font-size: 0.6rem;
-      width:90%;
+        background-color: transparent;
+        text-align: center;
+        float: none;
+
+        font-size: 0.8rem;
+      /* width:90%; */
+      margin-top: 0px;
+      padding-bottom: 0px;
     }
     .productsList ul img{
         width:128px;
