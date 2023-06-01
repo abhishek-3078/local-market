@@ -52,9 +52,26 @@
         <div id="sub_banner">
             <h1>Tailor</h1>
             <form action="">
-                <input type="search" placeholder="Search....." name="search" id="searchbar">
-                <button type="submit"><img src="img/logo/search.png" alt="noon" height="30" width="30"></button>
+                <input type="search" onkeyup="showList(event)" placeholder="Search....." name="search" id="searchbar" value="" autocomplete="off">
+                <button type="submit" onclick="searchProduct(event)"><img src="img/logo/search.png" alt="noon" height="30" width="30"></button>
             </form>
+            <div id="showOption">
+                <div class="options">
+                    apple
+                </div>
+                <div class="options">
+                    banana
+                </div>
+                <div class="options">
+                    kela
+                </div>
+                <div class="options">
+                    lamba kela
+                </div>
+                <div class="options">
+                    chaota kela
+                </div class="options">
+            </div>
         </div>
         <div id="categories">
             <a href="#product1"><div class="cateogry">For Men</div></a>
@@ -381,7 +398,8 @@
       </p>
     </div>
   </footer>
-
+  
+  <script src="js/search.js"></script>
   <script src="js/utils.js"></script>
   <!-- <script defer src="js/tailor.js"></script> -->
   <script src="js/services.js"></script>

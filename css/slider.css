@@ -318,7 +318,7 @@ body {
 .slidemenu{
     height: 70px;
     width: 50px;
-    background-color: rgba(128, 0, 128, 0.669);
+    background-color: rgba(0, 0, 0, 0.621);
     position: absolute;
     bottom: 0px;
     z-index: 3;
