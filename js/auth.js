@@ -10,8 +10,8 @@ let ImageBox2=document.querySelector("#profilePhoto img")
 let url2="https://local-market-api.onrender.com/checkauth"
 let url3="https://local-market-api.onrender.com/"
 
-url2="http://127.0.0.1:3000/checkauth"
-url3="http://127.0.0.1:3000/"
+// url2="http://127.0.0.1:3000/checkauth"
+// url3="http://127.0.0.1:3000/"
 
 
 if(localStorage.getItem("token")){

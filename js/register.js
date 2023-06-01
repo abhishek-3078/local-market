@@ -3,7 +3,7 @@ document.querySelector("#register").onsubmit=(e)=>{
     const formData=new FormData(e.target)
     console.log(JSON.stringify(Object.fromEntries(formData)))
     let url2="https://local-market-api.onrender.com/register"
-    url2="http://127.0.0.1:3000/register"
+    // url2="http://127.0.0.1:3000/register"
 
     fetch(url2,{
         method:"POST",
