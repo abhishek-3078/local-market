@@ -6,8 +6,8 @@ document.querySelector("#register").onsubmit=(e)=>{
     let url2="https://local-market-api.onrender.com/register"
     let url="https://local-market-api.onrender.com"
     
-    url2="http://127.0.0.1:3000/register"
-    url="http://127.0.0.1:3000"
+    // url2="http://127.0.0.1:3000/register"
+    // url="http://127.0.0.1:3000"
 
     fetch(url2,{
         method:"POST",

@@ -11,7 +11,7 @@ document.querySelector("#loginBox").onsubmit=(e)=>{
     // console.log(JSON.stringify(Object.fromEntries(formData)))
     console.log(email)
     let url2="https://local-market-api.onrender.com/login"
-     url2="http://127.0.0.1:3000/login"
+    //  url2="http://127.0.0.1:3000/login"
     fetch(url2,{
         method:"POST",
         headers:{
