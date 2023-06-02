@@ -86,7 +86,7 @@
     border: 3px solid black;
     margin:auto;
     font-size: 1.3rem;
-    background-color: green;
+    background-color: rgba(0, 128, 0, 0.73);
     cursor: pointer;
     transition: ease-in-out .1s;
 }

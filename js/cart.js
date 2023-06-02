@@ -107,6 +107,7 @@ function decrement(e){
     replaceValue(desBox,newQty)
     if(newQty==0){
         localStorage.removeItem(desBox.querySelector("h3").innerText)
+        y.remove() 
     }
 
 }

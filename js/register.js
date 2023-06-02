@@ -9,6 +9,7 @@ document.querySelector("#register").onsubmit=(e)=>{
     // url2="http://127.0.0.1:3000/register"
     // url="http://127.0.0.1:3000"
 
+    document.querySelector(".loading").style.display="block"
     fetch(url2,{
         method:"POST",
         headers:{
@@ -22,6 +23,7 @@ document.querySelector("#register").onsubmit=(e)=>{
     }).then(data=>{
 
         if(data.success){
+
             fetch(`${url}/login`,{
                 method:"POST",
                 headers:{
@@ -37,6 +39,7 @@ document.querySelector("#register").onsubmit=(e)=>{
                 console.log(res)
                 return res.json()
             }).then(data=>{
+                document.querySelector(".loading").style.display="none"
                 console.log(data)
                 if(data.success){
                     console.log(data)
