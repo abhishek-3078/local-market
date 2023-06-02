@@ -45,8 +45,8 @@ const categories=[]
 const totalItems=Object.entries(localStorage)
 let totalAmount=0;
 if(totalItems.length!=0) emptyCart.style.display="none";
-for(let i of Object.entries(localStorage)){
-
+for(let i of totalItems){
+    if(i[0]=="token") continue;
     let x=itemTemplate
     let y=itemCategory
     const name=i[0]

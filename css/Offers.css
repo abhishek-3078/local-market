@@ -35,6 +35,7 @@ h1{
 
 .discounts{
     display: flex;
+    
     /* border: 2px solid white; */
     width: 100vw;
     margin: 10px;
@@ -60,6 +61,21 @@ h1{
     color: red;
 }
 
+@media only screen and ( max-width:400px){
+    .description{
+        font-size: 10px;
+    }
+    .discounts p{
+        font-size: 12px;
+    }
+    .stylecoup p{
+        font-weight:bolder;
+    }
+    .discounts h3{
+        font-size: 13px;
+    }
+
+}
 .description{
     width: 40%;
 }
