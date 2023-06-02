@@ -1,4 +1,6 @@
+
 document.querySelector("#register").onsubmit=(e)=>{
+    document.querySelector(".loadingon").style.display="block"
     e.preventDefault()
     const formData=new FormData(e.target)
     const userData=Object.fromEntries(formData)
@@ -9,7 +11,6 @@ document.querySelector("#register").onsubmit=(e)=>{
     // url2="http://127.0.0.1:3000/register"
     // url="http://127.0.0.1:3000"
 
-    document.querySelector(".loading").style.display="block"
     fetch(url2,{
         method:"POST",
         headers:{
@@ -34,23 +35,25 @@ document.querySelector("#register").onsubmit=(e)=>{
                     email:userData.email,
                     password:userData.password
                 }),
-                credentials:"include"
+                // credentials:"include"
             }).then(res=>{
                 console.log(res)
                 return res.json()
             }).then(data=>{
-                document.querySelector(".loading").style.display="none"
+                document.querySelector(".loadingon").style.display="none"
                 console.log(data)
                 if(data.success){
                     console.log(data)
                     localStorage.setItem("token",data.token)
                     window.location="/Services.html"
                 }else{
+                    document.querySelector(".loadingon").style.display="none"
                     alert("invalid Credentials")
                 }
             }).catch(e=>console.log(e))
         }
         else{
+            document.querySelector(".loadingon").style.display="none"
             alert("registeration failed",data)
         }
           
