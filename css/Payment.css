@@ -1,8 +1,13 @@
+section{
+    background-image: url("/img/payment/payment_background.png");
+}
+
 .paymentOption{
     padding:20px;
     /* margin: 10px auto 10px; */
-    background-color: #fff;
+    background-color: #ffff;
     width: 300px;
+    border-radius: 10px;
     
 }
 input{
@@ -61,6 +66,7 @@ button:hover{
     width: 100%;
     /* margin: auto; */
     padding: 30px;
+    border-radius: 10px;
 }
 .deliveryChoice{
     display: flex;
@@ -74,6 +80,8 @@ button:hover{
     height: 100px;
     font-family: "Lato","sans-serif";
     font-size:2rem;
+    border-radius: 10px;
+    margin-top: 20px;
     background-color: rgb(218, 213, 213);
 }
 label{

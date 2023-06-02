@@ -130,11 +130,11 @@
         <div class="paymentOption">
            <h3>UPI</h3>
            <div>
-            <img src="" alt="paytm">
+            <img src="/img/payment/paytm.png" alt="paytm" height="60px">
            
-            <img src="" alt="Gpay">
+            <img src="/img/payment/Gpay.png" alt="Gpay" height="60px">
           
-            <img src="" alt="PhonePe">
+            <img src="/img/payment/phonepe.jpg" alt="PhonePe" height="60px">
            </div> 
 
            <div>
@@ -175,10 +175,12 @@
         choice.forEach((e)=>{
             e.addEventListener("click",(e)=>{
                 choice.forEach((e)=>{
-            e.style.background="white"
+            e.style.background="white";
+            e.style.color = "black";
             })
 
-                e.target.style.background="red"
+                e.target.style.background="rgb(14, 237, 14)";
+                e.target.style.color = "white";
             })
         })
         
