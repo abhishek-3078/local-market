@@ -34,7 +34,7 @@ document.querySelector("#profilePhoto").onclick=()=>{
 }
 
 window.addEventListener('click', function(e){   
-    console.log("tRGET",e.target)
+
     if (e.target == document.getElementById("profile") ||  e.target == document.querySelector("#profilePhoto img")){
         // console.log("You clicked inside the box");
     }

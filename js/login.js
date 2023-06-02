@@ -1,6 +1,8 @@
 const email=document.querySelector("#email")
 const password=document.querySelector("#password")
 const profilePhoto=document.querySelector("#profilePhoto")
+
+
 document.querySelector("#loginBox").onsubmit=(e)=>{    
     console.log(email.value)
   
@@ -26,7 +28,6 @@ document.querySelector("#loginBox").onsubmit=(e)=>{
         return res.json()
     }).then(data=>{
         if(data.success){
-            console.log(data)
             profilePhoto.style.display="block"
             localStorage.setItem("token",data.token)
             window.location="/Services.html"

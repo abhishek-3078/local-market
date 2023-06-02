@@ -178,6 +178,9 @@ header {
     /* box-shadow:1px 1px 10px white; */
 }
 
+#navbarRight li{
+    position: relative;
+}
 #navbarRight li button:focus{
     box-shadow: none;
 }
@@ -189,9 +192,10 @@ header {
 }
 
 .cartCount{
-    position: absolute;
-    top: 10px;
-    right: 30px;
+    position: relative;
+    top: 15px;
+    left:5px;
+    /* right:10px; */
     width: 15px;
     height: 15px;
     border-radius: 50%;
@@ -200,8 +204,9 @@ header {
     font-size:0.7rem;
     text-align: center;
     background-color: #e81111;
-    z-index:0
+    z-index:1
 }
+
 
 /*Profile Box----------------------------------------------------------------------------*/
 #profilePhoto{
@@ -252,6 +257,7 @@ header {
     transition: ease-in-out .2s;
     border-radius: 5px;
     margin-top: 8px;
+    cursor: pointer;
 }
 
 .profileOptions p{
@@ -470,7 +476,7 @@ form button:hover{
     display: flex;
     list-style: none;
     flex-wrap: wrap;
-    /* justify-content: center; */
+    justify-content: center;
     padding-left: 20px;
     padding-bottom: 20px;
 }
