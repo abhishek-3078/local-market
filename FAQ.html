@@ -168,23 +168,23 @@
 
     <script src="js/utils.js"></script>
     <script>
-        // function showAnswer(event)
-        // {
-        //     const answer = event.target.parentNode.parentNode.querySelector(".Answers");
-        //     const image = event.target;
+        function showAnswer(event)
+        {
+            const answer = event.target.parentNode.parentNode.querySelector(".Answers");
+            const image = event.target;
             
-        //     console.log("hello",answer);
-        //     if(answer.style.display == "block")
-        //     {
-        //         answer.style.display = "none";
-        //         image.style.transform = "rotateZ(0deg)";
-        //         return;
-        //     }
+            console.log("hello",answer);
+            if(answer.style.display == "block")
+            {
+                answer.style.display = "none";
+                image.style.transform = "rotateZ(0deg)";
+                return;
+            }
 
-        //     answer.style.display = "block";
-        //     image.style.transform = "rotateZ(180deg)";
+            answer.style.display = "block";
+            image.style.transform = "rotateZ(180deg)";
 
-        // }
+        }
     </script>
 </body>
      

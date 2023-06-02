@@ -492,9 +492,10 @@ form button:hover{
     transition: ease-in-out .2s;
 }
 
-.productsList ul li:hover{
+/* .productsList ul li:hover{
     transform: translateY(-10px);
-}
+} */
+
 
 .productsList ul li a{
     text-decoration: none;

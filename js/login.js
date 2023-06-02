@@ -22,7 +22,7 @@ document.querySelector("#loginBox").onsubmit=(e)=>{
             email:email.value,
             password:password.value
         }),
-        credentials:"include"
+        // credentials:"include"
     }).then(res=>{
         console.log(res)
         return res.json()
