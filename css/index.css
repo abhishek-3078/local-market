@@ -44,6 +44,26 @@ h2{
     width:20%;
     background-color: lightblue;
 }
+#showOption{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top:140px;
+    right:20px;
+    width:265px;
+}
+.options{
+    display: none;
+    position:relative;
+    z-index: 10;
+    border-bottom:1px solid black;
+    width:265px;
+    text-align: left;
+    padding:7px;
+    cursor: pointer;
+    background-color: white;
+    color:black;
+}
 .categories-container{
     background-color: #111;
 }
@@ -301,6 +321,12 @@ section #categories{
         top:350px;
         right:auto;
     }
+    #showOption{
+        top:390px;
+        right:auto;
+        width:100%;
+        margin: auto;
+    }
 }
 @media only screen and (max-width:600px){
     #searchInIndex{
@@ -309,6 +335,12 @@ section #categories{
         top:315px;
         right:auto;
         max-width: 80%;
+    }
+    #showOption{
+        top:355px;
+        right:auto;
+        width:100%;
+        margin: auto;
     }
 }
 @media only screen and (max-width:500px){
@@ -322,9 +354,13 @@ section #categories{
         position: absolute;
         top:300px;
         right:auto;
-
     }
-  
+    #showOption{
+        top:340px;
+        right:auto;
+        width:100%;
+        margin: auto;
+    }
 }
 
 @media only screen and (max-width:400px){
@@ -334,5 +370,10 @@ section #categories{
         top:264px;
         right:auto;
     }
+    #showOption{
+        top:304px;
+        right:auto;
+        width:100%;
+        margin: auto;
+    }
 }
-

@@ -99,11 +99,28 @@
         </div>
         <form id="searchform" action="">
             <div id="searchInIndex">
-                <input type="search" autocomplete="off" value="" id="searchbar" placeholder="search product...">
+                <input type="search" onkeyup="showIndexList(event)"  autocomplete="off" value="" id="searchbar" placeholder="search product...">
                 <button type="submit" id="searchme" onclick="sendToLink(event)"><img src="img/logo/search.png"
                         alt="press" height="20px" width="20px"></button>
             </div>
         </form>
+        <div id="showOption">
+            <div class="options">
+                apple
+            </div>
+            <div class="options">
+                banana
+            </div>
+            <div class="options">
+                kela
+            </div>
+            <div class="options">
+                lamba kela
+            </div>
+            <div class="options">
+                chaota kela
+            </div class="options">
+        </div>
         <div class="content">
             <div id="form">
                 <h2 class="subHeading">We Bring the Market at Your Door</h2>

@@ -82,9 +82,26 @@
             <div id="sub_banner">
                 <h1>We bring the Whole Market to you</h1>
                 <form action="">
-                    <input type="search" placeholder="Search....." name="search" id="searchbar" value="" autocomplete="off">
+                    <input type="search"  onkeyup="showIndexList(event)" placeholder="Search....." name="search" id="searchbar" value="" autocomplete="off">
                     <button type="submit" id="searchme" onclick="sendToLink(event)"><img src="img/logo/search.png" alt="noon" height="30" width="30"></button>
                 </form>
+                <div id="showOption">
+                    <div class="options">
+                        apple
+                    </div>
+                    <div class="options">
+                        banana
+                    </div>
+                    <div class="options">
+                        kela
+                    </div>
+                    <div class="options">
+                        lamba kela
+                    </div>
+                    <div class="options">
+                        chaota kela
+                    </div class="options">
+                </div>
             </div>
             <div id="categories">
                 <a href="#product1">
