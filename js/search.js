@@ -27,12 +27,12 @@ function showIndexList(event){
            }
         }
     }
-    console.log(finalList)
+    // console.log(finalList)
     let lengthOfFinalList = finalList.length
     let finalListDivs = document.getElementsByClassName("options");
-    console.log(finalListDivs)
+    // console.log(finalListDivs)
     for(let i=0;i<lengthOfFinalList;i++){
-        console.log(finalListDivs[i].innerText);
+        // console.log(finalListDivs[i].innerText);
         finalListDivs[i].innerText = finalList[i];
         finalListDivs[i].style.display = "block";
     }
@@ -52,7 +52,7 @@ function sendToLink(event){
             // console.log(items)
             if(items == product){
                 foundkey = key;
-                window.location = `http://127.0.0.1:5502/Services.html#${foundkey}`;
+                window.location = `/Services.html#${foundkey}`;
                 return;
             }
         }
@@ -193,3 +193,21 @@ document.querySelector("#banner form").onsubmit=(e)=>{
         })
     }
 }
+
+
+function checkElementInside(event){
+    let a = document.getElementById('searchbar');
+    let b = document.getElementsByClassName('options');
+
+    console.log("helloe");
+    if(!a.contains(event.target)){
+        for(items of b){
+            items.style.display = "none";
+        }
+    }
+}
+
+  
+  
+  
+  

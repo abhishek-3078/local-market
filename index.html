@@ -18,7 +18,7 @@
     <script defer src="js/auth.js"></script>
 </head>
 
-<body>
+<body onclick="checkElementInside(event)">
       <!-- Profile Dialog Box ------------------------------------------------------------------------------------>
       <div id="profile">
         <div id="profileHeading">
@@ -97,7 +97,7 @@
         <div class="slidemenu">
             <div class="move">&#8595;</div>
         </div>
-        <form id="searchform" action="">
+        <form id="searchform"  action="">
             <div id="searchInIndex">
                 <input type="search" onkeyup="showIndexList(event)"  autocomplete="off" value="" id="searchbar" placeholder="search product...">
                 <button type="submit" id="searchme" onclick="sendToLink(event)"><img src="img/logo/search.png"
